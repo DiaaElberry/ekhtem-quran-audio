@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 1,
+  "id": "husary-hafs",
+  "reciterAr": "محمود خليل الحصري",
+  "reciterEn": "Mahmoud Khalil Al-Husary",
+  "riwaya": "Hafs an Asim",
+  "baseUrl": "https://github.com/DiaaElberry/ekhtem-quran-audio/releases/download/husary-hafs-v1/",
+  "tracks": [
+    {
+      "surah": 1,
+      "file": "001.mp3",
+      "size": 461639,
+      "sha256": "45f69626c4c62f0db35184c6e8ed5c2728cf341005c3744f333d9f68b7809c25"
+    },
+    {
+      "surah": 2,
+      "file": "002.mp3",
+      "size": 95665844,
+      "sha256": "a4781ee41aae44149d3179d1e7d745696b443954fe84e3af629bfd90f53f0aa2"
+    },
+    {
+      "surah": 3,
+      "file": "003.mp3",
+      "size": 55113145,
+      "sha256": "aed3bb776c0ceff1fcae1abb9412547dafc3e49a7a4efff156d9dd97dcde2300"
+    },
+    {
+      "surah": 4,
+      "file": "004.mp3",
+      "size": 55218889,
+      "sha256": "3a25d933552b37096880f8b0482eee07bcad434430f9b631216844a5f430853b"
+    },
+    {
+      "surah": 5,
+      "file": "005.mp3",
+      "size": 44466053,
+      "sha256": "d115d39e3b3a35a1a423af16cf9c6daae2a4b4a74f34968493072f4c51d734e8"
+    },
+    {
+      "surah": 6,
+      "file": "006.mp3",
+      "size": 50217172,
+      "sha256": "28547ee7927d999a4bea13e59a8949937fcb89f6eca39c5cd21c50308c47fb91"
+    },
+    {
+      "surah": 7,
+      "file": "007.mp3",
+      "size": 51816492,
+      "sha256": "e93158989591a3f4b458fc5bc5197bf8f56c00780e68fac350d4c045f6b98637"
+    },
+    {
+      "surah": 8,
+      "file": "008.mp3",
+      "size": 20014396,
+      "sha256": "a5ac86684e1eafff38a792d116bf5b365b6195c4355075a5a90047cd9f78abab"
+    },
+    {
+      "surah": 9,
+      "file": "009.mp3",
+      "size": 41489975,
+      "sha256": "4c7fe85d9795c060385896a92aaf95c692b53e03b2283d6de24a0b5104748f23"
+    },
+    {
+      "surah": 10,
+      "file": "010.mp3",
+      "size": 28542017,
+      "sha256": "77a8cbf1bb0ff165ede046d78fd760d5da983ece0c5a954609c5138ed35964ad"
+    },
+    {
+      "surah": 11,
+      "file": "011.mp3",
+      "size": 26428816,
+      "sha256": "810dfa5021aa5d51d68e9d3757b2b414aa951a51c1bb18617abe379e16c24d23"
+    },
+    {
+      "surah": 12,
+      "file": "012.mp3",
+      "size": 27445919,
+      "sha256": "fd5d716c99c42ec458bef1c5eade9aa786a438192b3f2a0bdbdfe1ad6acc1d9f"
+    },
+    {
+      "surah": 13,
+      "file": "013.mp3",
+      "size": 13075020,
+      "sha256": "1c3ee1f9f31a83d8365e62301625bc9ed5874cc6058a210dc91872b2dbca21cc"
+    },
+    {
+      "surah": 14,
+      "file": "014.mp3",
+      "size": 13252025,
+      "sha256": "6aa5ebfeb83b18bea23f520a96d560fb541b7e9d31c99f87eb5457031f519966"
+    },
+    {
+      "surah": 15,
+      "file": "015.mp3",
+      "size": 10897661,
+      "sha256": "6826c496a8817a2897bd538c6fb05501106d57f9d1c26c67e9ac07f30743d916"
+    },
+    {
+      "surah": 16,
+      "file": "016.mp3",
+      "size": 27993028,
+      "sha256": "5ff3f9131a729f6885b2e8200a3d038ed5cd7e2f60d0c1de568d41e3950a748d"
+    },
+    {
+      "surah": 17,
+      "file": "017.mp3",
+      "size": 24174135,
+      "sha256": "a8c1ef5720da12252272928351b0b9ebe2898c4ba027cbfdbb77d4612ce3f35c"
+    },
+    {
+      "surah": 18,
+      "file": "018.mp3",
+      "size": 22961426,
+      "sha256": "85a6b1b326aee6e406e7e248df13eccc85c24fd5543c2973e7359432efb760ba"
+    },
+    {
+      "surah": 19,
+      "file": "019.mp3",
+      "size": 11888643,
+      "sha256": "feafc01d9bab02bfd93d13741cc8f12dffb1488da4451fcaf887dfd2c6ebf85e"
+    },
+    {
+      "surah": 20,
+      "file": "020.mp3",
+      "size": 18445586,
+      "sha256": "d1ba018bfb81e5e1f299e6bf242d4de207b81f9072786c2f79d0ab19ca607ef0"
+    },
+    {
+      "surah": 21,
+      "file": "021.mp3",
+      "size": 13015670,
+      "sha256": "579b66503a1ad9d7214368d0dd4ff446d3184ec49e2ed07b8d705bed821fcc0c"
+    },
+    {
+      "surah": 22,
+      "file": "022.mp3",
+      "size": 20276456,
+      "sha256": "37fa97b7195b220d63aa0983a31c09803e9e1e0ddd34751cff05f779c4f2f976"
+    },
+    {
+      "surah": 23,
+      "file": "023.mp3",
+      "size": 17034138,
+      "sha256": "0ae70b09d307f77638e945fea8486c05b2c96cd37424970c9911b2c9cc9597be"
+    },
+    {
+      "surah": 24,
+      "file": "024.mp3",
+      "size": 21440682,
+      "sha256": "783829fab60189fb9c58224712de13af4efd34bdc0326fa44a636e6ec5e3ea21"
+    },
+    {
+      "surah": 25,
+      "file": "025.mp3",
+      "size": 14078749,
+      "sha256": "8ceca2c441d09ce9b07d42658debdbb993407c809ba3ff71b3ce4d2727203170"
+    },
+    {
+      "surah": 26,
+      "file": "026.mp3",
+      "size": 23824721,
+      "sha256": "0bf8d006b639e2312d62611607bec157e30d8fdee8372b77ff8f32b16645ad85"
+    },
+    {
+      "surah": 27,
+      "file": "027.mp3",
+      "size": 20497766,
+      "sha256": "19a693f92285aea5713b26d9086823221f52c520f74035e273cb428c36db7488"
+    },
+    {
+      "surah": 28,
+      "file": "028.mp3",
+      "size": 25218824,
+      "sha256": "c968885dd21072d0c3b64e0fba38cce9abaafdc8eb83cbb912508dfc1f798bb8"
+    },
+    {
+      "surah": 29,
+      "file": "029.mp3",
+      "size": 16360806,
+      "sha256": "6cb19eb76e6d035529626dbf0538e187fe3da2ec1ccc1019898be692bceb4ceb"
+    },
+    {
+      "surah": 30,
+      "file": "030.mp3",
+      "size": 13819614,
+      "sha256": "ad4bf9388da7caaf156de6af99923d22f3aff9d4139baf17476d6e18bfdce745"
+    },
+    {
+      "surah": 31,
+      "file": "031.mp3",
+      "size": 9161877,
+      "sha256": "0dc9e0cb2e21752949d84e7f051425865552168828718c9546538281284eb581"
+    },
+    {
+      "surah": 32,
+      "file": "032.mp3",
+      "size": 6621312,
+      "sha256": "a767481a785e8ea3e608937c0d0db02d07d64652dfd11dcabd0d8570355f7736"
+    },
+    {
+      "surah": 33,
+      "file": "033.mp3",
+      "size": 19449315,
+      "sha256": "d65713d32b83aa4bbb01a6bec54b47b3cd4eddfc6f77e4fd55877dea590f7e77"
+    },
+    {
+      "surah": 34,
+      "file": "034.mp3",
+      "size": 11816754,
+      "sha256": "c7ebd47ab91d1a38078691e736adeb26d12236d262cb397462ff81ee119231f1"
+    },
+    {
+      "surah": 35,
+      "file": "035.mp3",
+      "size": 11430977,
+      "sha256": "f35897a0e8be15174911ae8ef5e4904de16aff3ee7f9fe0640d44a934584f05e"
+    },
+    {
+      "surah": 36,
+      "file": "036.mp3",
+      "size": 11451457,
+      "sha256": "ef76ac469bcb6137f61909efb0c5df2263329101c5d5474ff357f19971fd169c"
+    },
+    {
+      "surah": 37,
+      "file": "037.mp3",
+      "size": 16528825,
+      "sha256": "a8b256f0f3cbf54bbbd587324a14be996091514a199b67f2cf6539b03ddc8469"
+    },
+    {
+      "surah": 38,
+      "file": "038.mp3",
+      "size": 12165750,
+      "sha256": "3674da02d2223118ba3730a6c9e5b3bc19aa52937049dc5bb77d1e469e038088"
+    },
+    {
+      "surah": 39,
+      "file": "039.mp3",
+      "size": 18585812,
+      "sha256": "563f69c92eb614f06e9ba54f65d0a6c8da432da8c2fbb63ced612c169b68d404"
+    },
+    {
+      "surah": 40,
+      "file": "040.mp3",
+      "size": 18787059,
+      "sha256": "abc706b3d625744fd9eb5dcc7c02f927af6d400013f7d2d2c2f4edc0992e7825"
+    },
+    {
+      "surah": 41,
+      "file": "041.mp3",
+      "size": 11927931,
+      "sha256": "670a800803892ab8f7733efdcd49461b33b6c120c388b09eef4b8dce09aca60a"
+    },
+    {
+      "surah": 42,
+      "file": "042.mp3",
+      "size": 13738530,
+      "sha256": "233ab802d593afb0d9cfc641a6c0b8cac962faca6f1a02a80dc97798950ed6da"
+    },
+    {
+      "surah": 43,
+      "file": "043.mp3",
+      "size": 15010589,
+      "sha256": "4a7e3af56a1b7558b58bac136e0d92bdca80a8acfd39a11515bf0606119fd7d7"
+    },
+    {
+      "surah": 44,
+      "file": "044.mp3",
+      "size": 6727474,
+      "sha256": "6e03ec3ea881cae116bbfe43bbb1b2df5a06ea73f472bd631f7c63977c152546"
+    },
+    {
+      "surah": 45,
+      "file": "045.mp3",
+      "size": 8585302,
+      "sha256": "1623b4604380588ad473dc40d936bc6deb59e6a81adc0481764163a7687bd940"
+    },
+    {
+      "surah": 46,
+      "file": "046.mp3",
+      "size": 9240662,
+      "sha256": "ac1f7ae3e5e62b0a3a81769291c3c56a41319e6d840e384209527010b2054de8"
+    },
+    {
+      "surah": 47,
+      "file": "047.mp3",
+      "size": 8742664,
+      "sha256": "75b2bb6233c9ace0abc35ac2ca007cad14a490e4d52055cf9616a606c5c6cda7"
+    },
+    {
+      "surah": 48,
+      "file": "048.mp3",
+      "size": 8217916,
+      "sha256": "10ea19e095e3cf81fe563fab16b52e7ee9e527fb5ded2b0f40ec62b7bc980b64"
+    },
+    {
+      "surah": 49,
+      "file": "049.mp3",
+      "size": 6235327,
+      "sha256": "d653a0c326f2f91c8f7ae2c19f152c1e55ec20ae464d589bdc268bbb3fedf304"
+    },
+    {
+      "surah": 50,
+      "file": "050.mp3",
+      "size": 6335219,
+      "sha256": "c524ca01c24ea6caa3f9df893548d461773fadc8611b76c9bd65b260039f3935"
+    },
+    {
+      "surah": 51,
+      "file": "051.mp3",
+      "size": 5505988,
+      "sha256": "3926fc133674cae999f3852b50075bd5b1d0602922791189e0e82e3e40b15d2d"
+    },
+    {
+      "surah": 52,
+      "file": "052.mp3",
+      "size": 4790233,
+      "sha256": "51365e2d2f92ec91b86c0525ce7844273c33e88c0a02adb26b00002484657a59"
+    },
+    {
+      "surah": 53,
+      "file": "053.mp3",
+      "size": 5493658,
+      "sha256": "619fd0f9572ee5af0e76cc4ea65aa00fbe50a8730e83074f101cb641f8cf6c43"
+    },
+    {
+      "surah": 54,
+      "file": "054.mp3",
+      "size": 5863134,
+      "sha256": "e32af95d886fc153f5f22bcf0554f57cdaf3e9c99b58b414a374ebcb8026acf8"
+    },
+    {
+      "surah": 55,
+      "file": "055.mp3",
+      "size": 8243830,
+      "sha256": "2485953d0b7097d4ae26b7f4a4d43923175c01311485cad08fa8535931b2ebab"
+    },
+    {
+      "surah": 56,
+      "file": "056.mp3",
+      "size": 7971320,
+      "sha256": "324f75ba1fdaadfac0df36b71e752c79a46e011fdfe39dfe387ba556861e74ba"
+    },
+    {
+      "surah": 57,
+      "file": "057.mp3",
+      "size": 8878501,
+      "sha256": "cc18de0da7abf09ebc76249d3c50cfdb73bca90ea02b30d3bb05d9e271d2326a"
+    },
+    {
+      "surah": 58,
+      "file": "058.mp3",
+      "size": 8005384,
+      "sha256": "702ec7b7cd4e547ed9581066849732e160405cd7cd48148bee0a5fbeb0c63176"
+    },
+    {
+      "surah": 59,
+      "file": "059.mp3",
+      "size": 6741475,
+      "sha256": "f2068683a2865eee40719ca3d71e8e1539114c959b1eb1245191e2f447e3b685"
+    },
+    {
+      "surah": 60,
+      "file": "060.mp3",
+      "size": 4854181,
+      "sha256": "4045e97421da6d4c9322a1c68c9cf749a23258505e3cb343a296eb6eaab5df64"
+    },
+    {
+      "surah": 61,
+      "file": "061.mp3",
+      "size": 3387562,
+      "sha256": "74eb834605c5b9642b531e0a92c3e01895c63e46647092862c3a21b70931a017"
+    },
+    {
+      "surah": 62,
+      "file": "062.mp3",
+      "size": 2633145,
+      "sha256": "3238d2d18c0abdb79e653f3932aa1334c5b14f4a6c0ecc31e41a1645666bcfb0"
+    },
+    {
+      "surah": 63,
+      "file": "063.mp3",
+      "size": 3130099,
+      "sha256": "01c0800e8fcc6b8bf9a98a4a8f1dbf86180200f0a5167fc13f15f9e85c3b4c2e"
+    },
+    {
+      "surah": 64,
+      "file": "064.mp3",
+      "size": 4060685,
+      "sha256": "f31d37a4d5b4651489065e0b800852d5019905e254fac7669b4b0470b486e847"
+    },
+    {
+      "surah": 65,
+      "file": "065.mp3",
+      "size": 4349495,
+      "sha256": "6a897abdd3600a52f74316449c7497031bbc28205ba220b5aeb0aa498ab938e8"
+    },
+    {
+      "surah": 66,
+      "file": "066.mp3",
+      "size": 4638723,
+      "sha256": "7db8e4ec0d1e0d43a1c7cf7ec547f3e8d869dce95e8523ace326cbee020ec5c2"
+    },
+    {
+      "surah": 67,
+      "file": "067.mp3",
+      "size": 5391467,
+      "sha256": "eb326066f88356f0619568e4a47f4d0919f09eec8f99b3c6bd88b30be94af6f1"
+    },
+    {
+      "surah": 68,
+      "file": "068.mp3",
+      "size": 5448728,
+      "sha256": "610448a4dad6cecacdf709ec0a330e61926ee17b333580374319671b6d22d123"
+    },
+    {
+      "surah": 69,
+      "file": "069.mp3",
+      "size": 3843346,
+      "sha256": "3d3f293bf7a944f19bd8cb67ef731c99581cb49ad0e759dc73d332e261524246"
+    },
+    {
+      "surah": 70,
+      "file": "070.mp3",
+      "size": 3475333,
+      "sha256": "e1751c2b1468dea8cd7f16110fcec579bdfec478230a4f7263b660e2f0303bfe"
+    },
+    {
+      "surah": 71,
+      "file": "071.mp3",
+      "size": 3363947,
+      "sha256": "5125303fc9b405d8753d4c43af099047ee2b93197e033620d68cbea1df4bc146"
+    },
+    {
+      "surah": 72,
+      "file": "072.mp3",
+      "size": 4123588,
+      "sha256": "958bc19f476dd003cd681703579656c317c6907a4a5990fda0e0afdd5014c5c6"
+    },
+    {
+      "surah": 73,
+      "file": "073.mp3",
+      "size": 3080153,
+      "sha256": "b3d9f20cd2aa3d9c329c4866752ca9d8b0cc5b7330a30550c867df97c27bdf69"
+    },
+    {
+      "surah": 74,
+      "file": "074.mp3",
+      "size": 3556417,
+      "sha256": "92ed10856f87ec415f6569f0248ff4d843b8d6d170f5e869b715cc3bac5a58e1"
+    },
+    {
+      "surah": 75,
+      "file": "075.mp3",
+      "size": 2435033,
+      "sha256": "a82908ea549f3dba972d2d9f38d5e3b3d71f5316348dce3c1d95b34517460891"
+    },
+    {
+      "surah": 76,
+      "file": "076.mp3",
+      "size": 4208852,
+      "sha256": "ad33455ee0d92588ccb19959109c1b88d0a2b0f7633da5e3ec4a44aa850dac00"
+    },
+    {
+      "surah": 77,
+      "file": "077.mp3",
+      "size": 3582749,
+      "sha256": "83b422e46b2df479806a6e190e6ed0263c97eab2f9ab54764adde4a26a126ae0"
+    },
+    {
+      "surah": 78,
+      "file": "078.mp3",
+      "size": 3242112,
+      "sha256": "d743d9cacd67ae17f4446378626aaa9c81d5516be6f6b89f6e85f13574f8f1b3"
+    },
+    {
+      "surah": 79,
+      "file": "079.mp3",
+      "size": 3215363,
+      "sha256": "c220ab8bf092bf5487b570603bb2fb236413d5dfb043617a7aff4e14db5ed27d"
+    },
+    {
+      "surah": 80,
+      "file": "080.mp3",
+      "size": 2271402,
+      "sha256": "ada93ff977132b8c59c1a39ee338028ee9de44c24ca556cb588a3aff7f187736"
+    },
+    {
+      "surah": 81,
+      "file": "081.mp3",
+      "size": 1725965,
+      "sha256": "42b3448f41425178d3e7b8aa85fe5ee2c7ce08849697dd8726557d509cd0af86"
+    },
+    {
+      "surah": 82,
+      "file": "082.mp3",
+      "size": 1447813,
+      "sha256": "8cf3962155f681c8c0f273b3f462b41b2ea8f0518693e47def0d5dcbd5abd41a"
+    },
+    {
+      "surah": 83,
+      "file": "083.mp3",
+      "size": 3264473,
+      "sha256": "31069b653d096c6d3405e9372fad7dc8521d7cdaee72227a47967cecf74ee99b"
+    },
+    {
+      "surah": 84,
+      "file": "084.mp3",
+      "size": 1885834,
+      "sha256": "3fac9e9d47fe28589fc6956497b2495fbbfc657534dd2d27e2795d4d46726271"
+    },
+    {
+      "surah": 85,
+      "file": "085.mp3",
+      "size": 1939124,
+      "sha256": "608496be130581b7c96371101938edc2339a3fe3aabc1141e1a12d4b3c3122ad"
+    },
+    {
+      "surah": 86,
+      "file": "086.mp3",
+      "size": 1105714,
+      "sha256": "71e9e1a258a48c6c01581c1c936c26e36e68af12fcc0912b14f2803253bdec43"
+    },
+    {
+      "surah": 87,
+      "file": "087.mp3",
+      "size": 1305498,
+      "sha256": "3c53a799377fbb2fbfa99c7050cb702b9734d36a272b748e37a143ad03f855ed"
+    },
+    {
+      "surah": 88,
+      "file": "088.mp3",
+      "size": 1766716,
+      "sha256": "1daf1fbee4af4c0143aa6f8b2fbce5286eae2660f4c36e38d906deabed6b7d8c"
+    },
+    {
+      "surah": 89,
+      "file": "089.mp3",
+      "size": 2603679,
+      "sha256": "05365b9b4ba71cd5e7230690383bbebff827a38b9fe458ea5d8bc3898687db0d"
+    },
+    {
+      "surah": 90,
+      "file": "090.mp3",
+      "size": 1467875,
+      "sha256": "fded36b475f4398f1ce52315c45abbe67634a90aa3b71b0e9d2550b7fed512b7"
+    },
+    {
+      "surah": 91,
+      "file": "091.mp3",
+      "size": 1017942,
+      "sha256": "84854d301c254753666307e92b056d82e365c79bcba90685fd60cdef251b8bc7"
+    },
+    {
+      "surah": 92,
+      "file": "092.mp3",
+      "size": 1337472,
+      "sha256": "592184e6294931b1fd802dbc28f099a7114ff364c6e190409f51d6c6919f3c22"
+    },
+    {
+      "surah": 93,
+      "file": "093.mp3",
+      "size": 760897,
+      "sha256": "83239af743de1c1831184a85bc72238aee8032b4901a64d580fede5a480e5fab"
+    },
+    {
+      "surah": 94,
+      "file": "094.mp3",
+      "size": 511167,
+      "sha256": "9d55dccf9ffa823ae357e183d30a635cd4eee67ab2d3830edc0b781b82e481cb"
+    },
+    {
+      "surah": 95,
+      "file": "095.mp3",
+      "size": 680022,
+      "sha256": "5c1090ccfd08ad71bad7c75bd6ea64ad0e04fcda5fd39e6d3023a9d66dda6748"
+    },
+    {
+      "surah": 96,
+      "file": "096.mp3",
+      "size": 1257433,
+      "sha256": "b6dacb4f7e6ba1455f1e31f6417f85ea54f583d2c653544c9326f37b68093301"
+    },
+    {
+      "surah": 97,
+      "file": "097.mp3",
+      "size": 541260,
+      "sha256": "d5bec1276eb28a69ce5b20625504159e59e955995550ec00e9b410ae497330b2"
+    },
+    {
+      "surah": 98,
+      "file": "098.mp3",
+      "size": 1509253,
+      "sha256": "9b193f3cfee230bb6eba41c83b7555f6df98cb43d8e71f4663e0c6906beaa60a"
+    },
+    {
+      "surah": 99,
+      "file": "099.mp3",
+      "size": 720773,
+      "sha256": "95bc75f1b4a900b1efc309bcb96764b46c310aee8fe875bee58b1179044de249"
+    },
+    {
+      "surah": 100,
+      "file": "100.mp3",
+      "size": 764032,
+      "sha256": "3c443f29fca146e7aeb28ac292c21115ae32658290c621b567ae1dbe5cf9436c"
+    },
+    {
+      "surah": 101,
+      "file": "101.mp3",
+      "size": 726834,
+      "sha256": "5a7d3f9813ff78afba9f7726bff430857443ac4caa75540511d23aaab5c52e0e"
+    },
+    {
+      "surah": 102,
+      "file": "102.mp3",
+      "size": 593296,
+      "sha256": "4fa2c442c1a368d98823d88add032aa5323c03e24c48991a48b4ce222bda70be"
+    },
+    {
+      "surah": 103,
+      "file": "103.mp3",
+      "size": 323921,
+      "sha256": "b7c4d1f03c0e4772022c7893ce030aa702d67b343ae625b24aef50d26a8baa30"
+    },
+    {
+      "surah": 104,
+      "file": "104.mp3",
+      "size": 635092,
+      "sha256": "d6d8dfd503215bacf6f99bf5fd2b4b6f1e31516b8eb03f373a6160337e62a446"
+    },
+    {
+      "surah": 105,
+      "file": "105.mp3",
+      "size": 470834,
+      "sha256": "e4aafc1d64c99fb38b03808a6d16f218d78016d6d71636b2e269f3e82c4fab10"
+    },
+    {
+      "surah": 106,
+      "file": "106.mp3",
+      "size": 407931,
+      "sha256": "44390c7586c439b49ed280d21e2c63b0df21466d6ea18a2f829ae9d6199ea9c7"
+    },
+    {
+      "surah": 107,
+      "file": "107.mp3",
+      "size": 551918,
+      "sha256": "a53c118961bf656d8f0cfd1a55e084c094191c13f08ca42221d72194ef67c95f"
+    },
+    {
+      "surah": 108,
+      "file": "108.mp3",
+      "size": 267079,
+      "sha256": "26e673692959e3b3433a95f87936a39a3af12dc864a35302fd39347a68c8c5eb"
+    },
+    {
+      "surah": 109,
+      "file": "109.mp3",
+      "size": 528094,
+      "sha256": "4bf23ebc31470c2d6e508df74a0dc78bedb622a3b86f0467702a7d401b97acc4"
+    },
+    {
+      "surah": 110,
+      "file": "110.mp3",
+      "size": 398736,
+      "sha256": "1f1adb277b974bd7bebaffea5ea9058a5e3645675ef2155af19104b5755ea066"
+    },
+    {
+      "surah": 111,
+      "file": "111.mp3",
+      "size": 440950,
+      "sha256": "f49a6af673d3fb21141d6e265218683ff3cc78b87262f1a7332e94a92e1971ad"
+    },
+    {
+      "surah": 112,
+      "file": "112.mp3",
+      "size": 284215,
+      "sha256": "b512a8b24df32fcf7743fa402f0dc65a6772e5faaeebcb851965b50511acb45b"
+    },
+    {
+      "surah": 113,
+      "file": "113.mp3",
+      "size": 392466,
+      "sha256": "dc950144634f2ac3ca88495992c9786cf48fc3cefce7550d30f2b95a89230d6f"
+    },
+    {
+      "surah": 114,
+      "file": "114.mp3",
+      "size": 461012,
+      "sha256": "de56186f7a1eb37f2182397314620ae2a03196e88c59ccb08bd6ece4fb26d37d"
+    }
+  ]
+}
