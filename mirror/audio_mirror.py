@@ -333,8 +333,9 @@ def verify_one(entry, base, do_hash):
     if do_hash:
         size, sha, _ = with_retries(entry["key"], lambda: full_hash(url))
         checks["sha256"] = size == entry["size"] and sha == entry["sha256"]
-    status, headers, _ = fetch("HEAD", url)
-    checks["cache HIT on repeat"] = headers.get("cf-cache-status") == "HIT"
+    # A GET, as the players send: Cloudflare answers HEAD requests as DYNAMIC even when the file is cached.
+    status, headers, _ = fetch("GET", url, {"Range": "bytes=0-1023"})
+    checks["cache HIT on repeat"] = status == 206 and headers.get("cf-cache-status") == "HIT"
     return checks
 
 
