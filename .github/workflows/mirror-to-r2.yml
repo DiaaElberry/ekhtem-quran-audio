@@ -1,0 +1,61 @@
+# Copies the recitation MP3s from this repository's releases to Cloudflare R2 (served at audio.ekhtemalquran.stream),
+# and checks them on that address. Run by hand only: Actions -> Mirror audio to Cloudflare R2 -> Run workflow.
+# mirror/audio_mirror.py is a copy of tools/audio_mirror.py in the app repository; mirror/files.json is made by its
+# `export` command from the app's audio manifests. A file already in R2 is never overwritten.
+name: Mirror audio to Cloudflare R2
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "copy: from the releases to R2. verify: check the files on the public address."
+        type: choice
+        options: [copy, verify]
+        default: copy
+      only:
+        description: "Comma-separated files, for example afasy-hafs-v1/067.mp3. Empty means all 1,140."
+        type: string
+        default: ""
+      full_hash:
+        description: "verify only: download every file over the public address and check its sha256."
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mirror-to-r2
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install boto3
+        run: |
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --quiet "boto3>=1.36"
+          echo "$RUNNER_TEMP/venv/bin" >> "$GITHUB_PATH"
+
+      - name: Copy to R2
+        if: inputs.mode == 'copy'
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          ONLY: ${{ inputs.only }}
+        run: python mirror/audio_mirror.py copy --list mirror/files.json --only "$ONLY"
+
+      - name: Check the public address
+        if: inputs.mode == 'verify'
+        env:
+          ONLY: ${{ inputs.only }}
+          FULL: ${{ inputs.full_hash }}
+        run: |
+          if [ "$FULL" = "true" ]; then hash=--full-hash; else hash=; fi
+          python mirror/audio_mirror.py verify --list mirror/files.json --only "$ONLY" $hash
