@@ -1,0 +1,370 @@
+{
+ "set": "husary-mujawwad-hafs-v1",
+ "madeAt": "2026-11-11T22:17:35Z",
+ "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Not heard by anyone yet.",
+ "rows": [
+  {
+   "surah": 2,
+   "ayah": 232,
+   "startMs": 12931364,
+   "endMs": 13058034
+  },
+  {
+   "surah": 2,
+   "ayah": 233,
+   "startMs": 13058034,
+   "endMs": 13261234
+  },
+  {
+   "surah": 2,
+   "ayah": 234,
+   "startMs": 13261234,
+   "endMs": 13349664
+  },
+  {
+   "surah": 2,
+   "ayah": 235,
+   "startMs": 13349664,
+   "endMs": 13489804
+  },
+  {
+   "surah": 2,
+   "ayah": 236,
+   "startMs": 13489804,
+   "endMs": 13567390
+  },
+  {
+   "surah": 6,
+   "ayah": 118,
+   "startMs": 5471616,
+   "endMs": 5498746
+  },
+  {
+   "surah": 6,
+   "ayah": 119,
+   "startMs": 5498746,
+   "endMs": 5574696
+  },
+  {
+   "surah": 6,
+   "ayah": 120,
+   "startMs": 5574696,
+   "endMs": 5613990
+  },
+  {
+   "surah": 27,
+   "ayah": 60,
+   "startMs": 1997975,
+   "endMs": 2128305
+  },
+  {
+   "surah": 27,
+   "ayah": 61,
+   "startMs": 2128305,
+   "endMs": 2204345
+  },
+  {
+   "surah": 27,
+   "ayah": 62,
+   "startMs": 2204345,
+   "endMs": 2256065
+  }
+ ],
+ "surahs": [
+  {
+   "surah": 2,
+   "window": {
+    "ayat": [
+     232,
+     236
+    ],
+    "fromMs": 12918614,
+    "toMs": 13567390
+   },
+   "durationMs": 648776,
+   "heardWords": 200,
+   "textWords": 194,
+   "matchedTextWords": 186,
+   "rows": [
+    {
+     "surah": 2,
+     "ayah": 232,
+     "startMs": 12931364,
+     "heardStartMs": 12931954,
+     "snappedToPause": true,
+     "matchedWords": 31,
+     "words": 33,
+     "endMs": 13058034
+    },
+    {
+     "surah": 2,
+     "ayah": 233,
+     "startMs": 13058034,
+     "heardStartMs": 13058034,
+     "snappedToPause": false,
+     "matchedWords": 63,
+     "words": 64,
+     "endMs": 13261234
+    },
+    {
+     "surah": 2,
+     "ayah": 234,
+     "startMs": 13261234,
+     "heardStartMs": 13261234,
+     "snappedToPause": false,
+     "matchedWords": 25,
+     "words": 25,
+     "endMs": 13349664
+    },
+    {
+     "surah": 2,
+     "ayah": 235,
+     "startMs": 13349664,
+     "heardStartMs": 13349874,
+     "snappedToPause": true,
+     "matchedWords": 46,
+     "words": 47,
+     "endMs": 13489804
+    },
+    {
+     "surah": 2,
+     "ayah": 236,
+     "startMs": 13489804,
+     "heardStartMs": 13490214,
+     "snappedToPause": true,
+     "matchedWords": 21,
+     "words": 25,
+     "endMs": 13567390
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "2:232",
+     "heard": "واذا طلقتم النسا فبلونا اجلهن فلا تعضلون ان ينزل فلا تعضلوهن ان ينكحن ازواجهن اذا تراضه بينهن بالمعروب ذلك يوعبه من كان منكم يومن بالله واليوم الاخد ذلكم ازكالكم واطهر والله يعلم وانتم لا تعلمون",
+     "scores": {
+      "231": 0.387,
+      "232": 0.903,
+      "233": 0.286
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:233",
+     "heard": "والوالدات يرضعنا اولاده نحاولين كاملين لمن اراد ان يتم رضاعه وعلي المولود له رزقه وكسوته النبي المعروف لا تكلف نفس الا وسعها لا تضار ووالده بولدها ولا مولود له بولد وعلي الوارث مثل ذلك فان اراد في صالا عن تراض منهما وتشاهر فلا جنا حاليهما وان اردتم ان تسترضعوا اولادكم فلا جناح عليكم اذا سلنتم اتيتم بالمعروف واتقوا الله وعلموا ان الله بما تعملون بصير",
+     "scores": {
+      "232": 0.28,
+      "233": 0.957,
+      "234": 0.334
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:234",
+     "heard": "والذين يتوافهون منكم ويذرون ازواجيه ربصنا بانفسه فان اربعه اشهر وعشره فاذا بلونا اجله النفلا جناح عليكم في ما فعلنا في انفسي انه بالمعروف والله بما تعملون خبير و",
+     "scores": {
+      "233": 0.375,
+      "234": 0.906,
+      "235": 0.222
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:235",
+     "heard": "لا جناح عليكم فيما عردت به من خطبت النسا او اكناتم في انفسكم علم الله انكم ستكرون كن ولكن لا تواعدوه النسر وان الا ان تقولوا قولا معروفا ولا تعزم اقده لكاح حتي يبلوا الكتاب اجالك وعلموا ان الله يعلموا ما في انفسكم فحذروا وعلموا ان الله وفور حليم",
+     "scores": {
+      "234": 0.261,
+      "235": 0.918,
+      "236": 0.348
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:236",
+     "heard": "لا جناح عليكم ان طلقت من نسا ما لم تمسوه ومتعوهن علي الموسع قدره وعلي المقتر قدروا متاعا بالمعروف حقا علي المحسين",
+     "scores": {
+      "235": 0.38,
+      "236": 0.874,
+      "237": 0.341
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "002.mp3",
+    "size": 211521313,
+    "sha256": "91b669ce717d6d4d034421e2d30df3ee23ddc809e8b0a9b114e3e3c8930a57b0"
+   }
+  },
+  {
+   "surah": 6,
+   "window": {
+    "ayat": [
+     118,
+     120
+    ],
+    "fromMs": 5460886,
+    "toMs": 5613990
+   },
+   "durationMs": 153104,
+   "heardWords": 42,
+   "textWords": 52,
+   "matchedTextWords": 39,
+   "rows": [
+    {
+     "surah": 6,
+     "ayah": 118,
+     "startMs": 5471616,
+     "heardStartMs": 5472646,
+     "snappedToPause": true,
+     "matchedWords": 8,
+     "words": 10,
+     "endMs": 5498746
+    },
+    {
+     "surah": 6,
+     "ayah": 119,
+     "startMs": 5498746,
+     "heardStartMs": 5499186,
+     "snappedToPause": true,
+     "matchedWords": 27,
+     "words": 30,
+     "endMs": 5574696
+    },
+    {
+     "surah": 6,
+     "ayah": 120,
+     "startMs": 5574696,
+     "heardStartMs": 5574706,
+     "snappedToPause": true,
+     "matchedWords": 4,
+     "words": 12,
+     "endMs": 5613990
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "6:118",
+     "heard": "فكلوا ماذك رسم الله عليه ان كنتم باياته مومني",
+     "scores": {
+      "117": 0.362,
+      "118": 0.936,
+      "119": 0.358
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "6:119",
+     "heard": "وما لكم الا تاكلوا مما يكرسم الله عليه وقد فصل لكم ما حرم عليه الا مطررتم الي وان كثيرا لا يضلون باهوايهم بغير علم ان ربك هو اعلم بالمعتدين",
+     "scores": {
+      "118": 0.383,
+      "119": 0.951,
+      "120": 0.306
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "6:120",
+     "heard": "وذرو ظاهر الاثم وذاطنه",
+     "scores": {
+      "119": 0.156,
+      "120": 0.457,
+      "121": 0.19
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "006.mp3",
+    "size": 99372195,
+    "sha256": "dcd3cc534fa7fecaf46a1f23abc82a9513208a1fabaf926042cc4da6c82c39c9"
+   }
+  },
+  {
+   "surah": 27,
+   "window": {
+    "ayat": [
+     60,
+     62
+    ],
+    "fromMs": 1985235,
+    "toMs": 2267430
+   },
+   "durationMs": 282195,
+   "heardWords": 72,
+   "textWords": 64,
+   "matchedTextWords": 60,
+   "rows": [
+    {
+     "surah": 27,
+     "ayah": 60,
+     "startMs": 1997975,
+     "heardStartMs": 1997975,
+     "snappedToPause": false,
+     "matchedWords": 26,
+     "words": 27,
+     "endMs": 2128305
+    },
+    {
+     "surah": 27,
+     "ayah": 61,
+     "startMs": 2128305,
+     "heardStartMs": 2129255,
+     "snappedToPause": true,
+     "matchedWords": 18,
+     "words": 21,
+     "endMs": 2204345
+    },
+    {
+     "surah": 27,
+     "ayah": 62,
+     "startMs": 2204345,
+     "heardStartMs": 2205355,
+     "snappedToPause": true,
+     "matchedWords": 16,
+     "words": 16,
+     "endMs": 2256065
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "27:60",
+     "heard": "اما خلق السماوات والارض وانزل لكم من السما وانزل لكم من السما اما ان فانبتنا به حدايق ذات بهجه فانبتنا به حدايق ذات بهجه ما كان لكم هم انتم بتو شجرها االهما الله بل هم قاوموا يعدلون",
+     "scores": {
+      "59": 0.224,
+      "60": 0.79,
+      "61": 0.359
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "27:61",
+     "heard": "من جعل الارض قرارا وجعل خلالها انهارا وجعل لها رواسيا وجعل بين البحرين حاجزه بل اكتنهم لا ينلموا",
+     "scores": {
+      "60": 0.348,
+      "61": 0.888,
+      "62": 0.324
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "27:62",
+     "heard": "اما يجيب المضطا واذا دعاه ويكشف السوال ويجعلكم خلفا الارض ايله مع الله قليلا ما تكرون مرحبا",
+     "scores": {
+      "61": 0.33,
+      "62": 0.908,
+      "63": 0.469
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "027.mp3",
+    "size": 40035691,
+    "sha256": "c8b3eece730ca397b11676f12088b292b7e08670e08054209725f623f9ca8a35"
+   }
+  }
+ ]
+}

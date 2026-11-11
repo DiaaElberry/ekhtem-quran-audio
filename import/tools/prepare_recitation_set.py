@@ -195,15 +195,14 @@ SETS = {
         "timingFile": "verse_timestamps_abbad.json",
         "reciterAr": "فَارِس عَبَّاد", "reciterEn": "Fares Abbad",
     },
-    # The three mujawwad sets (owner, 11 Nov 2026: "murattal and mujawwad"). MP3Quran's aligner rejected some surahs of two of them:
-    # Mustafa Ismail's 6 take MP3Quran's older ayat_timing for the same moshaf; Al-Tablawi's 60 and 63, which have no timing anywhere,
-    # are measured in these files by local speech recognition (measured_timings.json, tools/time_surahs_by_speech.py).
+    # The three mujawwad sets (owner, 11 Nov 2026: "murattal and mujawwad"). MP3Quran's aligner rejected some surahs of two of them
+    # (Mustafa Ismail's 6, Al-Tablawi's 60 and 63): measured in these files by local speech recognition (measured_timings.json,
+    # tools/time_surahs_by_speech.py).
     "mustafa-ismail-mujawwad-hafs-v1": {
         "moshaf": 288, "reciterId": 125, "server": "https://cdn.mp3quran.net/audio/mustafa-ismail/r2/", "qud": None, "timingRelease": 239,
-        "releaseRejected": [10, 43, 57, 60, 63, 66], "fallback": "mp3quran",
-        # Where the release itself is wrong (2:235 missing and 2:233-236 mislabelled; 9:95 and 9:96 swapped): rows measured by speech
-        # recognition in these files replace the release's segments of those ayat (measured_timings.json, its windows).
-        "patches": {2: [233, 237], 9: [95, 96]},
+        # MP3Quran's older ayat_timing for these 6 was made for another edit of the recording (3.8 to 6.7 s off these files'
+        # pauses, audio_check.json of the first GitHub prepare run), so they are measured here too.
+        "releaseRejected": [10, 43, 57, 60, 63, 66], "fallback": "measured", "timingCorrections": "timing_corrections.json",
         "timingFile": "verse_timestamps_mustafa_ismail_mujawwad.json", "style": "mujawwad",
         "reciterAr": "مُصْطَفَى إِسْمَاعِيل (مُجَوَّد)", "reciterEn": "Mustafa Ismail (Mujawwad)",
     },
@@ -587,16 +586,16 @@ def release_rows(timing: dict, counts: list[int], skip: frozenset[int] = frozens
             continue
         timed = timing["doc"]["surahs"][str(surah)]["ayah_timings"]
         segments = sorted((a for a in timed["ayahs"] if a[0]), key=lambda a: (a[1], a[2]))
-        if patches and surah in patches:
+        for lo, hi in (patches or {}).get(surah, []):
             # The measured rows of ayat lo..hi replace every release segment of those ayat, and any segment lying inside them.
-            lo, hi = patches[surah]
             rows_in = [r for r in measured if r["surah"] == surah and lo <= r["ayah"] <= hi]
             if [r["ayah"] for r in rows_in] != list(range(lo, hi + 1)):
                 problems.append(f"patch {surah}:{lo}-{hi}: measured_timings.json has {[r['ayah'] for r in rows_in]}")
+                continue
             begin, finish = rows_in[0]["startMs"], rows_in[-1]["endMs"]
             segments = [a for a in segments if not (lo <= a[0] <= hi or begin <= a[1] < finish)]
             segments = sorted(segments + [[r["ayah"], r["startMs"], r["endMs"]] for r in rows_in], key=lambda a: (a[1], a[2]))
-        elif not timed["complete"]:
+        if not timed["complete"] and not (patches or {}).get(surah):
             problems.append(f"timing release surah {surah}: not complete")
         by_ayah: dict[int, dict] = {}
         last = None
@@ -629,6 +628,19 @@ FALLBACK_NOTES = {
                               "to the ayah text, each start moved to the end of the pause before it (measured_timings.json, "
                               "tools/time_surahs_by_speech.py); not heard by anyone yet"),
 }
+
+
+def measured_patches(set_id: str) -> tuple[dict[int, list[list[int]]], list[dict]]:
+    """The windows of the set's measured_timings.json (ayat measured inside the release's surahs): {surah: [[lo, hi], ...]}, and all its rows."""
+    path = OUTPUT / set_id / "measured_timings.json"
+    if not path.is_file():
+        return {}, []
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    patches: dict[int, list[list[int]]] = {}
+    for entry in doc["surahs"]:
+        if entry.get("window"):
+            patches.setdefault(entry["surah"], []).append(entry["window"]["ayat"])
+    return patches, doc["rows"]
 
 
 def fallback_rows(staging: Path, set_id: str, spec: dict, counts: list[int], surahs: frozenset[int]) -> tuple[list[dict], list[str]]:
@@ -1034,8 +1046,7 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
         rows, repeats, problems = merge_rows(qud, counts)
     elif release:
         rejected = frozenset(spec.get("releaseRejected", []))
-        patches = spec.get("patches")
-        measured = json.loads((OUTPUT / set_id / "measured_timings.json").read_text(encoding="utf-8"))["rows"] if patches else None
+        patches, measured = measured_patches(set_id)
         rows, repeats, problems = release_rows(release, counts, rejected, patches, measured)
         if rejected:
             extra, extra_problems = fallback_rows(staging, set_id, spec, counts, rejected)
@@ -1206,8 +1217,10 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
             "manifestUrl": TIMING_RELEASE_BASE + "manifest.json", "manifestSha256": release["manifestSha256"],
             "manifestStatus": release["manifestStatus"], "audioIdentity": audio_identity,
             **({"fallbackSurahs": {"surahs": spec["releaseRejected"], "source": FALLBACK_NOTES[spec["fallback"]](spec)}} if spec.get("releaseRejected") else {}),
-            **({"patchedAyat": {"ayat": {str(k): v for k, v in spec["patches"].items()}, "source": FALLBACK_NOTES["measured"](spec),
-                                "why": "the release is wrong there: an ayah missing or mislabelled, or two ayat swapped"}} if spec.get("patches") else {}),
+            **({"patchedAyat": {"ayat": {str(k): v for k, v in measured_patches(set_id)[0].items()}, "source": FALLBACK_NOTES["measured"](spec),
+                                "why": "where MP3Quran's aligner timed under 70 % of an ayah's words, or the release is plainly wrong (an ayah missing, "
+                                       "mislabelled or swapped), the ayah and its neighbours were measured and replace the release's rows"}}
+               if measured_patches(set_id)[0] else {}),
             "licence": "mp3quran.net's general statement (FUTURE_CONTENT_SOURCES.md C.4); no separate licence for the timing",
             "conversion": "ayah_timings [ayah, start, end] unchanged; ayah 0 (isti'adha, basmalah) dropped; a repeated ayah merged "
                           "(first start to last end); a return to an earlier ayah kept lit on the ayah before it (see repeats). "

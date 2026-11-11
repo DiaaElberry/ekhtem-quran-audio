@@ -1,0 +1,112 @@
+{
+ "set": "banna-mujawwad-hafs-v1",
+ "madeAt": "2026-11-11T22:19:22Z",
+ "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Not heard by anyone yet.",
+ "rows": [
+  {
+   "surah": 2,
+   "ayah": 101,
+   "startMs": 5702670,
+   "endMs": 5757230
+  },
+  {
+   "surah": 2,
+   "ayah": 102,
+   "startMs": 5757230,
+   "endMs": 5949180
+  },
+  {
+   "surah": 2,
+   "ayah": 103,
+   "startMs": 5949180,
+   "endMs": 5979020
+  }
+ ],
+ "surahs": [
+  {
+   "surah": 2,
+   "window": {
+    "ayat": [
+     101,
+     103
+    ],
+    "fromMs": 5698630,
+    "toMs": 5981570
+   },
+   "durationMs": 282940,
+   "heardWords": 112,
+   "textWords": 108,
+   "matchedTextWords": 99,
+   "rows": [
+    {
+     "surah": 2,
+     "ayah": 101,
+     "startMs": 5702670,
+     "heardStartMs": 5702670,
+     "snappedToPause": false,
+     "matchedWords": 20,
+     "words": 22,
+     "endMs": 5757230
+    },
+    {
+     "surah": 2,
+     "ayah": 102,
+     "startMs": 5757230,
+     "heardStartMs": 5757530,
+     "snappedToPause": true,
+     "matchedWords": 69,
+     "words": 74,
+     "endMs": 5949180
+    },
+    {
+     "surah": 2,
+     "ayah": 103,
+     "startMs": 5949180,
+     "heardStartMs": 5949450,
+     "snappedToPause": true,
+     "matchedWords": 10,
+     "words": 12,
+     "endMs": 5979020
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "2:101",
+     "heard": "ولما جاهم رسول من عند الله مصدق لما مرهم نبذ فريق نبذ فريق من الذين اهوطوا الكتاب كتاب الله وراه بورجم كانهم لا يظنوا",
+     "scores": {
+      "100": 0.435,
+      "101": 0.88,
+      "102": 0.185
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:102",
+     "heard": "واتبعوا ما تتل الشياطين علي ملكس ليمان وما كفرس ليمان ولكن الشياطين كفروا يولمون الناس يولمون الناس احري وما انزل علي الملكين بباب لاروت وما رود وما يولمان من اعذ حتي يقولا انما نحن فتنه فلا تكفر فيكعلون منهم ما يفلقون بهم بين المر وزوجه وما هم بظرين بكي من احد الا باذن اللام ويتعلمون ما يظنوهم ولا ينفوهم ولقد علموا لمن اشتراو مالهم في الاخره من خلاق ولبيس ما شروا به انفسهم لو كانوا يولمون",
+     "scores": {
+      "101": 0.132,
+      "102": 0.902,
+      "103": 0.186
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:103",
+     "heard": "ولو انهم امنوا واستقلوا لما ثوبه من الله خير لم كانوا يظلمون",
+     "scores": {
+      "102": 0.191,
+      "103": 0.9,
+      "104": 0.38
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "002.mp3",
+    "size": 243212077,
+    "sha256": "cf981e7a84cd3c8ca6c438ddf149cfb63f7427b6d520d7e56fc1b47921c39922"
+   }
+  }
+ ]
+}

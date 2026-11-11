@@ -6,11 +6,36 @@
   "gapWithVoice": "A gap over 20 s between two ayat is skipped by the app (AyahTimeline.skipTarget, from 1 s after the end to 0.2 s before the next start). Where the audit hears sound in such a gap, the ayah before it ends at the end of that sound plus 0.3 s, as for Hassan Saleh's last ayat, so the gap drops under 20 s and nothing that is heard is skipped. Of the 13 sets prepared on 11 Nov 2026, only these two gaps were over 20 s with sound in them."
  },
  "corrections": [
-  {"ayah": "6:119", "field": "end", "old": 5516600, "new": 5528680, "deltaMs": 12080, "kind": "voice-after-end",
-   "reason": "MP3Quran's aligner timed only words 1-9, 19, 20 and 29 of this 30-word ayah before 5,516,600 ms (word 30 is placed inside 6:120); the reciter's voice goes on to 5,528,380 ms (peak -9.1 dBFS), which the app would have skipped as a 20.5 s break",
-   "evidence": {"gapMs": 20465, "audibleRuns": [[5516600, 5523970, -9.1], [5524120, 5528380, -13.8]], "nextAyahStartMs": 5537065}},
-  {"ayah": "2:132", "field": "end", "old": 6419126, "new": 6429386, "deltaMs": 10260, "kind": "voice-after-end",
+  {
+   "ayah": "2:132",
+   "field": "end",
+   "old": 6419126,
+   "new": 6429386,
+   "deltaMs": 10260,
+   "kind": "voice-after-end",
    "reason": "two faint sounds (-45.8 and -47.0 dBFS, 830 ms in all) in a 20.8 s gap after the ayah; ending the ayah after them keeps the gap under 20 s so nothing heard is skipped",
-   "evidence": {"gapMs": 20834, "audibleRuns": [[6427866, 6428346, -45.8], [6428736, 6429086, -47.0]], "nextAyahStartMs": 6439960}}
+   "evidence": {
+    "gapMs": 20834,
+    "audibleRuns": [
+     [
+      6427866,
+      6428346,
+      -45.8
+     ],
+     [
+      6428736,
+      6429086,
+      -47.0
+     ]
+    ],
+    "nextAyahStartMs": 6439960
+   }
+  }
+ ],
+ "superseded": [
+  {
+   "ayah": "6:119",
+   "note": "replaced by measured rows (measured_timings.json, window 6:118-120): the owner heard the highlight jump ahead; 6:120 starts at 5,574,696 ms, 37.6 s after the release's start"
+  }
  ]
 }

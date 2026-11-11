@@ -1,0 +1,85 @@
+{
+ "set": "akhdar-hafs-v1",
+ "madeAt": "2026-11-11T22:20:08Z",
+ "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Not heard by anyone yet.",
+ "rows": [
+  {
+   "surah": 3,
+   "ayah": 199,
+   "startMs": 5413200,
+   "endMs": 5459210
+  },
+  {
+   "surah": 3,
+   "ayah": 200,
+   "startMs": 5459210,
+   "endMs": 5476260
+  }
+ ],
+ "surahs": [
+  {
+   "surah": 3,
+   "window": {
+    "ayat": [
+     199,
+     200
+    ],
+    "fromMs": 5412480,
+    "toMs": 5476702
+   },
+   "durationMs": 64170,
+   "heardWords": 41,
+   "textWords": 41,
+   "matchedTextWords": 41,
+   "rows": [
+    {
+     "surah": 3,
+     "ayah": 199,
+     "startMs": 5413200,
+     "heardStartMs": 5413380,
+     "snappedToPause": true,
+     "matchedWords": 30,
+     "words": 30,
+     "endMs": 5459210
+    },
+    {
+     "surah": 3,
+     "ayah": 200,
+     "startMs": 5459210,
+     "heardStartMs": 5459260,
+     "snappedToPause": true,
+     "matchedWords": 11,
+     "words": 11,
+     "endMs": 5476260
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "3:199",
+     "heard": "وان من اهل الكتاب لمن يومن بالله وما انزل اليكم وما انزل اليهم خاشعين لله لا يشترون بايات الله ثمن قليلا اوليك لهم اجرهم عند ربهم ان الله سريع الحساب",
+     "scores": {
+      "198": 0.323,
+      "199": 0.997,
+      "200": 0.324
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "3:200",
+     "heard": "يا ايها الذين امن صبر وصابر ورابط واتقوا الله لعلكم تفلحون",
+     "scores": {
+      "199": 0.308,
+      "200": 0.928
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "003.mp3",
+    "size": 32869249,
+    "sha256": "14d3e3870a3ed7c40dc6cad76f96c23bf45aacb6fcbc3d7d3c48e23ebb8de455"
+   }
+  }
+ ]
+}
