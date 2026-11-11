@@ -214,7 +214,7 @@ SETS = {
     },
     "tablawi-mujawwad-hafs-v1": {
         "moshaf": 10912, "reciterId": 106, "server": "https://cdn.mp3quran.net/audio/muhammad-tablawi/r2/", "qud": None, "timingRelease": 301,
-        "releaseRejected": [60, 63], "fallback": "measured",
+        "releaseRejected": [60, 63], "fallback": "measured", "timingCorrections": "timing_corrections.json",
         "timingFile": "verse_timestamps_tablawi_mujawwad.json", "style": "mujawwad",
         "reciterAr": "مُحَمَّد مَحْمُود الطَّبْلَاوِيّ (مُجَوَّد)", "reciterEn": "Mohamed Mahmoud Al-Tablawi (Mujawwad)",
     },

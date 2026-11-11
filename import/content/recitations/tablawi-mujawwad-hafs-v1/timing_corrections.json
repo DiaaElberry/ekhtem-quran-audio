@@ -1,0 +1,114 @@
+{
+ "reviewDate": "2026-11-11",
+ "reviewer": "found by machine (audio_check.json gap audit; the voice in each gap recognized by faster-whisper); not heard by anyone yet",
+ "tool": "tools/prepare_recitation_set.py applies this file (SETS timingCorrections); only timing numbers change, the MP3s stay unmodified",
+ "criterion": {
+  "gapWithVoice": "As for Al-Husary mujawwad: a gap over 20 s that holds voice ends the ayah before it 0.3 s after that voice, so the app's break skip (over 20 s) never skips recitation; a return to earlier ayat stays lit on the ayah before it."
+ },
+ "corrections": [
+  {
+   "ayah": "7:157",
+   "field": "end",
+   "old": 7953093,
+   "new": 7991123,
+   "deltaMs": 38030,
+   "kind": "voice-after-end",
+   "reason": "the reciter goes back over earlier ayat after this one: part of 7:157 again (ويحل لهم الطيبات ويحرم عليهم الخبائث ويضع عنهم إصرهم والأغلال) (heard by local speech recognition); the app would have skipped it as a 38.0 s break, so this ayah stays lit through it",
+   "evidence": {
+    "gapMs": 38040,
+    "audibleMs": 32730,
+    "audibleRuns": [
+     [
+      7953093,
+      7953903,
+      -21.8
+     ],
+     [
+      7959213,
+      7991133,
+      -7.8
+     ]
+    ],
+    "nextAyahStartMs": 7991133
+   }
+  },
+  {
+   "ayah": "7:158",
+   "field": "end",
+   "old": 8048020,
+   "new": 8069343,
+   "deltaMs": 21323,
+   "kind": "voice-after-end",
+   "reason": "the reciter goes back over earlier ayat after this one: about 10 s of voice the recognizer could not make out (heard by local speech recognition); the app would have skipped it as a 21.3 s break, so this ayah stays lit through it",
+   "evidence": {
+    "gapMs": 21333,
+    "audibleMs": 10080,
+    "audibleRuns": [
+     [
+      8059270,
+      8069350,
+      -10.5
+     ]
+    ],
+    "nextAyahStartMs": 8069353
+   }
+  },
+  {
+   "ayah": "10:5",
+   "field": "end",
+   "old": 257000,
+   "new": 302475,
+   "deltaMs": 45475,
+   "kind": "voice-after-end",
+   "reason": "the reciter goes back over earlier ayat after this one: the end of 10:4 (عذاب أليم بما كانوا يكفرون) and the start of 10:5 (هو الذي جعل الشمس ضياء والقمر نورا) again (heard by local speech recognition); the app would have skipped it as a 45.5 s break, so this ayah stays lit through it",
+   "evidence": {
+    "gapMs": 45485,
+    "audibleMs": 39080,
+    "audibleRuns": [
+     [
+      257000,
+      280450,
+      -9.8
+     ],
+     [
+      286850,
+      302480,
+      -7.1
+     ]
+    ],
+    "nextAyahStartMs": 302485
+   }
+  },
+  {
+   "ayah": "24:62",
+   "field": "end",
+   "old": 3714065,
+   "new": 3766535,
+   "deltaMs": 52470,
+   "kind": "voice-after-end",
+   "reason": "the reciter goes back over earlier ayat after this one: 24:61 again (فإذا دخلتم بيوتا فسلموا على أنفسكم تحية من عند الله مباركة طيبة كذلك يبين الله لكم الآيات) (heard by local speech recognition); the app would have skipped it as a 52.5 s break, so this ayah stays lit through it",
+   "evidence": {
+    "gapMs": 52480,
+    "audibleMs": 40830,
+    "audibleRuns": [
+     [
+      3714065,
+      3716025,
+      -13.5
+     ],
+     [
+      3721035,
+      3752385,
+      -6.9
+     ],
+     [
+      3759025,
+      3766545,
+      -12.3
+     ]
+    ],
+    "nextAyahStartMs": 3766545
+   }
+  }
+ ]
+}
