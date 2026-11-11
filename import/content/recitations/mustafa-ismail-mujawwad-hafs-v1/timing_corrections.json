@@ -1,0 +1,83 @@
+{
+ "reviewDate": "2026-11-12",
+ "reviewer": "found by machine (audio_check.json gap audit; the voice in each gap recognized by faster-whisper); not heard by anyone yet",
+ "tool": "tools/prepare_recitation_set.py applies this file (SETS timingCorrections); only timing numbers change, the MP3s stay unmodified",
+ "criterion": {
+  "gapWithVoice": "A gap over 20 s with voice louder than -30 dBFS is not left for the app's break skip: a return to earlier text keeps the ayah before it lit to 0.3 s after the voice; the next ayah's opening read early moves that ayah's start there. Gaps holding only faint sound (about 1 s at -35 to -45 dBFS: breath, room) are left as breaks."
+ },
+ "corrections": [
+  {
+   "ayah": "13:11",
+   "field": "end",
+   "old": 881500,
+   "new": 884050,
+   "deltaMs": 2550,
+   "kind": "voice-after-end",
+   "reason": "2.2 s of voice (peak -12 dBFS) in a 22.8 s gap the app would skip; recognition makes nothing of it; the ayah stays lit through it",
+   "evidence": {
+    "gapMs": 22760,
+    "audibleRuns": [
+     [
+      881500,
+      883750,
+      -12.0
+     ]
+    ],
+    "heard": "باااالي"
+   }
+  },
+  {
+   "ayah": "45:11",
+   "field": "end",
+   "old": 413334,
+   "new": 426994,
+   "deltaMs": 13660,
+   "kind": "next-ayah-early",
+   "reason": "the voice in the 32.6 s gap after this ayah is the opening of 45:12 (heard: امه الذي تخقي لكوهر بحوالي تجيير الكوكو بي بامره يواني توتو ميو), read once before the reading the row times; 45:12 now starts there",
+   "evidence": {
+    "gapMs": 32640,
+    "audibleRuns": [
+     [
+      427064,
+      430474,
+      -7.4
+     ],
+     [
+      430584,
+      431964,
+      -14.3
+     ],
+     [
+      431984,
+      434704,
+      -8.8
+     ],
+     [
+      434734,
+      436594,
+      -11.5
+     ]
+    ],
+    "scores": {
+     "next ayah's opening": 0.441,
+     "45:8": 0.256,
+     "45:9": 0.085,
+     "45:10": 0.145,
+     "45:11": 0.313
+    }
+   }
+  },
+  {
+   "ayah": "45:12",
+   "field": "start",
+   "old": 445974,
+   "new": 426994,
+   "deltaMs": -18980,
+   "kind": "next-ayah-early",
+   "reason": "see 45:11: the first reading of 45:12 starts here, 70 ms before the voice resumes",
+   "evidence": {
+    "voiceStartMs": 427064
+   }
+  }
+ ]
+}
