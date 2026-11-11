@@ -1,0 +1,98 @@
+# Imports recitation sets from their source straight into this repository and Cloudflare R2, so the audio never passes
+# through a PC. Run by hand only: Actions -> Import recitation sets -> Run workflow. One job per set.
+#
+#   prepare  download the set from its source, check every file against the timing release it was aligned to, build the
+#            app's manifest and ayah timings, and check the timings against the decoded audio. Publishes nothing: the
+#            results come back as an artifact per set, to be reviewed and committed in the app repository.
+#   publish  download the set again, check every file's size and sha256 against the committed manifest
+#            (import/content/recitations/<set>/audio_manifest.json), create the release <set> (never an existing one),
+#            copy it to R2 and check it on the public address (mirror/files.json must list it: audio_mirror.py export).
+#
+# import/ holds copies of the app repository's tools/prepare_recitation_set.py, tools/check_recitation_audio.py,
+# tools/publish_recitation_set.py and the two text files they read, at the same paths.
+name: Import recitation sets
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "prepare: build and check, publish nothing. publish: release and copy to R2."
+        type: choice
+        options: [prepare, publish]
+        default: prepare
+      sets:
+        description: "Comma-separated set ids, for example sudais-hafs-v1,ghamdi-hafs-v1"
+        type: string
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-sets
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      sets: ${{ steps.list.outputs.sets }}
+    steps:
+      - id: list
+        env:
+          SETS: ${{ inputs.sets }}
+        run: python3 -c 'import json, os; print("sets=" + json.dumps([s.strip() for s in os.environ["SETS"].split(",") if s.strip()]))' >> "$GITHUB_OUTPUT"
+
+  set:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 7
+      matrix:
+        set: ${{ fromJSON(needs.plan.outputs.sets) }}
+    env:
+      SET: ${{ matrix.set }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Python tools
+        run: |
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --quiet numpy miniaudio "boto3>=1.36"
+          echo "$RUNNER_TEMP/venv/bin" >> "$GITHUB_PATH"
+
+      - name: Prepare (download, build, check)
+        if: inputs.mode == 'prepare'
+        run: |
+          python -I -X utf8 import/tools/prepare_recitation_set.py --set "$SET" --download --staging "$RUNNER_TEMP/staging"
+          python -I -X utf8 import/tools/check_recitation_audio.py --set "$SET" --staging "$RUNNER_TEMP/staging"
+          cp -r "$RUNNER_TEMP/staging/fetch-log" "import/content/recitations/$SET/fetch-log"
+
+      - name: Keep the results
+        if: inputs.mode == 'prepare' && always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.set }}
+          path: import/content/recitations/${{ matrix.set }}/
+          if-no-files-found: warn
+
+      - name: Release
+        if: inputs.mode == 'publish'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -I -X utf8 import/tools/publish_recitation_set.py --set "$SET" --staging "$RUNNER_TEMP/staging"
+
+      - name: Copy to R2
+        if: inputs.mode == 'publish'
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python mirror/audio_mirror.py copy --list mirror/files.json --only "$SET/"
+
+      - name: Check the public address
+        if: inputs.mode == 'publish'
+        run: python mirror/audio_mirror.py verify --list mirror/files.json --only "$SET/" --full-hash

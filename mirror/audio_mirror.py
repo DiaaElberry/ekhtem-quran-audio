@@ -90,11 +90,12 @@ def load_list(path, only):
     files = json.load(open(path, encoding="utf-8"))["files"]
     wanted = [k.strip() for k in (only or "").split(",") if k.strip()]
     if wanted:
+        # A key ending in "/" is a whole set, e.g. sudais-hafs-v1/.
         by_key = {f["key"]: f for f in files}
-        missing = [k for k in wanted if k not in by_key]
+        missing = [k for k in wanted if (not any(f["key"].startswith(k) for f in files) if k.endswith("/") else k not in by_key)]
         if missing:
             sys.exit(f"not in the list: {', '.join(missing)}")
-        files = [by_key[k] for k in wanted]
+        files = [f for f in files if any(f["key"].startswith(k) if k.endswith("/") else f["key"] == k for k in wanted)]
     return files
 
 
@@ -381,7 +382,7 @@ def main():
     export.add_argument("--root", default=os.path.dirname(here), help="the app repo (default: this tool's parent)")
     copy = sub.add_parser("copy", help="copy files from the GitHub releases to R2")
     copy.add_argument("--list", required=True)
-    copy.add_argument("--only", default="", help="comma-separated keys, e.g. afasy-hafs-v1/067.mp3; empty = all")
+    copy.add_argument("--only", default="", help="comma-separated keys, e.g. afasy-hafs-v1/067.mp3, or whole sets as afasy-hafs-v1/; empty = all")
     copy.add_argument("--workers", type=int, default=6)
     copy.add_argument("--dry-run", action="store_true", help="download and check, but upload nothing")
     verify = sub.add_parser("verify", help="check the files on the public address")
