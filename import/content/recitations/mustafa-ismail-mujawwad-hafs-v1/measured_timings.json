@@ -1,0 +1,241 @@
+{
+ "set": "mustafa-ismail-mujawwad-hafs-v1",
+ "madeAt": "2026-11-11T21:11:44Z",
+ "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Not heard by anyone yet.",
+ "rows": [
+  {
+   "surah": 2,
+   "ayah": 233,
+   "startMs": 15383722,
+   "endMs": 15580642
+  },
+  {
+   "surah": 2,
+   "ayah": 234,
+   "startMs": 15580642,
+   "endMs": 15652982
+  },
+  {
+   "surah": 2,
+   "ayah": 235,
+   "startMs": 15652982,
+   "endMs": 15774852
+  },
+  {
+   "surah": 2,
+   "ayah": 236,
+   "startMs": 15774852,
+   "endMs": 15846912
+  },
+  {
+   "surah": 2,
+   "ayah": 237,
+   "startMs": 15846912,
+   "endMs": 15958442
+  },
+  {
+   "surah": 9,
+   "ayah": 95,
+   "startMs": 7120783,
+   "endMs": 7195443
+  },
+  {
+   "surah": 9,
+   "ayah": 96,
+   "startMs": 7195443,
+   "endMs": 7227523
+  }
+ ],
+ "surahs": [
+  {
+   "surah": 2,
+   "window": {
+    "ayat": [
+     233,
+     237
+    ],
+    "fromMs": 15371862,
+    "toMs": 15968180
+   },
+   "durationMs": 596318,
+   "heardWords": 217,
+   "textWords": 196,
+   "matchedTextWords": 176,
+   "rows": [
+    {
+     "surah": 2,
+     "ayah": 233,
+     "startMs": 15383722,
+     "heardStartMs": 15383722,
+     "snappedToPause": false,
+     "matchedWords": 58,
+     "words": 64,
+     "endMs": 15580642
+    },
+    {
+     "surah": 2,
+     "ayah": 234,
+     "startMs": 15580642,
+     "heardStartMs": 15580642,
+     "snappedToPause": false,
+     "matchedWords": 20,
+     "words": 25,
+     "endMs": 15652982
+    },
+    {
+     "surah": 2,
+     "ayah": 235,
+     "startMs": 15652982,
+     "heardStartMs": 15652982,
+     "snappedToPause": false,
+     "matchedWords": 39,
+     "words": 47,
+     "endMs": 15774852
+    },
+    {
+     "surah": 2,
+     "ayah": 236,
+     "startMs": 15774852,
+     "heardStartMs": 15775842,
+     "snappedToPause": true,
+     "matchedWords": 24,
+     "words": 25,
+     "endMs": 15846912
+    },
+    {
+     "surah": 2,
+     "ayah": 237,
+     "startMs": 15846912,
+     "heardStartMs": 15848302,
+     "snappedToPause": true,
+     "matchedWords": 35,
+     "words": 35,
+     "endMs": 15958442
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "2:233",
+     "heard": "والوالدات يخضحنا اولادهم اولين كاهلين لمن ارد ان يتم وطا وعلي المولود لغور اذ قن وكه وتون بالماروح لا تكلف نفس الا وصغي لا تضار والدت بولدها ولا مولود له بولده وعلي الوارث مثل ذلك فان اراد في صولا عن تراغ منهما وتشهر فلا جنا حاليك ما وان اودتم ان تستطعوا اولادكم فلا جنا عليكم اذا سلمت ما اتيت بالمعروف واتقوا الله وعلموا ان الله بما تملوا ربصيق",
+     "scores": {
+      "232": 0.283,
+      "233": 0.885,
+      "234": 0.301
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:234",
+     "heard": "والذين يتوافون منكم ويذرون اسوال يتربصن في انفس ان اربعه اشهر وعشرات فاذا بلغنا اجله نفراجنا عليكم في ما فعلنا في انفزهن في الما والله بما تعملون خيف",
+     "scores": {
+      "233": 0.312,
+      "234": 0.875,
+      "235": 0.203
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:235",
+     "heard": "ولا جناعه عليكم فيما عربت به من خطبه النسا او اكنت في انفتكم حلم الله انك بجت تذكرونهن ولكن لا تواعد ونثن الا ان تكروا قولا ما روح و لا تازم اقده نكاحه تاب لغي كتاب ايلا وعلموا ان الله يعلم ما في انفتكم فعذروا وعلموا ان الله وفون عليف",
+     "scores": {
+      "234": 0.253,
+      "235": 0.831,
+      "236": 0.245
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:236",
+     "heard": "ناجنا عليكم ان طلقتم نسا ما لم تمسوهن او تفرغ لهن فريض ومستعوهن علي الموسع قدره وعلي المكتب قدره متاغا بالماروح حقا علي المحسين",
+     "scores": {
+      "235": 0.339,
+      "236": 0.912,
+      "237": 0.379
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "2:237",
+     "heard": "وان فلقتموا هن من قبل ان تمسوا هن وقد فرقتم لهن فريغ وقد فرضتم له النفريضه فلصف ما فرضتم الا ان يحفوا فلصف ما فردتم الا ان يحفون او يحفوا الذي بيديه عقده النكاح وان تحفوا اقربوا للتقوي ولا تنسوا الفقل بينك ان الله بما تعملون وصير",
+     "scores": {
+      "236": 0.325,
+      "237": 0.819,
+      "238": 0.221
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "002.mp3",
+    "size": 242941320,
+    "sha256": "20e03782ae555172c6ce8bc81988dbae251d020e84c10e912d93112869b4f899"
+   }
+  },
+  {
+   "surah": 9,
+   "window": {
+    "ayat": [
+     95,
+     96
+    ],
+    "fromMs": 7102473,
+    "toMs": 7237370
+   },
+   "durationMs": 134897,
+   "heardWords": 35,
+   "textWords": 32,
+   "matchedTextWords": 26,
+   "rows": [
+    {
+     "surah": 9,
+     "ayah": 95,
+     "startMs": 7120783,
+     "heardStartMs": 7121993,
+     "snappedToPause": true,
+     "matchedWords": 15,
+     "words": 18,
+     "endMs": 7195443
+    },
+    {
+     "surah": 9,
+     "ayah": 96,
+     "startMs": 7195443,
+     "heardStartMs": 7195513,
+     "snappedToPause": true,
+     "matchedWords": 11,
+     "words": 14,
+     "endMs": 7227523
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "9:95",
+     "heard": "سيعلفون بالله لكم اذا قلعتم اليهم لطور طوانه فاعرضوا عنهم انهم رجل وماوي همد انه جزا بما كانوا يكسر",
+     "scores": {
+      "94": 0.331,
+      "95": 0.847,
+      "96": 0.421
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:96",
+     "heard": "يحلفون لكم لتوضوحا هم فان توضي النغم فان الله لا يرضان القوم الفاسقين",
+     "scores": {
+      "95": 0.312,
+      "96": 0.865,
+      "97": 0.379
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "009.mp3",
+    "size": 113957413,
+    "sha256": "b79a1ccf20252628c187be1d0b7e57ae6bb3a0701b2adaf06615ea7fa328eaef"
+   }
+  }
+ ]
+}

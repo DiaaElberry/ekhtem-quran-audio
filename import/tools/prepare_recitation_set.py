@@ -201,6 +201,9 @@ SETS = {
     "mustafa-ismail-mujawwad-hafs-v1": {
         "moshaf": 288, "reciterId": 125, "server": "https://cdn.mp3quran.net/audio/mustafa-ismail/r2/", "qud": None, "timingRelease": 239,
         "releaseRejected": [10, 43, 57, 60, 63, 66], "fallback": "mp3quran",
+        # Where the release itself is wrong (2:235 missing and 2:233-236 mislabelled; 9:95 and 9:96 swapped): rows measured by speech
+        # recognition in these files replace the release's segments of those ayat (measured_timings.json, its windows).
+        "patches": {2: [233, 237], 9: [95, 96]},
         "timingFile": "verse_timestamps_mustafa_ismail_mujawwad.json", "style": "mujawwad",
         "reciterAr": "مُصْطَفَى إِسْمَاعِيل (مُجَوَّد)", "reciterEn": "Mustafa Ismail (Mujawwad)",
     },
@@ -569,7 +572,8 @@ def load_timing_release(staging: Path, spec: dict) -> dict:
             "manifestSha256": _sha256(folder / "manifest.json")}
 
 
-def release_rows(timing: dict, counts: list[int], skip: frozenset[int] = frozenset()) -> tuple[list[dict], list[dict], list[str]]:
+def release_rows(timing: dict, counts: list[int], skip: frozenset[int] = frozenset(), patches: dict | None = None,
+                 measured: list[dict] | None = None) -> tuple[list[dict], list[dict], list[str]]:
     """One row per ayah from the release's ayah_timings ([ayah, start, end], ayah 0 = the isti'adha or basmalah, dropped).
 
     A reciter who reads an ayah again gives it a second segment. The same ayah again: its range runs from the first start to the last
@@ -582,9 +586,18 @@ def release_rows(timing: dict, counts: list[int], skip: frozenset[int] = frozens
                 problems.append(f"timing release surah {surah}: listed as rejected, but the release times it")
             continue
         timed = timing["doc"]["surahs"][str(surah)]["ayah_timings"]
-        if not timed["complete"]:
-            problems.append(f"timing release surah {surah}: not complete")
         segments = sorted((a for a in timed["ayahs"] if a[0]), key=lambda a: (a[1], a[2]))
+        if patches and surah in patches:
+            # The measured rows of ayat lo..hi replace every release segment of those ayat, and any segment lying inside them.
+            lo, hi = patches[surah]
+            rows_in = [r for r in measured if r["surah"] == surah and lo <= r["ayah"] <= hi]
+            if [r["ayah"] for r in rows_in] != list(range(lo, hi + 1)):
+                problems.append(f"patch {surah}:{lo}-{hi}: measured_timings.json has {[r['ayah'] for r in rows_in]}")
+            begin, finish = rows_in[0]["startMs"], rows_in[-1]["endMs"]
+            segments = [a for a in segments if not (lo <= a[0] <= hi or begin <= a[1] < finish)]
+            segments = sorted(segments + [[r["ayah"], r["startMs"], r["endMs"]] for r in rows_in], key=lambda a: (a[1], a[2]))
+        elif not timed["complete"]:
+            problems.append(f"timing release surah {surah}: not complete")
         by_ayah: dict[int, dict] = {}
         last = None
         for ayah, start, end in segments:
@@ -1021,7 +1034,9 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
         rows, repeats, problems = merge_rows(qud, counts)
     elif release:
         rejected = frozenset(spec.get("releaseRejected", []))
-        rows, repeats, problems = release_rows(release, counts, rejected)
+        patches = spec.get("patches")
+        measured = json.loads((OUTPUT / set_id / "measured_timings.json").read_text(encoding="utf-8"))["rows"] if patches else None
+        rows, repeats, problems = release_rows(release, counts, rejected, patches, measured)
         if rejected:
             extra, extra_problems = fallback_rows(staging, set_id, spec, counts, rejected)
             rows = sorted(rows + extra, key=lambda r: (r["surah"], r["ayah"]))
@@ -1191,6 +1206,8 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
             "manifestUrl": TIMING_RELEASE_BASE + "manifest.json", "manifestSha256": release["manifestSha256"],
             "manifestStatus": release["manifestStatus"], "audioIdentity": audio_identity,
             **({"fallbackSurahs": {"surahs": spec["releaseRejected"], "source": FALLBACK_NOTES[spec["fallback"]](spec)}} if spec.get("releaseRejected") else {}),
+            **({"patchedAyat": {"ayat": {str(k): v for k, v in spec["patches"].items()}, "source": FALLBACK_NOTES["measured"](spec),
+                                "why": "the release is wrong there: an ayah missing or mislabelled, or two ayat swapped"}} if spec.get("patches") else {}),
             "licence": "mp3quran.net's general statement (FUTURE_CONTENT_SOURCES.md C.4); no separate licence for the timing",
             "conversion": "ayah_timings [ayah, start, end] unchanged; ayah 0 (isti'adha, basmalah) dropped; a repeated ayah merged "
                           "(first start to last end); a return to an earlier ayah kept lit on the ayah before it (see repeats). "
