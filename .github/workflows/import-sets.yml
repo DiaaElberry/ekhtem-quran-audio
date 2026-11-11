@@ -28,10 +28,6 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: import-sets
-  cancel-in-progress: false
-
 jobs:
   plan:
     runs-on: ubuntu-latest
