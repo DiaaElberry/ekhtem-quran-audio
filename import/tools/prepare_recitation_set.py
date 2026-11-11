@@ -137,23 +137,23 @@ SETS = {
     # 4.0.8 (owner, 11 Nov 2026): thirteen MP3Quran sets timed by MP3Quran's timing release (timingRelease = its v4 recitation id).
     "husary-mujawwad-hafs-v1": {
         "moshaf": 119, "reciterId": 118, "server": "https://cdn.mp3quran.net/audio/mahmoud-husary/r2/", "qud": None, "timingRelease": 114,
-        "timingFile": "verse_timestamps_husary_mujawwad.json", "style": "mujawwad",
+        "timingFile": "verse_timestamps_husary_mujawwad.json", "style": "mujawwad", "timingCorrections": "timing_corrections.json",
         "reciterAr": "مَحْمُود خَلِيل الْحُصَرِيّ (مُجَوَّد)", "reciterEn": "Mahmoud Khalil Al-Husary (Mujawwad)",
     },
     "mustafa-ismail-hafs-v1": {
         "moshaf": 125, "reciterId": 125, "server": "https://cdn.mp3quran.net/audio/mustafa-ismail/r1/", "qud": None, "timingRelease": 120,
         "timingFile": "verse_timestamps_mustafa_ismail.json",
-        "reciterAr": "مُصْطَفَى إِسْمَاعِيل", "reciterEn": "Mustafa Ismail",
+        "reciterAr": "مُصْطَفَى إِسْمَاعِيل (مُرَتَّل)", "reciterEn": "Mustafa Ismail (Murattal)",
     },
     "banna-hafs-v1": {
         "moshaf": 121, "reciterId": 121, "server": "https://cdn.mp3quran.net/audio/mahmoud-banna/r1/", "qud": None, "timingRelease": 116,
         "timingFile": "verse_timestamps_banna.json",
-        "reciterAr": "مَحْمُود عَلِيّ الْبَنَّا", "reciterEn": "Mahmoud Ali Al-Banna",
+        "reciterAr": "مَحْمُود عَلِيّ الْبَنَّا (مُرَتَّل)", "reciterEn": "Mahmoud Ali Al-Banna (Murattal)",
     },
     "tablawi-hafs-v1": {
         "moshaf": 106, "reciterId": 106, "server": "https://cdn.mp3quran.net/audio/muhammad-tablawi/r1/", "qud": None, "timingRelease": 101,
         "timingFile": "verse_timestamps_tablawi.json",
-        "reciterAr": "مُحَمَّد مَحْمُود الطَّبْلَاوِيّ", "reciterEn": "Mohamed Mahmoud Al-Tablawi",
+        "reciterAr": "مُحَمَّد مَحْمُود الطَّبْلَاوِيّ (مُرَتَّل)", "reciterEn": "Mohamed Mahmoud Al-Tablawi (Murattal)",
     },
     "ayyub-hafs-v1": {
         "moshaf": 109, "reciterId": 109, "server": "https://cdn.mp3quran.net/audio/muhammad-ayyub/r1/", "qud": None, "timingRelease": 104,
@@ -194,6 +194,26 @@ SETS = {
         "moshaf": 81, "reciterId": 81, "server": "https://cdn.mp3quran.net/audio/fares-abbad/r1/", "qud": None, "timingRelease": 78,
         "timingFile": "verse_timestamps_abbad.json",
         "reciterAr": "فَارِس عَبَّاد", "reciterEn": "Fares Abbad",
+    },
+    # The three mujawwad sets (owner, 11 Nov 2026: "murattal and mujawwad"). MP3Quran's aligner rejected some surahs of two of them:
+    # Mustafa Ismail's 6 take MP3Quran's older ayat_timing for the same moshaf; Al-Tablawi's 60 and 63, which have no timing anywhere,
+    # are measured in these files by local speech recognition (measured_timings.json, tools/time_surahs_by_speech.py).
+    "mustafa-ismail-mujawwad-hafs-v1": {
+        "moshaf": 288, "reciterId": 125, "server": "https://cdn.mp3quran.net/audio/mustafa-ismail/r2/", "qud": None, "timingRelease": 239,
+        "releaseRejected": [10, 43, 57, 60, 63, 66], "fallback": "mp3quran",
+        "timingFile": "verse_timestamps_mustafa_ismail_mujawwad.json", "style": "mujawwad",
+        "reciterAr": "مُصْطَفَى إِسْمَاعِيل (مُجَوَّد)", "reciterEn": "Mustafa Ismail (Mujawwad)",
+    },
+    "banna-mujawwad-hafs-v1": {
+        "moshaf": 122, "reciterId": 121, "server": "https://cdn.mp3quran.net/audio/mahmoud-banna/r2/", "qud": None, "timingRelease": 117,
+        "timingFile": "verse_timestamps_banna_mujawwad.json", "style": "mujawwad",
+        "reciterAr": "مَحْمُود عَلِيّ الْبَنَّا (مُجَوَّد)", "reciterEn": "Mahmoud Ali Al-Banna (Mujawwad)",
+    },
+    "tablawi-mujawwad-hafs-v1": {
+        "moshaf": 10912, "reciterId": 106, "server": "https://cdn.mp3quran.net/audio/muhammad-tablawi/r2/", "qud": None, "timingRelease": 301,
+        "releaseRejected": [60, 63], "fallback": "measured",
+        "timingFile": "verse_timestamps_tablawi_mujawwad.json", "style": "mujawwad",
+        "reciterAr": "مُحَمَّد مَحْمُود الطَّبْلَاوِيّ (مُجَوَّد)", "reciterEn": "Mohamed Mahmoud Al-Tablawi (Mujawwad)",
     },
     "yasser-dosari-hafs-v1": {
         "moshaf": 92, "reciterId": 92, "server": "https://cdn.mp3quran.net/audio/yasser-dosari/r1/", "qud": None, "timingRelease": 89,
@@ -549,7 +569,7 @@ def load_timing_release(staging: Path, spec: dict) -> dict:
             "manifestSha256": _sha256(folder / "manifest.json")}
 
 
-def release_rows(timing: dict, counts: list[int]) -> tuple[list[dict], list[dict], list[str]]:
+def release_rows(timing: dict, counts: list[int], skip: frozenset[int] = frozenset()) -> tuple[list[dict], list[dict], list[str]]:
     """One row per ayah from the release's ayah_timings ([ayah, start, end], ayah 0 = the isti'adha or basmalah, dropped).
 
     A reciter who reads an ayah again gives it a second segment. The same ayah again: its range runs from the first start to the last
@@ -557,6 +577,10 @@ def release_rows(timing: dict, counts: list[int]) -> tuple[list[dict], list[dict
     its highlight through it, as accepted for Hassan Saleh's 55:45 (FUTURE_CONTENT_SOURCES.md C.6), so no range runs backwards."""
     rows, repeats, problems = [], [], []
     for surah in range(1, 115):
+        if surah in skip:    # rejected by MP3Quran's aligner: timed from the set's fallback (fallback_rows)
+            if str(surah) in timing["doc"]["surahs"]:
+                problems.append(f"timing release surah {surah}: listed as rejected, but the release times it")
+            continue
         timed = timing["doc"]["surahs"][str(surah)]["ayah_timings"]
         if not timed["complete"]:
             problems.append(f"timing release surah {surah}: not complete")
@@ -583,6 +607,34 @@ def release_rows(timing: dict, counts: list[int]) -> tuple[list[dict], list[dict
         repeat.update(mergedStartMs=lit["startMs"], mergedEndMs=lit["endMs"], nextAyahStartMs=after["startMs"] if after else None,
                       overlapsNeighbour=bool(after and lit["endMs"] > after["startMs"]))
     return rows, repeats, problems
+
+
+FALLBACK_NOTES = {
+    "mp3quran": lambda spec: (f"MP3Quran's older ayat_timing for the same moshaf ({MP3QURAN_API}ayat_timing?surah=N&read={spec['moshaf']}), start and end "
+                              "as published, its ayah 0 dropped; a draft checked against the decoded audio like the rest (audio_check.json)"),
+    "measured": lambda spec: ("measured in these files: local speech recognition (faster-whisper, nothing leaves the PC) with word times, matched "
+                              "to the ayah text, each start moved to the end of the pause before it (measured_timings.json, "
+                              "tools/time_surahs_by_speech.py); not heard by anyone yet"),
+}
+
+
+def fallback_rows(staging: Path, set_id: str, spec: dict, counts: list[int], surahs: frozenset[int]) -> tuple[list[dict], list[str]]:
+    """Rows for the surahs MP3Quran's timing release rejected: its older ayat_timing, or rows measured in these files."""
+    problems = []
+    if spec["fallback"] == "mp3quran":
+        folder = staging / "mp3quran-api" / f"ayat_timing-read{spec['moshaf']}"
+        rows = []
+        for surah in sorted(surahs):
+            entries = [e for e in json.loads((folder / f"{surah:03}.json").read_text(encoding="utf-8")) if e["ayah"]]
+            rows += [{"surah": surah, "ayah": e["ayah"], "startMs": e["start_time"], "endMs": e["end_time"]} for e in entries]
+    else:
+        measured = json.loads((OUTPUT / set_id / "measured_timings.json").read_text(encoding="utf-8"))["rows"]
+        rows = [dict(surah=r["surah"], ayah=r["ayah"], startMs=r["startMs"], endMs=r["endMs"]) for r in measured if r["surah"] in surahs]
+    for surah in sorted(surahs):
+        ayat = [r["ayah"] for r in rows if r["surah"] == surah]
+        if ayat != list(range(1, counts[surah - 1] + 1)):
+            problems.append(f"fallback surah {surah}: ayat {ayat[:5]}... ({len(ayat)}), the mushaf has {counts[surah - 1]}")
+    return rows, problems
 
 
 def region_area(path: str) -> float:
@@ -968,7 +1020,12 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
     if qud:
         rows, repeats, problems = merge_rows(qud, counts)
     elif release:
-        rows, repeats, problems = release_rows(release, counts)
+        rejected = frozenset(spec.get("releaseRejected", []))
+        rows, repeats, problems = release_rows(release, counts, rejected)
+        if rejected:
+            extra, extra_problems = fallback_rows(staging, set_id, spec, counts, rejected)
+            rows = sorted(rows + extra, key=lambda r: (r["surah"], r["ayah"]))
+            problems += extra_problems
     elif spec.get("qul"):
         rows, repeats, problems = qul_rows(staging, spec, counts)
     elif spec.get("ayahClips"):
@@ -997,14 +1054,18 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
         # The release names the bytes each surah was aligned to: these files must be exactly those.
         mismatched = []
         for t in tracks:
+            if t["surahNumber"] in spec.get("releaseRejected", []):
+                continue
             aligned = release["doc"]["surahs"][str(t["surahNumber"])]["word_timings"]["audio"]
             if (aligned["sha256"], aligned["bytes"]) != (t["sha256"], t["sizeBytes"]):
                 mismatched.append(t["surahNumber"])
         if mismatched:
             problems.append(f"timing release: files {mismatched} are not the bytes it was aligned to")
-        if release["manifestStatus"]["accepted"] != 114:
-            problems.append(f"timing release manifest: {release['manifestStatus']}")
-        audio_identity = {"filesMatchingAlignedSha256AndSize": 114 - len(mismatched), "mismatched": mismatched}
+        rejected_listed = sorted(int(x.split(":")[0]) for x in release["manifestStatus"]["notAccepted"])
+        if rejected_listed != sorted(spec.get("releaseRejected", [])):
+            problems.append(f"timing release manifest: {release['manifestStatus']}, expected rejected {spec.get('releaseRejected', [])}")
+        audio_identity = {"filesMatchingAlignedSha256AndSize": 114 - len(spec.get("releaseRejected", [])) - len(mismatched),
+                          "mismatched": mismatched, "notTimedByTheRelease": spec.get("releaseRejected", [])}
     shifted = []
     for shift in spec.get("shifts", []):
         moved = [r for r in rows if r["surah"] == shift["surah"] and r["ayah"] >= shift["fromAyah"]]
@@ -1063,6 +1124,9 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
             timing_source += f" {style}"
     elif release:
         timing_source = f"MP3Quran timing release {TIMING_RELEASE}, recitation {spec['timingRelease']}; {spec['reciterEn']} {host} {riwaya_name}"
+        if spec.get("releaseRejected"):
+            timing_source += (f"; surahs {', '.join(map(str, spec['releaseRejected']))} from "
+                              + (f"MP3Quran ayat_timing read={spec['moshaf']}" if spec["fallback"] == "mp3quran" else "local speech recognition in these files"))
     elif spec.get("qul"):
         timing_source = f"QUL surah_segments {spec['qul']} (MP3Quran ayat_timing read={spec['moshaf']} where it is complete); {spec['reciterEn']} {riwaya_name}"
     elif spec.get("ayahClips"):
@@ -1126,6 +1190,7 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
             "sha256": release["sha256"], "bytes": release["bytes"],
             "manifestUrl": TIMING_RELEASE_BASE + "manifest.json", "manifestSha256": release["manifestSha256"],
             "manifestStatus": release["manifestStatus"], "audioIdentity": audio_identity,
+            **({"fallbackSurahs": {"surahs": spec["releaseRejected"], "source": FALLBACK_NOTES[spec["fallback"]](spec)}} if spec.get("releaseRejected") else {}),
             "licence": "mp3quran.net's general statement (FUTURE_CONTENT_SOURCES.md C.4); no separate licence for the timing",
             "conversion": "ayah_timings [ayah, start, end] unchanged; ayah 0 (isti'adha, basmalah) dropped; a repeated ayah merged "
                           "(first start to last end); a return to an earlier ayah kept lit on the ayah before it (see repeats). "

@@ -1,0 +1,663 @@
+{
+ "set": "tablawi-mujawwad-hafs-v1",
+ "madeAt": "2026-11-11T20:16:38Z",
+ "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Not heard by anyone yet.",
+ "rows": [
+  {
+   "surah": 60,
+   "ayah": 1,
+   "startMs": 14060,
+   "endMs": 164940
+  },
+  {
+   "surah": 60,
+   "ayah": 2,
+   "startMs": 164940,
+   "endMs": 208700
+  },
+  {
+   "surah": 60,
+   "ayah": 3,
+   "startMs": 208700,
+   "endMs": 248600
+  },
+  {
+   "surah": 60,
+   "ayah": 4,
+   "startMs": 248600,
+   "endMs": 446340
+  },
+  {
+   "surah": 60,
+   "ayah": 5,
+   "startMs": 446340,
+   "endMs": 483360
+  },
+  {
+   "surah": 60,
+   "ayah": 6,
+   "startMs": 483360,
+   "endMs": 574520
+  },
+  {
+   "surah": 60,
+   "ayah": 7,
+   "startMs": 574520,
+   "endMs": 620620
+  },
+  {
+   "surah": 60,
+   "ayah": 8,
+   "startMs": 620620,
+   "endMs": 690880
+  },
+  {
+   "surah": 60,
+   "ayah": 9,
+   "startMs": 690880,
+   "endMs": 772820
+  },
+  {
+   "surah": 60,
+   "ayah": 10,
+   "startMs": 772820,
+   "endMs": 973390
+  },
+  {
+   "surah": 60,
+   "ayah": 11,
+   "startMs": 973390,
+   "endMs": 1035470
+  },
+  {
+   "surah": 60,
+   "ayah": 12,
+   "startMs": 1035470,
+   "endMs": 1162840
+  },
+  {
+   "surah": 60,
+   "ayah": 13,
+   "startMs": 1162840,
+   "endMs": 1219000
+  },
+  {
+   "surah": 63,
+   "ayah": 1,
+   "startMs": 21160,
+   "endMs": 78430
+  },
+  {
+   "surah": 63,
+   "ayah": 2,
+   "startMs": 78430,
+   "endMs": 125240
+  },
+  {
+   "surah": 63,
+   "ayah": 3,
+   "startMs": 125240,
+   "endMs": 152270
+  },
+  {
+   "surah": 63,
+   "ayah": 4,
+   "startMs": 152270,
+   "endMs": 231220
+  },
+  {
+   "surah": 63,
+   "ayah": 5,
+   "startMs": 231220,
+   "endMs": 271420
+  },
+  {
+   "surah": 63,
+   "ayah": 6,
+   "startMs": 271420,
+   "endMs": 315660
+  },
+  {
+   "surah": 63,
+   "ayah": 7,
+   "startMs": 315660,
+   "endMs": 370290
+  },
+  {
+   "surah": 63,
+   "ayah": 8,
+   "startMs": 370290,
+   "endMs": 422960
+  },
+  {
+   "surah": 63,
+   "ayah": 9,
+   "startMs": 422960,
+   "endMs": 478180
+  },
+  {
+   "surah": 63,
+   "ayah": 10,
+   "startMs": 478180,
+   "endMs": 528260
+  },
+  {
+   "surah": 63,
+   "ayah": 11,
+   "startMs": 528260,
+   "endMs": 557090
+  }
+ ],
+ "surahs": [
+  {
+   "surah": 60,
+   "durationMs": 1223460,
+   "heardWords": 423,
+   "textWords": 356,
+   "matchedTextWords": 307,
+   "rows": [
+    {
+     "surah": 60,
+     "ayah": 1,
+     "startMs": 14060,
+     "heardStartMs": 14060,
+     "snappedToPause": false,
+     "matchedWords": 41,
+     "words": 49,
+     "endMs": 164940
+    },
+    {
+     "surah": 60,
+     "ayah": 2,
+     "startMs": 164940,
+     "heardStartMs": 164940,
+     "snappedToPause": false,
+     "matchedWords": 13,
+     "words": 13,
+     "endMs": 208700
+    },
+    {
+     "surah": 60,
+     "ayah": 3,
+     "startMs": 208700,
+     "heardStartMs": 208700,
+     "snappedToPause": false,
+     "matchedWords": 13,
+     "words": 13,
+     "endMs": 248600
+    },
+    {
+     "surah": 60,
+     "ayah": 4,
+     "startMs": 248600,
+     "heardStartMs": 248600,
+     "snappedToPause": false,
+     "matchedWords": 47,
+     "words": 52,
+     "endMs": 446340
+    },
+    {
+     "surah": 60,
+     "ayah": 5,
+     "startMs": 446340,
+     "heardStartMs": 446340,
+     "snappedToPause": false,
+     "matchedWords": 10,
+     "words": 13,
+     "endMs": 483360
+    },
+    {
+     "surah": 60,
+     "ayah": 6,
+     "startMs": 483360,
+     "heardStartMs": 483360,
+     "snappedToPause": false,
+     "matchedWords": 18,
+     "words": 19,
+     "endMs": 574520
+    },
+    {
+     "surah": 60,
+     "ayah": 7,
+     "startMs": 574520,
+     "heardStartMs": 574520,
+     "snappedToPause": false,
+     "matchedWords": 14,
+     "words": 15,
+     "endMs": 620620
+    },
+    {
+     "surah": 60,
+     "ayah": 8,
+     "startMs": 620620,
+     "heardStartMs": 621060,
+     "snappedToPause": true,
+     "matchedWords": 19,
+     "words": 21,
+     "endMs": 690880
+    },
+    {
+     "surah": 60,
+     "ayah": 9,
+     "startMs": 690880,
+     "heardStartMs": 690880,
+     "snappedToPause": false,
+     "matchedWords": 16,
+     "words": 21,
+     "endMs": 772820
+    },
+    {
+     "surah": 60,
+     "ayah": 10,
+     "startMs": 772820,
+     "heardStartMs": 772820,
+     "snappedToPause": false,
+     "matchedWords": 41,
+     "words": 56,
+     "endMs": 973390
+    },
+    {
+     "surah": 60,
+     "ayah": 11,
+     "startMs": 973390,
+     "heardStartMs": 974720,
+     "snappedToPause": true,
+     "matchedWords": 19,
+     "words": 21,
+     "endMs": 1035470
+    },
+    {
+     "surah": 60,
+     "ayah": 12,
+     "startMs": 1035470,
+     "heardStartMs": 1036660,
+     "snappedToPause": true,
+     "matchedWords": 35,
+     "words": 39,
+     "endMs": 1162840
+    },
+    {
+     "surah": 60,
+     "ayah": 13,
+     "startMs": 1162840,
+     "heardStartMs": 1164280,
+     "snappedToPause": true,
+     "matchedWords": 17,
+     "words": 20,
+     "endMs": 1219000
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "60:1",
+     "heard": "يا ايها الذين امنون هنا تتشهد ودور واغذ وكم اوليا تلقون اليهم بالموعده وقذ كفروا بما جاكم ملا حفظ وقذ كفروا بما جاكم ملا حفظ يخرجون رسول اياهما تومنوا بالله ربكم ان كنتم خرجتم جيادا في سبيل وبتضا مرضا تسرون انا ين بالموده وان اولم بما اخفيتم وما اخلاتم ومن يفعله منكم فقد ظل سوا السبيل",
+     "scores": {
+      "1": 0.834,
+      "2": 0.176
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:2",
+     "heard": "ان يسقفواكم يكونوا لكم اردا ويبسوا اليكم ايديهم وانسلتهم بالسو ووضعوا لو تفسون",
+     "scores": {
+      "1": 0.17,
+      "2": 0.897,
+      "3": 0.447
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:3",
+     "heard": "لان تنفعتم ارخامكم ولا اولادكم يوم القيامه يفسل بينكم والله بما تغملون بصير",
+     "scores": {
+      "2": 0.392,
+      "3": 0.94,
+      "4": 0.273
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:4",
+     "heard": "قد كانت لكم بس وتنشفن سن في ابراهيم والنذين موظو قالوا لطومهم اننا براوا منكم ومنما تربضون من دون الله اذ قالوا لقومهم اننا مرا منكم ومن ما تعمدون من دون الله لا يجفرنا بكم وبدا بيننا و بينكم اللدي والدضم وابدا وبدا بيننا وبينكم لداوات والبقا ابدا فتاه منوا بالله وحده الا قول ابراعي ايم لابي الا قول امرا ايم لابي لاسفر ندج وما املك من الله من شي ربنا عليك توجلنا واليك انا بنا واليك المصير",
+     "scores": {
+      "3": 0.211,
+      "4": 0.73,
+      "5": 0.166
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:5",
+     "heard": "ربنا لا تجعلنا فتنه للذين كفوا وغفر لنا ربنا ان كانثا رجيز خكيب",
+     "scores": {
+      "4": 0.217,
+      "5": 0.855,
+      "6": 0.273
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:6",
+     "heard": "لقد كان لكم فيهم قصوه حسنه لمن كان يرجو الله واليوم اخر ومن يتوان فان الله هو الغني الحميد لقد كان لكم شي اصوات خفنه لمن كان يرن الله واليوم الاخذ ومن يفعل فان الله هو الغني الخميد",
+     "scores": {
+      "5": 0.194,
+      "6": 0.635,
+      "7": 0.272
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:7",
+     "heard": "عسي الله ان يجعل بينكم وبين الذين عاديتم منهم ووهده والله قدير والله غفر حين",
+     "scores": {
+      "6": 0.263,
+      "7": 0.954,
+      "8": 0.439
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:8",
+     "heard": "لا ينهيكم الله عن الذين لم يقاتلكم في الدين ولم يخرضوكم من دياركم ولم يخرجكم من ذياركم ان ثبتواه وتقسطوا الي ان الله الحيب المقفطين",
+     "scores": {
+      "7": 0.385,
+      "8": 0.835,
+      "9": 0.651
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:9",
+     "heard": "انما ينهاكم الله للنذين قاتلواكم في الذين واخرجواكم من ذياركم وظاهر واخرجكم من ديالكم وظاهر ولا اخرجكم من يتولهم ومن يتولهم فاوليكهم ور",
+     "scores": {
+      "8": 0.569,
+      "9": 0.766,
+      "10": 0.148
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:10",
+     "heard": "يا ايها الذين امنوا اذا دايكم المومنات مهاجرات فانتحنوا الله ارلم بايمان فان علمتمونا مومنات فلا ترجعونا الي الفسار لاهم نخلن لهم ونهم يخلن لهم واتوا ما فقوا ولا جناح عليكم انفن تقول ان اذا اتيتموا نا ادورهم ولا تمسكم بعصه الكواف والالوما والله وليم فكين",
+     "scores": {
+      "9": 0.267,
+      "10": 0.781,
+      "11": 0.223
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:11",
+     "heard": "وان فاتك شي من ادواجكم الي القصف فارف عاقبتم فاكل الذين ذهرت ازواجهم مثلما اعصقوا واتقوا الله الذي انت به مومن",
+     "scores": {
+      "10": 0.303,
+      "11": 0.888,
+      "12": 0.219
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:12",
+     "heard": "يا ايها النبي اذا جاك بالمومنات مبايع انك علي ولا انه يشرقنا بالناه سييا بل لا يشي ولا يترقنا ولا يضين ولا يقتلنا ولا دون ولا ياتين ببوثان ولا ياتين ببوتان يفترينهم بين اهلين وارلوا لهم ان ولا ياصينك في مغروف فبا ياهن وان تاصر لهن الله ان الله بفر رخيم",
+     "scores": {
+      "11": 0.236,
+      "12": 0.736,
+      "13": 0.268
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "60:13",
+     "heard": "يا انوا الذين امنوا لاتتولوا قوما رضب الله وعليه قد ييسوا من الاشراه قوم العظم الله وعليه قد ييسوا من الاشراه كما ييفي القفار من اسطاب القبور",
+     "scores": {
+      "12": 0.205,
+      "13": 0.742
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "060.mp3",
+    "size": 5740218,
+    "sha256": "07a770e7ffe2289dde6167c9694d6ec0f45da3662316be8cd833683f729fe55b"
+   }
+  },
+  {
+   "surah": 63,
+   "durationMs": 561456,
+   "heardWords": 197,
+   "textWords": 185,
+   "matchedTextWords": 165,
+   "rows": [
+    {
+     "surah": 63,
+     "ayah": 1,
+     "startMs": 21160,
+     "heardStartMs": 21160,
+     "snappedToPause": false,
+     "matchedWords": 16,
+     "words": 17,
+     "endMs": 78430
+    },
+    {
+     "surah": 63,
+     "ayah": 2,
+     "startMs": 78430,
+     "heardStartMs": 79800,
+     "snappedToPause": true,
+     "matchedWords": 12,
+     "words": 12,
+     "endMs": 125240
+    },
+    {
+     "surah": 63,
+     "ayah": 3,
+     "startMs": 125240,
+     "heardStartMs": 125240,
+     "snappedToPause": false,
+     "matchedWords": 9,
+     "words": 11,
+     "endMs": 152270
+    },
+    {
+     "surah": 63,
+     "ayah": 4,
+     "startMs": 152270,
+     "heardStartMs": 152640,
+     "snappedToPause": true,
+     "matchedWords": 19,
+     "words": 22,
+     "endMs": 231220
+    },
+    {
+     "surah": 63,
+     "ayah": 5,
+     "startMs": 231220,
+     "heardStartMs": 231520,
+     "snappedToPause": true,
+     "matchedWords": 12,
+     "words": 14,
+     "endMs": 271420
+    },
+    {
+     "surah": 63,
+     "ayah": 6,
+     "startMs": 271420,
+     "heardStartMs": 271420,
+     "snappedToPause": false,
+     "matchedWords": 16,
+     "words": 18,
+     "endMs": 315660
+    },
+    {
+     "surah": 63,
+     "ayah": 7,
+     "startMs": 315660,
+     "heardStartMs": 315660,
+     "snappedToPause": false,
+     "matchedWords": 18,
+     "words": 20,
+     "endMs": 370290
+    },
+    {
+     "surah": 63,
+     "ayah": 8,
+     "startMs": 370290,
+     "heardStartMs": 370520,
+     "snappedToPause": true,
+     "matchedWords": 14,
+     "words": 17,
+     "endMs": 422960
+    },
+    {
+     "surah": 63,
+     "ayah": 9,
+     "startMs": 422960,
+     "heardStartMs": 423540,
+     "snappedToPause": true,
+     "matchedWords": 16,
+     "words": 18,
+     "endMs": 478180
+    },
+    {
+     "surah": 63,
+     "ayah": 10,
+     "startMs": 478180,
+     "heardStartMs": 478180,
+     "snappedToPause": false,
+     "matchedWords": 19,
+     "words": 21,
+     "endMs": 528260
+    },
+    {
+     "surah": 63,
+     "ayah": 11,
+     "startMs": 528260,
+     "heardStartMs": 528260,
+     "snappedToPause": false,
+     "matchedWords": 10,
+     "words": 11,
+     "endMs": 557090
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "63:1",
+     "heard": "اذا جاك المناسكون قارون الشهر انك لرسول الله والله يغلم ان كل رجول والله يشهد ان المنافقين لكالبون اتل",
+     "scores": {
+      "1": 0.864,
+      "2": 0.294
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:2",
+     "heard": "خدوا ايما لهم جرنه فخدوا عن سبيل الله انهم سا ما كانوا يعملون",
+     "scores": {
+      "1": 0.304,
+      "2": 0.918,
+      "3": 0.296
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:3",
+     "heard": "ذلك بانهم امنوا ثم كفروا فقوا بغني قلوبهم فهم لا يفقهون",
+     "scores": {
+      "2": 0.293,
+      "3": 0.899,
+      "4": 0.3
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:4",
+     "heard": "واذا رايتهم ترجبك اجسامهم وان يقولوا تكما غلقاوا لي كانه انخشب مسنده يحتبون كل صيحه نالاهم هم لدوا في حلارهم موت لهم الله ان يوفدون",
+     "scores": {
+      "3": 0.205,
+      "4": 0.844,
+      "5": 0.239
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:5",
+     "heard": "واذا قيل لهم طوالا يتغفر لكم رسول الله له وانه امسهم ورايتهم يصدون وهم مستكبرون",
+     "scores": {
+      "4": 0.245,
+      "5": 0.904,
+      "6": 0.485
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:6",
+     "heard": "سوا لهم استغفرت لهم ام لم تستغفر لهم لي ينفر الله لهم ان الله ينهد القومي الشراسين",
+     "scores": {
+      "5": 0.438,
+      "6": 0.905,
+      "7": 0.408
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:7",
+     "heard": "هم الذين يقولون لا تنسفوا علي من اين ذا رسول الله حفتا ينشهدوا وللله خزايم السماوات والارض ولكن المنافقين لا يستقرون",
+     "scores": {
+      "6": 0.356,
+      "7": 0.889,
+      "8": 0.477
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:8",
+     "heard": "يقولون لا يرجلنا الي المدينه لا يخرجا لنا الازم الغال الغال ورناه العزه ونرسوله ونلمومنين ولاتنا المنافقين لا يالمون",
+     "scores": {
+      "7": 0.489,
+      "8": 0.793,
+      "9": 0.269
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:9",
+     "heard": "يا اجوي الذين امنوا لا اكون لكم اموالكم ونا اولادكم عن ذكر الله ومن يفعل ذلك فاوليك هو الخاترون",
+     "scores": {
+      "8": 0.219,
+      "9": 0.909,
+      "10": 0.16
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:10",
+     "heard": "وانفقوا مما رفناكم من قبل ان ياتي اخذكم الموت فيكون رب له لا افرتني الي اجن قريب فارسل دق وافن من الصالعين",
+     "scores": {
+      "9": 0.394,
+      "10": 0.863,
+      "11": 0.126
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "63:11",
+     "heard": "ولن يوشر الله نفسا اذا اجا اجد ذا والله خبير بما هظملون",
+     "scores": {
+      "10": 0.325,
+      "11": 0.889
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "063.mp3",
+    "size": 2573460,
+    "sha256": "5381e0b7376aba31920c3a6c67affdcbef38ee4e694fd536167e63950c214904"
+   }
+  }
+ ]
+}
