@@ -202,7 +202,7 @@ SETS = {
         "moshaf": 288, "reciterId": 125, "server": "https://cdn.mp3quran.net/audio/mustafa-ismail/r2/", "qud": None, "timingRelease": 239,
         # MP3Quran's older ayat_timing for these 6 was made for another edit of the recording (3.8 to 6.7 s off these files'
         # pauses, audio_check.json of the first GitHub prepare run), so they are measured here too.
-        "releaseRejected": [10, 43, 57, 60, 63, 66], "fallback": "measured", "timingCorrections": "timing_corrections.json",
+        "releaseRejected": [10, 43, 57, 60, 63, 66], "fallback": "measured",
         "timingFile": "verse_timestamps_mustafa_ismail_mujawwad.json", "style": "mujawwad",
         "reciterAr": "مُصْطَفَى إِسْمَاعِيل (مُجَوَّد)", "reciterEn": "Mustafa Ismail (Mujawwad)",
     },
