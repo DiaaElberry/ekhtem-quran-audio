@@ -1,6 +1,6 @@
 {
  "reviewDate": "2026-11-12",
- "reviewer": "found by machine (audio_check.json gap audit; the voice in each gap recognized by faster-whisper); not heard by anyone yet",
+ "reviewer": "found by machine (audio_check.json gap audit; the voice in each gap recognized by faster-whisper); not heard by anyone yet; 43:86-87 from the owner's listening on the tablet (12 Nov 2026)",
  "tool": "tools/prepare_recitation_set.py applies this file (SETS timingCorrections); only timing numbers change, the MP3s stay unmodified",
  "criterion": {
   "gapWithVoice": "A gap over 20 s with voice louder than -30 dBFS is not left for the app's break skip: a return to earlier text keeps the ayah before it lit to 0.3 s after the voice; the next ayah's opening read early moves that ayah's start there. Gaps holding only faint sound (about 1 s at -35 to -45 dBFS: breath, room) are left as breaks."
@@ -78,6 +78,36 @@
    "evidence": {
     "voiceStartMs": 427064
    }
+  },
+  {
+   "ayah": "43:86",
+   "field": "end",
+   "old": 3317320,
+   "new": 3276430,
+   "deltaMs": -40890,
+   "kind": "owner-heard",
+   "reason": "the owner heard 43:87 lit very late (12 Nov 2026) while 43:86 started right; whisper large-v3-turbo hears 43:87's text from 3,276,430 ms (own-text score 0.851, pause before it), where the small model had missed it",
+   "evidence": {
+    "turboRow": [
+     3276430,
+     3309400
+    ],
+    "turboScores": {
+     "86": 0.318,
+     "87": 0.851,
+     "88": 0.342
+    }
+   }
+  },
+  {
+   "ayah": "43:87",
+   "field": "start",
+   "old": 3317320,
+   "new": 3276430,
+   "deltaMs": -40890,
+   "kind": "owner-heard",
+   "reason": "see 43:86",
+   "evidence": {}
   }
  ]
 }
