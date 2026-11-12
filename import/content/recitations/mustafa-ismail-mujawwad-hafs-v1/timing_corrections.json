@@ -148,6 +148,126 @@
    "kind": "owner-heard",
    "reason": "the owner heard 43:88 and 43:89 lit late (12 Nov 2026); whisper large-v3-turbo with word times: 43:88 (وقيله يا رب) from 3,309.4 s after a pause 3,300.6-3,309.8 s; 43:89 (فاصفح عنهم) from 3,335.8 s, the pause before it ending at 3,335.9 s (less 70 ms)",
    "evidence": {}
+  },
+  {
+   "ayah": "10:41",
+   "field": "end",
+   "old": 2786320,
+   "new": 2782830,
+   "deltaMs": -3490,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «ومنهم من يستمعون» heard from 2,783.6 s; the pause before it ends at 2,782.9 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:42",
+   "field": "start",
+   "old": 2786320,
+   "new": 2782830,
+   "deltaMs": -3490,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «ومنهم من يستمعون» heard from 2,783.6 s; the pause before it ends at 2,782.9 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:42",
+   "field": "end",
+   "old": 2830420,
+   "new": 2827130,
+   "deltaMs": -3290,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «ومنهم من ينظر» heard from 2,828.6 s; the pause before it ends at 2,827.2 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:43",
+   "field": "start",
+   "old": 2830420,
+   "new": 2827130,
+   "deltaMs": -3290,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «ومنهم من ينظر» heard from 2,828.6 s; the pause before it ends at 2,827.2 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:43",
+   "field": "end",
+   "old": 2866000,
+   "new": 2862830,
+   "deltaMs": -3170,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «إن الله لا يظلم» heard from 2,862.4 s; the pause before it ends at 2,862.9 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:44",
+   "field": "start",
+   "old": 2866000,
+   "new": 2862830,
+   "deltaMs": -3170,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «إن الله لا يظلم» heard from 2,862.4 s; the pause before it ends at 2,862.9 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:49",
+   "field": "end",
+   "old": 3097220,
+   "new": 3156330,
+   "deltaMs": 59110,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: 10:49 runs on to «ولا يستقدمون» (heard at 3,138.4 s), not to «إلا ما شاء الله» at 3,097 s where its row ended; 10:50 is the voice after the pause 3,144.9-3,156.4 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:50",
+   "field": "start",
+   "old": 3097220,
+   "new": 3156330,
+   "deltaMs": 59110,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: 10:49 runs on to «ولا يستقدمون» (heard at 3,138.4 s), not to «إلا ما شاء الله» at 3,097 s where its row ended; 10:50 is the voice after the pause 3,144.9-3,156.4 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:50",
+   "field": "end",
+   "old": 3188980,
+   "new": 3187130,
+   "deltaMs": -1850,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: the voice after the pause 3,180.0-3,187.2 s; «الآن وقد كنتم به تستعجلون», the end of 10:51, heard from 3,207.6 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:51",
+   "field": "start",
+   "old": 3188980,
+   "new": 3187130,
+   "deltaMs": -1850,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: the voice after the pause 3,180.0-3,187.2 s; «الآن وقد كنتم به تستعجلون», the end of 10:51, heard from 3,207.6 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:52",
+   "field": "end",
+   "old": 3268160,
+   "new": 3264630,
+   "deltaMs": -3530,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «ويستنبئونك» heard from 3,267.9 s; the pause before it ends at 3,264.7 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
+  },
+  {
+   "ayah": "10:53",
+   "field": "start",
+   "old": 3268160,
+   "new": 3264630,
+   "deltaMs": -3530,
+   "kind": "owner-heard",
+   "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «ويستنبئونك» heard from 3,267.9 s; the pause before it ends at 3,264.7 s; the start is the end of that pause less 70 ms",
+   "evidence": {}
   }
  ]
 }
