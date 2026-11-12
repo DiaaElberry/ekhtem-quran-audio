@@ -108,6 +108,46 @@
    "kind": "owner-heard",
    "reason": "see 43:86",
    "evidence": {}
+  },
+  {
+   "ayah": "43:87",
+   "field": "end",
+   "old": 3318720,
+   "new": 3309400,
+   "deltaMs": -9320,
+   "kind": "owner-heard",
+   "reason": "the owner heard 43:88 and 43:89 lit late (12 Nov 2026); whisper large-v3-turbo with word times: 43:88 (وقيله يا رب) from 3,309.4 s after a pause 3,300.6-3,309.8 s; 43:89 (فاصفح عنهم) from 3,335.8 s, the pause before it ending at 3,335.9 s (less 70 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "43:88",
+   "field": "start",
+   "old": 3318720,
+   "new": 3309400,
+   "deltaMs": -9320,
+   "kind": "owner-heard",
+   "reason": "the owner heard 43:88 and 43:89 lit late (12 Nov 2026); whisper large-v3-turbo with word times: 43:88 (وقيله يا رب) from 3,309.4 s after a pause 3,300.6-3,309.8 s; 43:89 (فاصفح عنهم) from 3,335.8 s, the pause before it ending at 3,335.9 s (less 70 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "43:88",
+   "field": "end",
+   "old": 3336510,
+   "new": 3335830,
+   "deltaMs": -680,
+   "kind": "owner-heard",
+   "reason": "the owner heard 43:88 and 43:89 lit late (12 Nov 2026); whisper large-v3-turbo with word times: 43:88 (وقيله يا رب) from 3,309.4 s after a pause 3,300.6-3,309.8 s; 43:89 (فاصفح عنهم) from 3,335.8 s, the pause before it ending at 3,335.9 s (less 70 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "43:89",
+   "field": "start",
+   "old": 3336510,
+   "new": 3335830,
+   "deltaMs": -680,
+   "kind": "owner-heard",
+   "reason": "the owner heard 43:88 and 43:89 lit late (12 Nov 2026); whisper large-v3-turbo with word times: 43:88 (وقيله يا رب) from 3,309.4 s after a pause 3,300.6-3,309.8 s; 43:89 (فاصفح عنهم) from 3,335.8 s, the pause before it ending at 3,335.9 s (less 70 ms)",
+   "evidence": {}
   }
  ]
 }
