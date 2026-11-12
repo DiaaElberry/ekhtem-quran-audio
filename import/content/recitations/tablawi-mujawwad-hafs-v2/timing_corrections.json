@@ -1,0 +1,27 @@
+{
+ "reviewDate": "2026-11-11",
+ "reviewer": "found by machine (audio_check.json gap audit; the voice in each gap recognized by faster-whisper); not heard by anyone yet",
+ "tool": "tools/prepare_recitation_set.py applies this file (SETS timingCorrections); only timing numbers change, the MP3s stay unmodified",
+ "criterion": {
+  "gapWithVoice": "As for Al-Husary mujawwad: a gap over 20 s that holds voice ends the ayah before it 0.3 s after that voice, so the app's break skip (over 20 s) never skips recitation; a return to earlier ayat stays lit on the ayah before it."
+ },
+ "corrections": [],
+ "superseded": [
+  {
+   "ayah": "7:157",
+   "note": "replaced by measured rows (measured_timings.json): the release's rows there were up to 2 minutes off"
+  },
+  {
+   "ayah": "7:158",
+   "note": "replaced by measured rows (measured_timings.json): the release's rows there were up to 2 minutes off"
+  },
+  {
+   "ayah": "10:5",
+   "note": "replaced by measured rows (measured_timings.json): the release's rows there were up to 2 minutes off"
+  },
+  {
+   "ayah": "24:62",
+   "note": "replaced by measured rows (measured_timings.json): the release's rows there were up to 2 minutes off"
+  }
+ ]
+}

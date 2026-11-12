@@ -41,7 +41,9 @@ def notes(set_id: str, spec: dict, manifest: dict) -> tuple[str, str]:
         f"{spec['reciterAr']} — {spec['reciterEn']}",
         "",
         f"Riwayah: Hafs an Asim. Style: {style}. All 114 surahs, one MP3 per surah (`001.mp3` … `114.mp3`), {total:,} bytes.",
-        f"Source: mp3quran.net (moshaf {spec['moshaf']}), `{spec['server']}NNN.mp3`, unmodified. mp3quran.net lets any visitor or "
+        f"Source: mp3quran.net (moshaf {spec['moshaf']}), `{spec['server']}NNN.mp3`"
+        + (" (MP3Quran's constant-bitrate copy `NNN-64k.mp3` for " + ("every surah" if spec.get("copy64") is True else "surah " + ", ".join(map(str, spec["copy64"]))) + ", the same audio)" if spec.get("copy64") else "")
+        + ", unmodified. mp3quran.net lets any visitor or "
         "developer copy and use its material (its privacy page, Copyrights); this is its statement, not a licence from the reciter "
         "or the recording's producer.",
         f"Ayah timings: MP3Quran timing release {prs.TIMING_RELEASE} (recitation {spec['timingRelease']}), made for exactly these "
@@ -70,7 +72,7 @@ def main() -> None:
     for track in manifest["tracks"]:
         target = folder / track["file"]
         if not (target.is_file() and target.stat().st_size == track["size"]):
-            prs._fetch(spec["server"] + track["file"], target, {}, expected_size=track["size"])
+            prs._fetch(prs.source_url(spec, track["surah"]), target, {}, expected_size=track["size"])
         digest = hashlib.sha256(target.read_bytes()).hexdigest()
         if digest != track["sha256"]:
             sys.exit(f"{set_id}/{track['file']}: sha256 {digest} is not the prepared file's {track['sha256']}")

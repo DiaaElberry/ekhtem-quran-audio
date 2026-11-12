@@ -217,6 +217,19 @@ SETS = {
         "timingFile": "verse_timestamps_tablawi_mujawwad.json", "style": "mujawwad",
         "reciterAr": "مُحَمَّد مَحْمُود الطَّبْلَاوِيّ (مُجَوَّد)", "reciterEn": "Mohamed Mahmoud Al-Tablawi (Mujawwad)",
     },
+    # 4.0.8 (owner, 12 Nov 2026): the variable-bitrate originals seek seconds off (Al-Tablawi's mujawwad up to 61 s, Yasser Al-Dosari's
+    # 004 up to 25 s), so these releases hold MP3Quran's identical constant-bitrate 64 kbps copies of those files instead.
+    "tablawi-mujawwad-hafs-v2": {
+        "moshaf": 10912, "reciterId": 106, "server": "https://cdn.mp3quran.net/audio/muhammad-tablawi/r2/", "qud": None, "timingRelease": 301,
+        "copy64": True, "releaseRejected": [60, 63], "fallback": "measured", "timingCorrections": "timing_corrections.json",
+        "timingFile": "verse_timestamps_tablawi_mujawwad.json", "style": "mujawwad",
+        "reciterAr": "مُحَمَّد مَحْمُود الطَّبْلَاوِيّ (مُجَوَّد)", "reciterEn": "Mohamed Mahmoud Al-Tablawi (Mujawwad)",
+    },
+    "yasser-dosari-hafs-v2": {
+        "moshaf": 92, "reciterId": 92, "server": "https://cdn.mp3quran.net/audio/yasser-dosari/r1/", "qud": None, "timingRelease": 89,
+        "copy64": [4], "timingFile": "verse_timestamps_yasser_dosari.json",
+        "reciterAr": "يَاسِر الدَّوْسَرِيّ", "reciterEn": "Yasser Al-Dosari",
+    },
     "yasser-dosari-hafs-v1": {
         "moshaf": 92, "reciterId": 92, "server": "https://cdn.mp3quran.net/audio/yasser-dosari/r1/", "qud": None, "timingRelease": 89,
         "timingFile": "verse_timestamps_yasser_dosari.json",
@@ -262,6 +275,20 @@ def _fetch(url: str, target: Path, log: dict, expected_size: int | None = None) 
                 raise
             print(f"retry {attempt + 1} {url}: {error}", file=sys.stderr, flush=True)
             time.sleep(5 * (attempt + 1))
+
+
+def source_url(spec: dict, surah: int) -> str:
+    """Where a surah's file is fetched. `copy64` (all surahs, or a list): MP3Quran's own constant-bitrate 64 kbps copy (NNN-64k.mp3),
+    the same audio as the file the timings were made for, used where that file is variable-bitrate and the players' seeks miss
+    (owner, 12 Nov 2026); it is published as NNN.mp3 like every file."""
+    copy = spec.get("copy64")
+    use = copy is True or (isinstance(copy, list) and surah in copy)
+    return f"{spec['server']}{surah:03}{'-64k' if use else ''}.mp3"
+
+
+def uses_copy64(spec: dict, surah: int) -> bool:
+    copy = spec.get("copy64")
+    return copy is True or (isinstance(copy, list) and surah in copy)
 
 
 def _write_log(staging: Path, name: str, log: dict) -> None:
@@ -321,7 +348,7 @@ def download(staging: Path, set_ids: list[str]) -> None:
 
         def one(surah: int) -> None:
             target = audio / f"{surah:03}.mp3"
-            url = spec["server"] + target.name
+            url = source_url(spec, surah)
             if target.is_file():
                 # Already staged: record the server's current headers without fetching the body again.
                 request = urllib.request.Request(url, method="HEAD", headers={"User-Agent": USER_AGENT})
@@ -1067,7 +1094,7 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
         pauses.append({"surah": surah, **pause_alignment(
             activity, info["sampleRateHz"], [r["startMs"] for r in rows if r["surah"] == surah and r["ayah"] >= 2],
             [e["start_time"] for e in mp3quran if e["ayah"] >= 2])})
-        url = f"{spec['server']}{surah:03}.mp3"
+        url = source_url(spec, surah)
         fetched = audio_log.get(url, {})
         headers = fetched.get("headers", {})
         assert fetched.get("bytes") in (None, info["sizeBytes"]), f"{url}: staged size differs from the fetch log"
@@ -1079,10 +1106,20 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
     if release:
         # The release names the bytes each surah was aligned to: these files must be exactly those.
         mismatched = []
+        copies = []
         for t in tracks:
             if t["surahNumber"] in spec.get("releaseRejected", []):
                 continue
-            aligned = release["doc"]["surahs"][str(t["surahNumber"])]["word_timings"]["audio"]
+            timed = release["doc"]["surahs"][str(t["surahNumber"])]["word_timings"]
+            aligned = timed["audio"]
+            if uses_copy64(spec, t["surahNumber"]):
+                # Not the aligned bytes but MP3Quran's 64 kbps copy of them: the same audio, so it must last as long (within 50 ms).
+                gap = round(t["durationSeconds"] * 1000) - timed["duration_ms"]
+                copies.append({"surah": t["surahNumber"], "durationMs": round(t["durationSeconds"] * 1000), "alignedDurationMs": timed["duration_ms"],
+                               "gapMs": gap})
+                if abs(gap) > 50:
+                    mismatched.append(t["surahNumber"])
+                continue
             if (aligned["sha256"], aligned["bytes"]) != (t["sha256"], t["sizeBytes"]):
                 mismatched.append(t["surahNumber"])
         if mismatched:
@@ -1090,8 +1127,12 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
         rejected_listed = sorted(int(x.split(":")[0]) for x in release["manifestStatus"]["notAccepted"])
         if rejected_listed != sorted(spec.get("releaseRejected", [])):
             problems.append(f"timing release manifest: {release['manifestStatus']}, expected rejected {spec.get('releaseRejected', [])}")
-        audio_identity = {"filesMatchingAlignedSha256AndSize": 114 - len(spec.get("releaseRejected", [])) - len(mismatched),
-                          "mismatched": mismatched, "notTimedByTheRelease": spec.get("releaseRejected", [])}
+        audio_identity = {"filesMatchingAlignedSha256AndSize": 114 - len(spec.get("releaseRejected", [])) - len(mismatched) - len(copies),
+                          "mismatched": mismatched, "notTimedByTheRelease": spec.get("releaseRejected", []),
+                          **({"copies64k": {"files": len(copies), "largestGapMs": max((abs(c["gapMs"]) for c in copies), default=0),
+                                            "note": "MP3Quran's NNN-64k.mp3, constant bitrate: the aligned file's audio, same length; checked on "
+                                                    "11-12 Nov 2026 for 060 of Al-Tablawi's mujawwad and 004 of Yasser Al-Dosari by envelope "
+                                                    "correlation: 0 ms, r = 1.0000"}} if copies else {})}
     shifted = []
     for shift in spec.get("shifts", []):
         moved = [r for r in rows if r["surah"] == shift["surah"] and r["ayah"] >= shift["fromAyah"]]
