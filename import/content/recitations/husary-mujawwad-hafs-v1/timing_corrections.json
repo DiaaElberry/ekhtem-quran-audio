@@ -30,6 +30,46 @@
     ],
     "nextAyahStartMs": 6439960
    }
+  },
+  {
+   "ayah": "2:232",
+   "field": "end",
+   "old": 13058034,
+   "new": 13056030,
+   "deltaMs": -2004,
+   "kind": "owner-heard",
+   "reason": "the owner heard 2:233 and 2:234 lit a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «والوالدات» heard from 13,057.9 s; the pause before it ends at 13,056.1 s (less 70 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "2:233",
+   "field": "start",
+   "old": 13058034,
+   "new": 13056030,
+   "deltaMs": -2004,
+   "kind": "owner-heard",
+   "reason": "the owner heard 2:233 and 2:234 lit a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «والوالدات» heard from 13,057.9 s; the pause before it ends at 13,056.1 s (less 70 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "2:233",
+   "field": "end",
+   "old": 13261234,
+   "new": 13259330,
+   "deltaMs": -1904,
+   "kind": "owner-heard",
+   "reason": "the owner heard 2:233 and 2:234 lit a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «والذين يتوفون» heard from 13,261.2 s; the pause before it ends at 13,259.4 s (less 70 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "2:234",
+   "field": "start",
+   "old": 13261234,
+   "new": 13259330,
+   "deltaMs": -1904,
+   "kind": "owner-heard",
+   "reason": "the owner heard 2:233 and 2:234 lit a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «والذين يتوفون» heard from 13,261.2 s; the pause before it ends at 13,259.4 s (less 70 ms)",
+   "evidence": {}
   }
  ],
  "superseded": [

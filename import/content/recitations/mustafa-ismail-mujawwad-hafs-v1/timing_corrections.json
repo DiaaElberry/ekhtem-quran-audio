@@ -268,6 +268,66 @@
    "kind": "owner-heard",
    "reason": "the owner heard 10:42-43 lit a little late, and in 10:49 the highlight move to 10:50 halfway, 10:51-53 a little late (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «ويستنبئونك» heard from 3,267.9 s; the pause before it ends at 3,264.7 s; the start is the end of that pause less 70 ms",
    "evidence": {}
+  },
+  {
+   "ayah": "57:2",
+   "field": "end",
+   "old": 71530,
+   "new": 78530,
+   "deltaMs": 7000,
+   "kind": "owner-heard",
+   "reason": "the owner heard 57:3 and 57:5 lit a little off (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: 57:2 ends with «قدير» drawn out to 75.1 s, then a pause to 78.6 s; «هو الأول» from 79.2 s, so 57:3 starts as that pause ends (less 70 ms), not at 71.5 s during «قدير»",
+   "evidence": {}
+  },
+  {
+   "ayah": "57:3",
+   "field": "start",
+   "old": 71530,
+   "new": 78530,
+   "deltaMs": 7000,
+   "kind": "owner-heard",
+   "reason": "the owner heard 57:3 and 57:5 lit a little off (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: 57:2 ends with «قدير» drawn out to 75.1 s, then a pause to 78.6 s; «هو الأول» from 79.2 s, so 57:3 starts as that pause ends (less 70 ms), not at 71.5 s during «قدير»",
+   "evidence": {}
+  },
+  {
+   "ayah": "57:3",
+   "field": "end",
+   "old": 125120,
+   "new": 124200,
+   "deltaMs": -920,
+   "kind": "owner-heard",
+   "reason": "the owner heard 57:3 and 57:5 lit a little off (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «هو الذي خلق» heard from 124.3 s, a soft start inside the measured pause (less 100 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "57:4",
+   "field": "start",
+   "old": 125120,
+   "new": 124200,
+   "deltaMs": -920,
+   "kind": "owner-heard",
+   "reason": "the owner heard 57:3 and 57:5 lit a little off (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «هو الذي خلق» heard from 124.3 s, a soft start inside the measured pause (less 100 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "57:4",
+   "field": "end",
+   "old": 237440,
+   "new": 234300,
+   "deltaMs": -3140,
+   "kind": "owner-heard",
+   "reason": "the owner heard 57:3 and 57:5 lit a little off (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «له ملك» heard from 234.4 s, a soft start inside the measured pause (less 100 ms)",
+   "evidence": {}
+  },
+  {
+   "ayah": "57:5",
+   "field": "start",
+   "old": 237440,
+   "new": 234300,
+   "deltaMs": -3140,
+   "kind": "owner-heard",
+   "reason": "the owner heard 57:3 and 57:5 lit a little off (12 Nov 2026); whisper large-v3-turbo words and the file's pauses: «له ملك» heard from 234.4 s, a soft start inside the measured pause (less 100 ms)",
+   "evidence": {}
   }
  ]
 }
