@@ -230,6 +230,13 @@ SETS = {
         "copy64": [4], "copyOf": "yasser-dosari-hafs-v1", "timingFile": "verse_timestamps_yasser_dosari.json",
         "reciterAr": "يَاسِر الدَّوْسَرِيّ", "reciterEn": "Yasser Al-Dosari",
     },
+    # Al-Insan (076) is variable-bitrate with no Xing table and a first frame of 128 kbps against an average of 191: players think it
+    # lasts 448 s, not 300.6, so a jump lands about a third early, two ayat back (owner, 12 Nov 2026). MP3Quran's 64 kbps copy replaces it.
+    "muaiqly-murattal-hafs-v2": {
+        "moshaf": 102, "reciterId": 102, "server": "https://cdn.mp3quran.net/audio/maher-muaiqly/r1/", "qud": None, "timingRelease": 97,
+        "copy64": [76], "copyOf": "muaiqly-murattal-hafs-v1", "timingFile": "verse_timestamps_muaiqly_murattal.json",
+        "reciterAr": "مَاهِر الْمُعَيْقِلِيّ (مُرَتَّل)", "reciterEn": "Maher Al-Muaiqly (Murattal)",
+    },
     "yasser-dosari-hafs-v1": {
         "moshaf": 92, "reciterId": 92, "server": "https://cdn.mp3quran.net/audio/yasser-dosari/r1/", "qud": None, "timingRelease": 89,
         "timingFile": "verse_timestamps_yasser_dosari.json",
