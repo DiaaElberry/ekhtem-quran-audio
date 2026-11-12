@@ -5,7 +5,7 @@
  "publicBase": "https://audio.ekhtemalquran.stream/",
  "sets": 26,
  "count": 2964,
- "totalBytes": 43008722349,
+ "totalBytes": 43787880934,
  "files": [
   {
    "key": "husary-hafs-v2/001.mp3",
@@ -19160,1597 +19160,1597 @@
    "sha256": "673775ecbe7cb7d47bd4e5baa99c02ec06ed41827e8aa9f8e3ff170a477ab8cd"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/001.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/001.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "001.mp3",
-   "size": 513797,
-   "sha256": "f701f33c70c4095732d1c3b7fe230e46f850e9bf1eef5cbeafcc2e435e88bc56"
+   "size": 838253,
+   "sha256": "2e9e19ac53cea5816f5523213cbecb29dd24e675efeecdb33f64b5493b0c2ac1"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/002.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/002.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "002.mp3",
-   "size": 104686356,
-   "sha256": "3e8cf5a3919174261b084bdf739c138aa45bbb8d52bc25b4c81052f2e5f2cdc3"
+   "size": 156818355,
+   "sha256": "811c0d2df79d334fd5319d49294de9a3e9d580c076b92253e0679c4d618ca50b"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/003.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/003.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "003.mp3",
-   "size": 51511648,
-   "sha256": "cabcd7ddc64b9448f7791fb45825e6ec702ddb9f87c78512168517d5be0d0592"
+   "size": 85844763,
+   "sha256": "3c782e8fdc417f0e1d8d752b961aff70a2b749609eaa19d7e16c4d6d3831dd35"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/004.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/004.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "004.mp3",
-   "size": 53279546,
-   "sha256": "0eb060dee0c15294aaec808eb4fcc6d8ad8e297932c68b0f0dd585ac59e260ff"
+   "size": 89304493,
+   "sha256": "0a39b7c34ca3f17adbabf9a38e393d7bd8d795d61698e60a5bb6dd1d13cba0ed"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/005.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/005.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "005.mp3",
-   "size": 42946362,
-   "sha256": "17f7e06d7db1c7d6152432da0a778e7ec5c9dbd7d31d5bbb8c5e8afa5a5054db"
+   "size": 69937954,
+   "sha256": "22611b5fbccbd1ceddd72b6002c7d28dbcde23b784bcb960c442933d382a12cb"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/006.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/006.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "006.mp3",
-   "size": 51812222,
-   "sha256": "571b825ce13e534f7174effbeefb34f4fd3051ce9a1bc0d5461d99b1480cab65"
+   "size": 78783029,
+   "sha256": "94f6ec130e04617f05ec44bd40960a8fd478ac6e49d8db6321d43d170d3d591a"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/007.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/007.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "007.mp3",
-   "size": 54686428,
-   "sha256": "98f7fe29d45f7ce3ae034103660f16e1dba1a4c638c0026566a315c9da8ca250"
+   "size": 86736438,
+   "sha256": "18bdcd8e0cb3a74a98da06586bef72d23a7f9879fb5377c41e7fa63d61acf959"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/008.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/008.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "008.mp3",
-   "size": 21607018,
-   "sha256": "b9245eb693d842a6846d65ac98dfff1f2e764cd2124dc4cf20bc8149fdab4849"
+   "size": 34183608,
+   "sha256": "a94c842dd75df1a2c0c73349aa123be7c502580bf4ca74a6daffe1e072902091"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/009.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/009.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "009.mp3",
-   "size": 43270732,
-   "sha256": "20d5092bbbbac43a1a12e5b52181624d155c93355404716eb671b040f0426233"
+   "size": 66710324,
+   "sha256": "1d185b3bb10d821c74ce4849b077e4877e7ab00cb4d9c7c909a2915fa98b6d8c"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/010.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/010.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "010.mp3",
-   "size": 31255156,
-   "sha256": "f5e49420d1d41d9e246db660d63245beafe564fbaadae79b60923a1987e051fb"
+   "size": 49252359,
+   "sha256": "5f47edf53f98a0b6e0178f84b8d6bc2041a4baebdc429c515927a0c66fd42f52"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/011.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/011.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "011.mp3",
-   "size": 32108532,
-   "sha256": "09a38331bd465876a1717091934ef08604b0d12a7474bff7de04f380ebe97941"
+   "size": 50144253,
+   "sha256": "1ab49734df3df0b7661111bf9d33dd5fa92ec91e25fcce879284c6c5904aec84"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/012.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/012.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "012.mp3",
-   "size": 25185672,
-   "sha256": "ed28cc06d24fc26cf3dbb9fb6ebd3d1c5e769f665fad9a846c08678666094a44"
+   "size": 43882276,
+   "sha256": "94eef369861ec66b0a91d9dd12d5cb2cdcb0ce73c0daff1a1e2de195a5f66e1f"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/013.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/013.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "013.mp3",
-   "size": 12203038,
-   "sha256": "b158736c8a3d5bb0c8f061d1c5c20054102234ee525ea50b5ee4bf405daea76b"
+   "size": 20060689,
+   "sha256": "7f7a2732d82a7437b884992c65285f19bed5fc2966ac4a49ae3c13b5cc80ad31"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/014.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/014.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "014.mp3",
-   "size": 12010584,
-   "sha256": "cfd83633331589186f476e575aefa0796ce583e7e027a4d3d75afbec1f69675c"
+   "size": 19935661,
+   "sha256": "32294944d3bc18d0b64fa874d12199a088801f122e90dcf886b1f94789d506a8"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/015.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/015.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "015.mp3",
-   "size": 9725742,
-   "sha256": "38f447657e641d89ed3ef2ab81c1443b06fddd0d84dfd139b98c7f1767144cd8"
+   "size": 16404821,
+   "sha256": "3ae794fadc6e09c70386efb3566032856ccaaa3b35e9afd25f565c873803e250"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/016.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/016.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "016.mp3",
-   "size": 26525026,
-   "sha256": "364a6c17c7d1da6919c9992eff3f0f634d21e9243286c575df46168e03cd599c"
+   "size": 44705098,
+   "sha256": "4bf62d5b324e01c27da65a8c7c56590e445b78d7f333b515b01a55bec6c6d2b0"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/017.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/017.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "017.mp3",
-   "size": 22127036,
-   "sha256": "383ceaca30c839a861a8fc7ee7b2d6d4d67e5169f961ffa6fe8a606f937c4ef1"
+   "size": 38089175,
+   "sha256": "e93f3d090891308d304a2bc7da356d9190a5ad8294b39459602b85d7c649574d"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/018.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/018.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "018.mp3",
-   "size": 22309240,
-   "sha256": "990791d269d298b474d8c2bb3684cb76e2e9da517fd68ff7653f97fb176f3fc7"
+   "size": 37143982,
+   "sha256": "8b89d28353eee8563babdceb1c9cbe3ca12d9bf2d784597d4a9bfb7d5eaab6c4"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/019.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/019.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "019.mp3",
-   "size": 13881916,
-   "sha256": "f8715e4632fdfbe3b460d0e7bfc86afde01bd6e8fce13560f1d4882eda0a101c"
+   "size": 22485927,
+   "sha256": "06750c1256d0671514e752c9be23f83ad0617c96e7e6edcb72ef5823c993e086"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/020.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/020.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "020.mp3",
-   "size": 19377134,
-   "sha256": "57421af630ec00f6b7ea42ab7afb64428baa0477fa7bb3654953f48d03aad83d"
+   "size": 31562493,
+   "sha256": "69c7f62b00dfa6d4eda141c7f96a829587b8c8a980d9a9c878b4a63d0c935d2a"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/021.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/021.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "021.mp3",
-   "size": 19492762,
-   "sha256": "de6b46fe019cc2976e41dce16d84fe658deb4b007d296f387d2bcda7a7998d20"
+   "size": 32008090,
+   "sha256": "b8e489d208d0f555097ad1eea663dca7ca31379ebc266f33dde0edf07a48344a"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/022.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/022.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "022.mp3",
-   "size": 19412690,
-   "sha256": "59e955f2ba659886600cbb2d6785a6cf007774cffbd8b437a1dc21f616a6efff"
+   "size": 31366130,
+   "sha256": "25df659d21b3267ff45cb233717f4a7c9d1b245f9e8a1876509029a2c7a2ced1"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/023.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/023.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "023.mp3",
-   "size": 16957928,
-   "sha256": "f4d00b069803c502e5732389004b209e103fd73f283cee5a097a121dcbdc12df"
+   "size": 28014227,
+   "sha256": "4d5dc2ad217657fd47bf0acc43e156b3a94a675df3c8e4552705f6590eb81e4e"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/024.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/024.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "024.mp3",
-   "size": 19689652,
-   "sha256": "b878b53756ff0880ab2afc63b3e370a37d4be8d5a16b0d5ead449cc107c6032d"
+   "size": 32329413,
+   "sha256": "bbe9846ad85b6fd59ff510706c7c2a381feb63d3b6d87678488bb39dc8568be0"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/025.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/025.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "025.mp3",
-   "size": 12951064,
-   "sha256": "e9bee8a4968b68901817746c5a655e111db7b92ac9b1a1a7bbf3d42e81b8014b"
+   "size": 20666901,
+   "sha256": "2a942610e6e903cecbc61a4e15662304776a1237af4630d3755c1cd5e8066530"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/026.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/026.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "026.mp3",
-   "size": 19497724,
-   "sha256": "6aeef25a47cb3fda1fbfd1608eba9e15d2a1d6fbc11ff1bda4787508e86965f3"
+   "size": 32614902,
+   "sha256": "53781f4c7b1dbe26a42a35bfe57dbf7d1d1f660a0d2a089757868ca4b186d7c3"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/027.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/027.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "027.mp3",
-   "size": 16486498,
-   "sha256": "66a535a4bc86907a048f1e204c52cfc860e81e9232c2f5943e73ac833b9bb815"
+   "size": 27585802,
+   "sha256": "80704b3ad136bb61173b421baca935c8d0f7d6f4a874287793523d8cf94a32c6"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/028.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/028.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "028.mp3",
-   "size": 19928244,
-   "sha256": "fc792d115d2744940e8cbdd7335bdf67e619dd6b34c028324412726b831e0150"
+   "size": 33149426,
+   "sha256": "1644d9e64639685da9ceada413c4c3c022d1d7e5a640aa21ec6d1d08e678b0d7"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/029.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/029.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "029.mp3",
-   "size": 13359370,
-   "sha256": "bcabc301d71b27a2cae0d0f1f74ff3e45b9fc15e83fa1ef5f214ae25b5d7680d"
+   "size": 22218106,
+   "sha256": "3abda76e05d3e27433eece5018ca9eae2bf3a974337724263122da6ebd3cda4a"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/030.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/030.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "030.mp3",
-   "size": 11049998,
-   "sha256": "1280e33e6f88abea26a035cf106b318e89b29c56bc1bdda6e25d2159bc8e2544"
+   "size": 18990444,
+   "sha256": "c0af06176e4356133a55926edfc79478700d584b8da5e8943526c00f525b1410"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/031.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/031.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "031.mp3",
-   "size": 6962686,
-   "sha256": "ecfb63ae8858d7438dd33050aa3a879ffa3b4ee1c6aec483ad846d8460e69535"
+   "size": 12708331,
+   "sha256": "7d6cd03a54afbd0270bb28671ba7465e03e028f28efda0ebe79c20329a4b827f"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/032.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/032.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "032.mp3",
-   "size": 5462844,
-   "sha256": "f12d4335356a1f5ffaa6c52de621ed3d6b3142492936a980642c243f0b963bec"
+   "size": 8897529,
+   "sha256": "13dafe3159149b22a426ef69410fb9b69ef6b4c83e0faf877d07175a5e07a75b"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/033.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/033.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "033.mp3",
-   "size": 20999876,
-   "sha256": "433921b6fb8266d6cc0c955f87d4e05360bb78078f546a02f3c46274f865144d"
+   "size": 34237463,
+   "sha256": "dab489dd4b58cd09d68ddaf1bf1491b9fbca92892c66a36d15d6e9de0a400c8e"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/034.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/034.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "034.mp3",
-   "size": 11389452,
-   "sha256": "70e06519c8d7ef1cc7454f7c94a5ba446291bfe00e0b62aea83e2cd93575d55b"
+   "size": 19454436,
+   "sha256": "88f4fa402546dab1dd989409db33150885d9700aae451b91f28753343e4b7e13"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/035.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/035.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "035.mp3",
-   "size": 10958018,
-   "sha256": "c700428cbe3916d2578ccd014d0acea61b808d7ab445d5b9f232fba050574f1c"
+   "size": 18937163,
+   "sha256": "e6ad31fc835e80a2ece602dde4b4884e3908ab25bfa2f2d7a5fb971e7a7c8b73"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/036.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/036.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "036.mp3",
-   "size": 11020640,
-   "sha256": "c89fb4c5407b823b4a4cf82d068f9178d1bc2b4fe526a37290271e7ab93cb8a0"
+   "size": 18901479,
+   "sha256": "80b098a55f4cb2817777487bd77d93ec74dd3bf83302d47c586d6cda2fcd957a"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/037.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/037.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "037.mp3",
-   "size": 13009648,
-   "sha256": "e269e2ff0156d37293f06e1184330125b4ce44021b89083bcd51e5c7d85ed5d6"
+   "size": 21558306,
+   "sha256": "e7e34116e56876d29b84ef26046b42d5cc2a20e44a63bc665094a8efad4163a0"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/038.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/038.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "038.mp3",
-   "size": 10667958,
-   "sha256": "c25fcc0e9f207e2f84c91ef319352671cf903fdc2a81ee4ab89fee7302ca2161"
+   "size": 17617252,
+   "sha256": "e11d5abcf1551725a5cc7272dfd239fea3d726d80c525b3ef069ff9613967a3d"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/039.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/039.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "039.mp3",
-   "size": 14843350,
-   "sha256": "576af2c2e24f509e07225b5f43d6c1cec1ab558f4a641bc93f414e14ac4011fa"
+   "size": 25035601,
+   "sha256": "6b29c35e498a7ff62ec79ef44343cc975cd42fbf2799204afdb8150f1d8b3725"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/040.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/040.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "040.mp3",
-   "size": 15981524,
-   "sha256": "5d89d3c198d85a8dbe67270c58ddab992a70c27731015a5b5b00f3c7737e4c26"
+   "size": 25945103,
+   "sha256": "ae7dd36f5b57b1295be2022bd79fa074b35b6da3ced62ce7da9114f9126d1439"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/041.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/041.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "041.mp3",
-   "size": 12242948,
-   "sha256": "ebf21b9812f66bdb7b94a13ba9774a83ee91a01400f835865a3e90ff7bbf5a63"
+   "size": 20363636,
+   "sha256": "a3a78ebe2ec2f07aac8b18c0a7619e42610fc77f9c650ecd47b5a45285953125"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/042.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/042.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "042.mp3",
-   "size": 12387654,
-   "sha256": "f0114c72f825407d9cfbff34e7268841257674ace2d5b9d2769bb0efc0810165"
+   "size": 21130614,
+   "sha256": "751aadd40de52489b7ed2260711f7ab6069a7d4ccdc6fc228582f41d50a39d4c"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/043.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/043.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "043.mp3",
-   "size": 12473498,
-   "sha256": "e78a508748f5db3a2e22795ebda71874b3ef811f40c35c832cb0488369415ea2"
+   "size": 20310073,
+   "sha256": "eb9480e7ad057a085c194aa893edcee4813f9ac58924636494c2ea96f6fcccd5"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/044.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/044.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "044.mp3",
-   "size": 5470326,
-   "sha256": "419b3337508ee2999671d470fa3613ca2ce485c4943c1fe51b3bb280c1a7a5c4"
+   "size": 8843631,
+   "sha256": "94534c3f84811743dfd3154ec4445547d3cb8544b08239ba04cb0694426af754"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/045.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/045.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "045.mp3",
-   "size": 7482630,
-   "sha256": "593c2d3159b7433adc94ed97781ecbf49d1479609585981fb3b21c390d9e3682"
+   "size": 12410230,
+   "sha256": "69855c1ddb0b129c64ebc04bbd4e3b1394d70b3edb74679d1ae2fb621d7d56d2"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/046.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/046.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "046.mp3",
-   "size": 8834982,
-   "sha256": "71bde894b65370678f636f65cf423e47093e78c8f925303934a5ceaebdad98bd"
+   "size": 14675068,
+   "sha256": "4e4fa8e56c1ba6489c2cd7e75bc813252bd7fccfdf15c6863a017444bc852e3b"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/047.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/047.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "047.mp3",
-   "size": 7371622,
-   "sha256": "6a583e3ac347cefe211c5d7453d397512312b33aec119353f4af2e964d12b0bf"
+   "size": 12374505,
+   "sha256": "0d4778f5946f70ea0beed1967cdf5c49349de7ac5f7e3e0dcf3a3bf423a20f85"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/048.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/048.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "048.mp3",
-   "size": 7569838,
-   "sha256": "c4735795f4c1d1fb9538cdb6b3226de09f02ba1e6e2be744a6a2d5e3d6867228"
+   "size": 13070353,
+   "sha256": "65a4b157a5a8dcde6d86fad0d19f5eb534496ffc97e3c7eca95302d809d77893"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/049.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/049.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "049.mp3",
-   "size": 5147886,
-   "sha256": "fa69f96508bb9646a9319f261821e04c59184ffbb40a95574d3bfc14e2874c43"
+   "size": 8772502,
+   "sha256": "e3b442a56129d4907becfb510d653197c596f8ad26127589a9314fefb05c9f6d"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/050.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/050.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "050.mp3",
-   "size": 5162010,
-   "sha256": "f86200c2a5052ad0f5f1c320258d4095e39ddce167e28b6bc6973ac4a61c8ad5"
+   "size": 8701348,
+   "sha256": "ba4d1e2171067e276f57c29cc2aec5fca3a90b62e555cc0465edf415826255a7"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/051.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/051.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "051.mp3",
-   "size": 4786540,
-   "sha256": "ee8d394c2db6b1d1bdd47b51225d61570fe1fb62561b27734d71c24fa311dab9"
+   "size": 8255266,
+   "sha256": "b4cf04cf9523f16b1e23e7fc76c8c3721e8dd112d04a76785bd66f59c4b4a91c"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/052.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/052.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "052.mp3",
-   "size": 4234438,
-   "sha256": "5a69d2e84926c7116ba3820dc4c2a7ff9793da12ce452a5eb39f31b8147f8868"
+   "size": 7363594,
+   "sha256": "9c93a107ce17e1dab67f0245d1c35641256afbabc516c2b3d4440a653f4bcdaf"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/053.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/053.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "053.mp3",
-   "size": 4817134,
-   "sha256": "ccf9464367b152924cf358780898646a798d76ae0efe75caf44c9988489b4f9a"
+   "size": 8166250,
+   "sha256": "4be02ac971852340fa71162524c648c9dc9262a3012204e5084b455238bcb729"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/054.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/054.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "054.mp3",
-   "size": 5023050,
-   "sha256": "4a1df6130b6bf1065aa37fbdf3210736c583c991a184c94703b3aee8ec69ae8d"
+   "size": 8647535,
+   "sha256": "bc3c765bd964264951b5372e94273df319e4da986ca601013feebb03d4dd83c4"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/055.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/055.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "055.mp3",
-   "size": 6655314,
-   "sha256": "b917c3c09f76ff76fdb3f7882aea1be23f38f3f5eabee5de77a33e8a7fc141b1"
+   "size": 11643324,
+   "sha256": "e11ade2e3beca7dace6edc299eefee59d81fd6385e5f3b7dad3ce71e0ca129e0"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/056.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/056.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "056.mp3",
-   "size": 5945128,
-   "sha256": "377c2bea20c21633cf0f5d82cc17049c2645b5735c4ab58a5a7a183c5b92712c"
+   "size": 10359702,
+   "sha256": "a1a538723b667c757431c56bcf84afb618aeca6dcd113187415d8264dffcbbf2"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/057.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/057.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "057.mp3",
-   "size": 7873244,
-   "sha256": "e421bacbf950de3510002e62c968107e19a401ca498dd7b58d918ebfcb22ecad"
+   "size": 13694449,
+   "sha256": "54b81966a04c604c8bd6890cf884cef0836175ee2ecae993a65cce5d2691010d"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/058.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/058.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "058.mp3",
-   "size": 6740068,
-   "sha256": "b028e4f34b58792d3ad3ff29b92d4ec33915a4225bac023e34aa7d4462f8fddb"
+   "size": 11536195,
+   "sha256": "ebc0b96fa4af79bccd8933fad657dbc83d5d24d91f3fa380e72413345425996c"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/059.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/059.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "059.mp3",
-   "size": 6434692,
-   "sha256": "88373ea1fe3a2aeee509dec724de2a5a750523cbfd3b0b9188019e4ad125b1fb"
+   "size": 11287060,
+   "sha256": "9bb60346bee4b1e1f970dfaa0633a885448ea583d317218881151ee6373b2099"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/060.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/060.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "060.mp3",
-   "size": 5740218,
-   "sha256": "07a770e7ffe2289dde6167c9694d6ec0f45da3662316be8cd833683f729fe55b"
+   "size": 9788906,
+   "sha256": "3e3392aa85de6125b93f740dc3c40be06fcd95d53bbc5d2015afc8036000b56b"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/061.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/061.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "061.mp3",
-   "size": 2967624,
-   "sha256": "749df14eb7698aa3e7d24ebedcd74ee1b31713ebd6fc759957d5bc9da4f2af48"
+   "size": 5331211,
+   "sha256": "73f73a2367e8aba3804b92790b57593305ddac4fc5ca6cb1cb78d21ed2d2fb67"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/062.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/062.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "062.mp3",
-   "size": 2166416,
-   "sha256": "f0a034e7750d508eff655cfe1eeb043091d7428e2fca73480fdfdcfb7639c3c8"
+   "size": 3886609,
+   "sha256": "3fbf4c3fdbbc5ff014e84c506fe8be2cf5e53389c5ea4bca99dfd23295c5291e"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/063.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/063.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "063.mp3",
-   "size": 2573460,
-   "sha256": "5381e0b7376aba31920c3a6c67affdcbef38ee4e694fd536167e63950c214904"
+   "size": 4492866,
+   "sha256": "023163639c69b25359b818c5fb76baca5a3259e161004e7894da0888424e0feb"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/064.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/064.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "064.mp3",
-   "size": 2995920,
-   "sha256": "cf58089274769ca4b8193d44d628bfef106c6de0f6529b77ace9c27a806df5ca"
+   "size": 5384224,
+   "sha256": "d5b0b42dd3e5351997a7167426a545baf75c1e1b0ff8da6fa1b340f7de619762"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/065.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/065.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "065.mp3",
-   "size": 3855002,
-   "sha256": "639e012a916b4465e107c0865bbbc3c7bfddba7ee0622cd35bfc03fb3fca4e8e"
+   "size": 6757396,
+   "sha256": "62359e5a28a847a77bea08fa12441af37c7718ed19c5ff35e4470799c3dea94a"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/066.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/066.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "066.mp3",
-   "size": 4483178,
-   "sha256": "afc578e094750458c6b79248194fdaae9e9787cc97cca0211c7f517b5d91029d"
+   "size": 7791611,
+   "sha256": "1fbf33588267643d43fd8a04d517250df1cb90156dc939fb6a33e41cf4e615a6"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/067.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/067.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "067.mp3",
-   "size": 4957564,
-   "sha256": "f57c6f1a89f17309c6c74dc790a8fd6a9423621e27f0912629e9a2e8c3bfbeeb"
+   "size": 8701390,
+   "sha256": "c75c9fa7d33d53637326e8677027103cbd3d9f43c5e291aa5dce7425280e8d8f"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/068.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/068.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "068.mp3",
-   "size": 4988308,
-   "sha256": "e4a913fe05326d395e1db365ffd020417a0c07d54e48adcf8c3dcb707737b043"
+   "size": 8273422,
+   "sha256": "ac49417d79830c23731f10cad1cb9de13b695eff1e5b0730ec96c7a3917aabe1"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/069.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/069.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "069.mp3",
-   "size": 5266248,
-   "sha256": "b1651fc880826c2d34a1168a25cf94305c0b7128d004cc40e77f985e71f7e514"
+   "size": 8808249,
+   "sha256": "16616138af8ce5c920940534729f71977e09182b7e5ea17fd21ce335a2c95ac9"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/070.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/070.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "070.mp3",
-   "size": 3948226,
-   "sha256": "25d9ee41f20f9a290031b4deb6fb86c3da790ee5a97cb88a978d948c7b3a99d2"
+   "size": 6650271,
+   "sha256": "68265b8810f74d96881e831625c29a087656f359a7df2d77f0e8daa81de1b4cd"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/071.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/071.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "071.mp3",
-   "size": 4330498,
-   "sha256": "bd730ddb84098f15a1f35000df74066ca11dd963e4b3c1bcb2f54abc42ceaf86"
+   "size": 7453187,
+   "sha256": "2c7178536282217ef23a7fcb2b2eafe764e815dc89dfef628e3709d5a9274ad8"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/072.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/072.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "072.mp3",
-   "size": 4234142,
-   "sha256": "dbe19c907a26b6da45dd018b61a7456c495404b777dc162be538503a9e14db42"
+   "size": 7132076,
+   "sha256": "b8602af3e92c08658b31fb654dc0007e9c3da8ab2514c7b62e38446de1aba538"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/073.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/073.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "073.mp3",
-   "size": 3020346,
-   "sha256": "d420d4dee5d00acf3f962b5f2610a2c47b99830cb8e11cf15c6ff03dff8263bf"
+   "size": 5045832,
+   "sha256": "2accf1b5e835b63e1dcc03df44499a665c511b09987f072f4a4b34bef9cf21d4"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/074.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/074.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "074.mp3",
-   "size": 3484982,
-   "sha256": "67f16007acbcabc8a24558f71175cdb5be477547cc58b84ede1062c3cace499a"
+   "size": 5776768,
+   "sha256": "fc50bcd784943732979b20f4448a4143b75090435804637e0b09ddb5b4abb2c7"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/075.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/075.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "075.mp3",
-   "size": 2283222,
-   "sha256": "7fdc31db12982df3b8874f19c032ea5649fae571b3a4ef68e367156148e244a0"
+   "size": 3886621,
+   "sha256": "eeca6e3b98d901cbaf7d56011d312f695a7243e65486da486bd5c11ffd593a49"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/076.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/076.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "076.mp3",
-   "size": 3572892,
-   "sha256": "11ef9faa46f178addebc6f81f3784d8abd4dbeabbf04f417ad7ecb1afde4cc1b"
+   "size": 6115150,
+   "sha256": "4fb1ce5aa25fd8e781889c33d8f10a4a7573fda0a7336a57c55836e27b128577"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/077.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/077.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "077.mp3",
-   "size": 3275890,
-   "sha256": "a4b43f8eb14c8ff0e3492ea746dda2dc65e13463f6b506abf788fa5a3f4b2011"
+   "size": 5633920,
+   "sha256": "5fe7ef5d7cfa45ce7536f9f2fabda3393522b84a67cb673bfb6248badaf59a64"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/078.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/078.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "078.mp3",
-   "size": 5161266,
-   "sha256": "d00b368f97ac553e84a77660f1ce8d1e1f1aaf6325b2608de64805757730de8c"
+   "size": 8897525,
+   "sha256": "202645e378556f337e7ace7b86ae7dd57dd224e38bc53e4515b324becabea6c6"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/079.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/079.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "079.mp3",
-   "size": 2875824,
-   "sha256": "fa42ea59d8e5d1cd1bea85654003f13247e4906502f5a0570183babe57981b12"
+   "size": 4670849,
+   "sha256": "bb61b6ab34a12b53db545ac8461b696ec4665f0c11dd9718e0384664586178b3"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/080.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/080.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "080.mp3",
-   "size": 2188080,
-   "sha256": "f0a4d2f70e8ac554fdf389cabfb31cd2455499f5d096800d87d6062f7d02ec4c"
+   "size": 3600906,
+   "sha256": "1511eaae363277f43474a8a1c82ffc22dc2b07b961ed81c3e403906976fbc0e6"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/081.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/081.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "081.mp3",
-   "size": 2965084,
-   "sha256": "20e5263dc348c68e1dcf1860b149873d176e89331fa28a33417ce240d2bd259e"
+   "size": 4849128,
+   "sha256": "b0dee0f763baef49c77ae357324efba477bd927904417cb4200b0e1242d80800"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/082.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/082.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "082.mp3",
-   "size": 1706712,
-   "sha256": "367c53e2d21c272b12bd5eecdc82e69c2caa30f3557250b72b7e65b32c8e0e53"
+   "size": 2887547,
+   "sha256": "382b09cd658cb766c9ffe4c5a6525653983d90e61b2c04496eb990477f9d1ce7"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/083.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/083.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "083.mp3",
-   "size": 3256576,
-   "sha256": "453effe6054d1bd4d4622bcb3960991e35f303304d879735af25b30c93bf1582"
+   "size": 5580361,
+   "sha256": "15a89991bbab2e6072bc24d88edcdf7b09bc9a78c374277c199cbaa7a0bf8eb0"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/084.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/084.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "084.mp3",
-   "size": 1799000,
-   "sha256": "23dd1470339e708c9220d4e297f3cfa9dbe44f60b571f12221fb787c19e73fd5"
+   "size": 3208677,
+   "sha256": "1438beed40758a8730a5f8863e965dd1cebf9638ac1e6093bad480dd1c0d31c0"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/085.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/085.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "085.mp3",
-   "size": 1385912,
-   "sha256": "9f4a0e0477de3d2ed963b2f47a34527c9bd3d32c47a1869d4820e885cb4c5dff"
+   "size": 2317303,
+   "sha256": "1bf0b7f0a97af72dc144c6fca362684ccbb9fad1b65e668a31a56df11998dcda"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/086.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/086.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "086.mp3",
-   "size": 1385410,
-   "sha256": "a11a5ce9e1da33b77f7557b8f8c620afdcee2f8bd3f39bbaa36eb4374371c669"
+   "size": 2335160,
+   "sha256": "9e5cc810ff5dc4b66de7a65f486d46086187284de69ca60fffb6a0bfc4915530"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/087.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/087.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "087.mp3",
-   "size": 1573324,
-   "sha256": "e44b5a547f00f6fd9084ec5bc3bbbf93064392a63d492950fda4ab998b624316"
+   "size": 2709557,
+   "sha256": "94aefef631a736047976b76915898793a43a3b223f61629f6acfe4242b202fa1"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/088.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/088.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "088.mp3",
-   "size": 2174072,
-   "sha256": "6467c11392e92c3b003a04af900b3547800e3f5d5249f6857ab6f0409f220fc2"
+   "size": 3814910,
+   "sha256": "d9b1e0708bd983623595c7832d42b8caa2c9604d8e39fcd325c9944d169fac97"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/089.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/089.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "089.mp3",
-   "size": 3005752,
-   "sha256": "7739bce67f01758e0be71ed1673793e5cb97bcc975173b8008e909cbe9d80b86"
+   "size": 4955950,
+   "sha256": "9c8a865f05defe85b3a47170b6d3de12d9aa4d93293aaa39dd350f6732f021bf"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/090.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/090.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "090.mp3",
-   "size": 2074506,
-   "sha256": "f2220ea0daf9e209580f924604d8505b6dc66c4978ffb875ce2d66617bd2f0b2"
+   "size": 3440495,
+   "sha256": "a549c5b8ab68b2044575144a8c108ead02717335f3e66e5545d91961bac54e10"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/091.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/091.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "091.mp3",
-   "size": 1234338,
-   "sha256": "4d84a635222b4efc37ef4cbfc8c6ab38169b6aba503dd91a545f6904bfb2a1ea"
+   "size": 2031599,
+   "sha256": "e261cde8b47ba419d0a4ceec1295957669335906299e75f2ea4e8a8a760b567f"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/092.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/092.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "092.mp3",
-   "size": 1859550,
-   "sha256": "e58b38d134995ac694eaeeacfc069bec275ee6070bc1e6bc5df6c45483b2f5b4"
+   "size": 3101519,
+   "sha256": "6d4c6689e2f2c755472253812392fa890dad9bfb14d819daa090400f7cf6cf5f"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/093.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/093.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "093.mp3",
-   "size": 777146,
-   "sha256": "8c210b6f6e09395b9707ad2885807428f3820bfe44bd6c4cabc8898f4aa691a0"
+   "size": 1247091,
+   "sha256": "5ad29918b530590553cb3e090e8e8baa3370a1e6c1fd0702dce5f74e93a813fe"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/094.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/094.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "094.mp3",
-   "size": 781872,
-   "sha256": "b538dac7da7e89eafb478397c6e977e443a6a88a89166b0d183f13bf8b4c483e"
+   "size": 1283096,
+   "sha256": "52ea6464f547acaa7b7689fb35353dd67e53ea2b78b8b89c77d3364ce47ba188"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/095.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/095.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "095.mp3",
-   "size": 567612,
-   "sha256": "b133bc99bff3625997a1745407d370be74c8f49faf26ab7ee0a132a5ff968952"
+   "size": 944108,
+   "sha256": "cb12113798c64612fc88048679be5a71d7f2cb1003ef2e9ef5a9042d4b05be70"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/096.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/096.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "096.mp3",
-   "size": 1322430,
-   "sha256": "80c9f9b3ce0d6944a04059b4a841fcaeb94d1fa93faf171bbc2babd49a3b8ea2"
+   "size": 2156591,
+   "sha256": "bec9b4739a21e07e45ae0469eca9e10351c5252bf76a6cb1d774d0f17ba119d8"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/097.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/097.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "097.mp3",
-   "size": 441026,
-   "sha256": "bd6745d598a9a5b9831b20f677780bfddb2ad7c492c6cf61141e38f179c79191"
+   "size": 765849,
+   "sha256": "35cf6710991bc181d40e3aa5554d84f99e472852c79ac2fdb544605b9a8884bd"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/098.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/098.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "098.mp3",
-   "size": 1401838,
-   "sha256": "0b51a2679bf4f0ca4ecd0a7b38a168bb06f90e8145ad998e507d9c0948de010f"
+   "size": 2352446,
+   "sha256": "246696dbaa774b244dd11d781c94f521a3e9c369b4fd740883462f651328af79"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/099.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/099.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "099.mp3",
-   "size": 663508,
-   "sha256": "40308110a1ac479294006aa9d19d83ba8a7fca619e2f8827b5ccee00931d6cda"
+   "size": 1122108,
+   "sha256": "772e75b810494981e48cfd81dafc998f4b352169fea13d5db46f3ec7fc29d208"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/100.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/100.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "100.mp3",
-   "size": 864892,
-   "sha256": "0a374ab01ce109bb6a0f8baf4af1285bdf2dba749a6fd3764e8e11b5e579258a"
+   "size": 1461085,
+   "sha256": "600aa99e0fa5c734d35223df472b037c24ad55d08776e244ab1c22efa4794832"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/101.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/101.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "101.mp3",
-   "size": 629528,
-   "sha256": "0ba84b4c8ed66bf8606e9186bd1976984391c3f68a8e10fa6471c5c39627391b"
+   "size": 1050974,
+   "sha256": "b6296303c058ae8f3192e9aef4c5c8b652a99d462db70703d02a3b83f2b9d644"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/102.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/102.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "102.mp3",
-   "size": 481634,
-   "sha256": "d5f62a1dccd56e4ebbdf16580f8b44016c595f4fc4df8d1031cc713a73a08115"
+   "size": 765851,
+   "sha256": "ecb028d12a777c9e1b46aa8406fe5210966cd7b3d12711204c83cd93a482029c"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/103.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/103.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "103.mp3",
-   "size": 248042,
-   "sha256": "f096e181cbceb4d47fa538bfdf1e3d412c4224f2d0fa9a72b8167f954260ae3d"
+   "size": 355149,
+   "sha256": "099d3cc1bc633a52f57a45fb43b872f0c3a4491103d9d725c62626749af5601d"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/104.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/104.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "104.mp3",
-   "size": 548302,
-   "sha256": "4817ad6a7db59f415978498a86ece7120688b0979daf474f0a92108230875c56"
+   "size": 926264,
+   "sha256": "99bcd77d388b659fc4d48f5e9b6ad694ff6ca8b533bca2dee10b806ffbfe07e4"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/105.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/105.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "105.mp3",
-   "size": 356158,
-   "sha256": "15095ec01ee18dcbdbeb082fe6956d5bdfdee8b69818a79297ee3b45fdc37d59"
+   "size": 551857,
+   "sha256": "4621e6b4ca10f0ff687cdbb41d993346d8ac45d696d1bc7d8f0b062e6a461f15"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/106.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/106.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "106.mp3",
-   "size": 319248,
-   "sha256": "2c2f835622f76780a72f0c904df17827b336dd691e08d7e45558831307daf962"
+   "size": 497995,
+   "sha256": "232912c26494249cb2f206fa85e7c091be571deb48a68abcba82eb923257c09f"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/107.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/107.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "107.mp3",
-   "size": 388898,
-   "sha256": "ca5f1f44bb92d2553645f5a92f0718e5c7fd87a1c590eebe2640b3b1e8424cba"
+   "size": 605147,
+   "sha256": "8b44f524e53a177476b30dfb2d3e5f182daf1a6bd0109f1ac7fb91a475b38b36"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/108.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/108.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "108.mp3",
-   "size": 190690,
-   "sha256": "f5f6042e92d9b31dd51866b23a8e0354aafba16173ef80cc6014706cc830b1af"
+   "size": 266174,
+   "sha256": "56d04f53364e12e3dfcc417a058bd9098a461dd6a525e2924983d2a605e5d71f"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/109.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/109.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "109.mp3",
-   "size": 381706,
-   "sha256": "0637e5234769b6d26414d853bf5431a64372dc6edd715c91fa73dd92a8ae6235"
+   "size": 587296,
+   "sha256": "5e7493f95a2fe7fc9249d950164ad3f28b24b1a1d376c989557b8ec020be68d4"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/110.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/110.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "110.mp3",
-   "size": 316840,
-   "sha256": "c5191f2091ebe1163343aaf7cf29bb863adab66408543d98e641a4b12c2fd1a0"
+   "size": 497998,
+   "sha256": "32458a64eb1d8108cc5c15d209a747f01fa569f97a88066351f62d3f777d569c"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/111.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/111.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "111.mp3",
-   "size": 304434,
-   "sha256": "ce9db3e931d8c5d7683cc2b73c775e920bdd84f61cf5b9221275ed9d0828acf4"
+   "size": 498293,
+   "sha256": "9eb5c0263bd9c0552af25e5cde9fb89d722625c7b658664d5439e4422414c2f8"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/112.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/112.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "112.mp3",
-   "size": 191398,
-   "sha256": "059f15b371ab378f5b4c26d820c45beb66af34cd133d1257dce69459f9d053fb"
+   "size": 284025,
+   "sha256": "0e0f8c0937ee3f0711893d02e79266e7a44b20d7e1660ae5cb8b4948136d0741"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/113.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/113.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "113.mp3",
-   "size": 285134,
-   "sha256": "c93046921317db8ca51bdfcecd262d734b22a5f3822c25f57788d0ecb3d2dde9"
+   "size": 444723,
+   "sha256": "8586b34d380005108f032c228474cc5a8f344267da1079472f9a9f3f3a7ac0d5"
   },
   {
-   "key": "tablawi-mujawwad-hafs-v1/114.mp3",
-   "set": "tablawi-mujawwad-hafs-v1",
+   "key": "tablawi-mujawwad-hafs-v2/114.mp3",
+   "set": "tablawi-mujawwad-hafs-v2",
    "file": "114.mp3",
-   "size": 374076,
-   "sha256": "a084f8b9e1ae57f2da310481ec05c8a99691c29096c926bd4c1877bb5dc2a622"
+   "size": 605132,
+   "sha256": "00767cd634c48771272a474d650fc9df023f1f5fbf74f5b18f63391d0406b310"
   },
   {
-   "key": "yasser-dosari-hafs-v1/001.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/001.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "001.mp3",
    "size": 774896,
    "sha256": "08237b30a2fcdabe9df6633208442395b5bbb0cd0e612f15bb43de5d0ed72a33"
   },
   {
-   "key": "yasser-dosari-hafs-v1/002.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/002.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "002.mp3",
    "size": 115965282,
    "sha256": "d390ae18bf320e6073e4736a72e8dd4a24ea363a80ab4696281e2b990d2aeb25"
   },
   {
-   "key": "yasser-dosari-hafs-v1/003.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/003.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "003.mp3",
    "size": 69994368,
    "sha256": "c11f9be3807af64503f84ab3ed85a68513cd253aa346522faeb7787c550469d4"
   },
   {
-   "key": "yasser-dosari-hafs-v1/004.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/004.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "004.mp3",
-   "size": 15037694,
-   "sha256": "1c7f63838cf665b7fcc8a2533c75de126b4c6cd4ae7838fbef6791c0f9592449"
+   "size": 35374509,
+   "sha256": "cda6e6190eccd71d79cef8040f22b12b66431050f1e77afc4b0d95cc0cf67b10"
   },
   {
-   "key": "yasser-dosari-hafs-v1/005.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/005.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "005.mp3",
    "size": 54726739,
    "sha256": "48332d99dea45700384c918707361c33162fdb5f31941fd6e3950935cb7139c3"
   },
   {
-   "key": "yasser-dosari-hafs-v1/006.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/006.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "006.mp3",
    "size": 57970100,
    "sha256": "e0922de8edaa959c56be5488f515219007559bd030308cf7fae991a793a0bf35"
   },
   {
-   "key": "yasser-dosari-hafs-v1/007.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/007.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "007.mp3",
    "size": 68172066,
    "sha256": "137b9939e8c2f4fbefcf19a5bf21c486fa2bb05d2dc4c21f82e7a246d14cbaad"
   },
   {
-   "key": "yasser-dosari-hafs-v1/008.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/008.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "008.mp3",
    "size": 31253149,
    "sha256": "4c04049fddd82c71800e53589f4a459e2bea3e92acf9ee29f737bfb0383877e3"
   },
   {
-   "key": "yasser-dosari-hafs-v1/009.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/009.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "009.mp3",
    "size": 49953644,
    "sha256": "0a5a17ad52805b5afe97ba5306ad422f571e3bd44a2fce25a7e7d09ba9bc207b"
   },
   {
-   "key": "yasser-dosari-hafs-v1/010.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/010.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "010.mp3",
    "size": 34865731,
    "sha256": "485ef78c4733891fb9dd8ec9b6d0d14ba58c862b184ae278c449aa9579e5c2f5"
   },
   {
-   "key": "yasser-dosari-hafs-v1/011.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/011.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "011.mp3",
    "size": 37805237,
    "sha256": "007fd1605f7b2b315c8526aa050c756f4225d9ccc3bcb458da59fcb927136cde"
   },
   {
-   "key": "yasser-dosari-hafs-v1/012.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/012.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "012.mp3",
    "size": 34117584,
    "sha256": "c5d01848e28e11042c8342b7e45317255b99327084b7bdd8649f605646a4bb01"
   },
   {
-   "key": "yasser-dosari-hafs-v1/013.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/013.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "013.mp3",
    "size": 15491653,
    "sha256": "002028305f6af4e8190d8d86471e2671d50d9689b7f6f9f0eeefa33df34c0d91"
   },
   {
-   "key": "yasser-dosari-hafs-v1/014.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/014.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "014.mp3",
    "size": 17369544,
    "sha256": "1a1a5ad541b90ca59f18f06577a85daa89b1eecab3aa58ca6f0711deba47dd5e"
   },
   {
-   "key": "yasser-dosari-hafs-v1/015.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/015.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "015.mp3",
    "size": 13077521,
    "sha256": "cb060bb9aecab5168b35da70dbde4065e89b7f75cc26905b26847349c70b43d8"
   },
   {
-   "key": "yasser-dosari-hafs-v1/016.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/016.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "016.mp3",
    "size": 33612692,
    "sha256": "79d5b2a398aafe7a131d41bcf67702811d0009a3ed1389e5a4ad3425b8ab9d0e"
   },
   {
-   "key": "yasser-dosari-hafs-v1/017.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/017.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "017.mp3",
    "size": 28832075,
    "sha256": "dc0738346941c3c3544dd223bb56e79fdcc7c272913f2834f6fe874a935da17b"
   },
   {
-   "key": "yasser-dosari-hafs-v1/018.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/018.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "018.mp3",
    "size": 27902951,
    "sha256": "1da146d6f2abbdfc8dcadc0404ad66aa217da41c127b93c6b9f7687526105b92"
   },
   {
-   "key": "yasser-dosari-hafs-v1/019.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/019.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "019.mp3",
    "size": 18222180,
    "sha256": "1091400f1548e2b91356daddc1e25b2035090fe96655a4a5184a87539bc71ac2"
   },
   {
-   "key": "yasser-dosari-hafs-v1/020.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/020.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "020.mp3",
    "size": 23291699,
    "sha256": "d199b1e9c70c0869df0768367f954bbf449724270187d6aa7f8b6e45ffcb2821"
   },
   {
-   "key": "yasser-dosari-hafs-v1/021.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/021.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "021.mp3",
    "size": 22697273,
    "sha256": "1125338d1deb1c461e2879d684ed474a579bd93fd873fc55fd9792d7f378bb39"
   },
   {
-   "key": "yasser-dosari-hafs-v1/022.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/022.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "022.mp3",
    "size": 23438729,
    "sha256": "5deeed0999dadf6a11e86a758b75a8e7f4fd39a31b5cf366df84af46603c0c0d"
   },
   {
-   "key": "yasser-dosari-hafs-v1/023.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/023.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "023.mp3",
    "size": 20097568,
    "sha256": "e660249183bde43366f1e9c125bea6356a9487dc3c9b5812783863cc04f01f44"
   },
   {
-   "key": "yasser-dosari-hafs-v1/024.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/024.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "024.mp3",
    "size": 25006075,
    "sha256": "aa3b7e4192581c92bd811bb5a5ed04fb5d5e64985828a532cb7b5a0e63b4271a"
   },
   {
-   "key": "yasser-dosari-hafs-v1/025.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/025.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "025.mp3",
    "size": 16688272,
    "sha256": "b0819779bd9e02181859fdabab550c775890406f790d7a2c432b527e3eb71885"
   },
   {
-   "key": "yasser-dosari-hafs-v1/026.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/026.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "026.mp3",
    "size": 24725213,
    "sha256": "140b8e188fbeb7ee902e68737a1745845915e5d6c7f648bdcd7a0d0ae04b9827"
   },
   {
-   "key": "yasser-dosari-hafs-v1/027.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/027.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "027.mp3",
    "size": 22334899,
    "sha256": "ce07fd4ab6b93e4c4b5caf9895266aee7398d375c5af7ed4e60fca8ad8c6a5b9"
   },
   {
-   "key": "yasser-dosari-hafs-v1/028.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/028.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "028.mp3",
    "size": 25647227,
    "sha256": "60cdff0c9bbe65eddc36938c3c4ca9612b4630a6968ef6fdf64117077de528d9"
   },
   {
-   "key": "yasser-dosari-hafs-v1/029.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/029.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "029.mp3",
    "size": 18826972,
    "sha256": "2d28e128daaead4f380cbbdb33d2063ce161faab253293cfb4571b472af43eb7"
   },
   {
-   "key": "yasser-dosari-hafs-v1/030.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/030.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "030.mp3",
    "size": 15321543,
    "sha256": "5af5247bbe5a2118d740c98d6ff59312efeb78f02a1f87825a85e5526734be7d"
   },
   {
-   "key": "yasser-dosari-hafs-v1/031.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/031.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "031.mp3",
    "size": 9871773,
    "sha256": "149da07184798a7fb0f5f017d1787b1133cc90e95476c9b59cef2fd89db93250"
   },
   {
-   "key": "yasser-dosari-hafs-v1/032.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/032.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "032.mp3",
    "size": 7921996,
    "sha256": "43373a3f14481b1216c53ec2f0eeedac3a3f1c1427939fd427a73ed92d482385"
   },
   {
-   "key": "yasser-dosari-hafs-v1/033.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/033.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "033.mp3",
    "size": 24446011,
    "sha256": "3d8fd4af5452ae213f0776a91b0cbc9a1a11a56b8b5436a63d9bd218d1d19bf2"
   },
   {
-   "key": "yasser-dosari-hafs-v1/034.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/034.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "034.mp3",
    "size": 16766009,
    "sha256": "7ea9c7a6f647cfb4cdfb474f32ca1ca98a975796b1ab03098885cf1540f04512"
   },
   {
-   "key": "yasser-dosari-hafs-v1/035.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/035.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "035.mp3",
    "size": 15822257,
    "sha256": "7ec9a9db9646d9d5f934d0b2253d36124cf9708ade34f1a6ec4cbb15443683e2"
   },
   {
-   "key": "yasser-dosari-hafs-v1/036.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/036.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "036.mp3",
    "size": 14662002,
    "sha256": "6765bb5fbaef1330842f446a6d7209aa31d3abbc453ce91d4117f4906c42233e"
   },
   {
-   "key": "yasser-dosari-hafs-v1/037.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/037.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "037.mp3",
    "size": 16395283,
    "sha256": "dcec1540bc53a93a679cbda3d347954d2a3e62703f08012fb932d3fd5a8ac696"
   },
   {
-   "key": "yasser-dosari-hafs-v1/038.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/038.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "038.mp3",
    "size": 13594951,
    "sha256": "3c43dcd9c1c4891e6e5a88a1547aa24009cf8a306779d1b98dbc753f2567f1ab"
   },
   {
-   "key": "yasser-dosari-hafs-v1/039.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/039.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "039.mp3",
    "size": 22162359,
    "sha256": "894ca114abffe89c5f76c443a543aa085ca119747cb929527681425cd5a025fe"
   },
   {
-   "key": "yasser-dosari-hafs-v1/040.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/040.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "040.mp3",
    "size": 23020769,
    "sha256": "4ba1e4ffc7971f5af2c04320fbb99d0207416cb3228f51a6512005fdb31abdfd"
   },
   {
-   "key": "yasser-dosari-hafs-v1/041.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/041.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "041.mp3",
    "size": 15298139,
    "sha256": "7bb4f580fec11bf3ba9dca27df22d254e40622d470a517316a1cb4f6c6c5441c"
   },
   {
-   "key": "yasser-dosari-hafs-v1/042.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/042.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "042.mp3",
    "size": 15571486,
    "sha256": "14b97ffe652fdf1b163ba73bccfe1a57176a36b04c3dd1139ecaaab779423969"
   },
   {
-   "key": "yasser-dosari-hafs-v1/043.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/043.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "043.mp3",
    "size": 15776287,
    "sha256": "ceeba0b9c7ff763ac58847334ac48bffac585e1e3de988726ac78e4a186193e7"
   },
   {
-   "key": "yasser-dosari-hafs-v1/044.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/044.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "044.mp3",
    "size": 6830705,
    "sha256": "6156908d549b198dcb95c9425a4744b381f3f1e1f9dd2a0c82acd747fbe55ec1"
   },
   {
-   "key": "yasser-dosari-hafs-v1/045.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/045.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "045.mp3",
    "size": 9868433,
    "sha256": "1243263e2ce2e49ddd60525f5a6089d2acbc58a19f619bb4a9a0208234ba3e76"
   },
   {
-   "key": "yasser-dosari-hafs-v1/046.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/046.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "046.mp3",
    "size": 12084869,
    "sha256": "1fb67b05287136e0cd8503394f73637bc15a5be983ed814bec90229b5c8d0ffc"
   },
   {
-   "key": "yasser-dosari-hafs-v1/047.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/047.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "047.mp3",
    "size": 10697245,
    "sha256": "a478252c1fb35b96d5ffc3201f7b8eface368e5bb445833d2f760566cb88f2c2"
   },
   {
-   "key": "yasser-dosari-hafs-v1/048.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/048.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "048.mp3",
    "size": 10499549,
    "sha256": "8333c27f04b5556ab98d7107f88cfb62a99669b79ad6ce6442f1f92e1b256fc2"
   },
   {
-   "key": "yasser-dosari-hafs-v1/049.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/049.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "049.mp3",
    "size": 5167556,
    "sha256": "705cf213d6215cd8118f65b47d1d6e01e9d0a3c0d908071862601577cdef33e3"
   },
   {
-   "key": "yasser-dosari-hafs-v1/050.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/050.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "050.mp3",
    "size": 7745714,
    "sha256": "a9f52ac0bdac1ca11c92e3837afedde5423c755fc8b75dd686353cf326fe56e3"
   },
   {
-   "key": "yasser-dosari-hafs-v1/051.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/051.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "051.mp3",
    "size": 6569482,
    "sha256": "209ba9cf7dd751a8cef7ab0b0108ea84837899cf6a56c22d47a15ccf33d7fd9c"
   },
   {
-   "key": "yasser-dosari-hafs-v1/052.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/052.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "052.mp3",
    "size": 5774937,
    "sha256": "b04bc86e3951f3925715c51664f3f39fb8a37d722afaf1681ff563897ae7d6c1"
   },
   {
-   "key": "yasser-dosari-hafs-v1/053.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/053.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "053.mp3",
    "size": 6191644,
    "sha256": "930b8f3b97e69d9126999036453b52c4b5128a82eecadcf46e817c6b023a96be"
   },
   {
-   "key": "yasser-dosari-hafs-v1/054.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/054.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "054.mp3",
    "size": 6451197,
    "sha256": "81fccd39d40444969d987adc5c1303f90b5a686d0b379f9a8cc0595e8a88f99d"
   },
   {
-   "key": "yasser-dosari-hafs-v1/055.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/055.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "055.mp3",
    "size": 8487077,
    "sha256": "897ed216746b3ce5ee6ab7f30a140ebd6b74342f3abacbfc40c59e011648ac3e"
   },
   {
-   "key": "yasser-dosari-hafs-v1/056.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/056.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "056.mp3",
    "size": 8528456,
    "sha256": "3d27ee425f4b73dbe8af60ef947fb6eb360d64d61f94253cf796f2dcff3510a8"
   },
   {
-   "key": "yasser-dosari-hafs-v1/057.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/057.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "057.mp3",
    "size": 11567018,
    "sha256": "690e6a2bd2a1b5f3587a7b7ad2ec013dea05cdaa2ecb468d93beaa4871af340f"
   },
   {
-   "key": "yasser-dosari-hafs-v1/058.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/058.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "058.mp3",
    "size": 8675998,
    "sha256": "4abf525a26695b0d3848e4c9cf4b481c05ab65cd59aa04dfc88e8134f39fe574"
   },
   {
-   "key": "yasser-dosari-hafs-v1/059.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/059.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "059.mp3",
    "size": 9009943,
    "sha256": "583e663d569778b9ecdf66592f2efbf4c6f65407313bdde526799d1f8163469e"
   },
   {
-   "key": "yasser-dosari-hafs-v1/060.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/060.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "060.mp3",
    "size": 6934363,
    "sha256": "89ffb4d2d2487cf1141b9cc492cd81a3aa318775887b787955c60fe71f410dfe"
   },
   {
-   "key": "yasser-dosari-hafs-v1/061.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/061.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "061.mp3",
    "size": 4064649,
    "sha256": "5adbe20f3f319a3e47121f032486b81b1e36640be1de8946e2783f0d6789cab6"
   },
   {
-   "key": "yasser-dosari-hafs-v1/062.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/062.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "062.mp3",
    "size": 3151829,
    "sha256": "a2c921c1fd40dcd7c29953a2a22d846022c287e7ce77096a0c83dd40a57f1171"
   },
   {
-   "key": "yasser-dosari-hafs-v1/063.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/063.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "063.mp3",
    "size": 3385889,
    "sha256": "ad8cb1c7643c7a162637a5782a9cc93c361d33f4d083fbb551766065fcdf001c"
   },
   {
-   "key": "yasser-dosari-hafs-v1/064.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/064.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "064.mp3",
    "size": 4717923,
    "sha256": "2516f774ebc9ccd33a6887c4722075cce6f32adbe32a10d6d92864b2159e51bf"
   },
   {
-   "key": "yasser-dosari-hafs-v1/065.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/065.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "065.mp3",
    "size": 5602740,
    "sha256": "38a6544d684e0a8ef44320405d4d76dbf9b8b9948f6f477129dfc89b629e720f"
   },
   {
-   "key": "yasser-dosari-hafs-v1/066.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/066.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "066.mp3",
    "size": 4918960,
    "sha256": "4fc7a4cd0381a5aca9dc660a09c7b4f5c4022c51858b3b1dd31a53639ab6c35e"
   },
   {
-   "key": "yasser-dosari-hafs-v1/067.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/067.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "067.mp3",
    "size": 6131875,
    "sha256": "a5f4312a63c77c9f831a9a1afb741c6a1d6197fdbb32908e2135ef3408fe9911"
   },
   {
-   "key": "yasser-dosari-hafs-v1/068.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/068.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "068.mp3",
    "size": 5458126,
    "sha256": "895680814bb75515220a4c85f0214fd4984419c4eee84ee1bc7d4b90b5840a2f"
   },
   {
-   "key": "yasser-dosari-hafs-v1/069.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/069.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "069.mp3",
    "size": 6637608,
    "sha256": "df7798279ac52e4e6ca664eb96f3787355016e01bcef8d5006e0accd63eb4164"
   },
   {
-   "key": "yasser-dosari-hafs-v1/070.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/070.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "070.mp3",
    "size": 4735477,
    "sha256": "a5e305a8a8fb5426b703678cb4d8c80a64ec7d6bf2d2b6b85b6aa66d9611aa2b"
   },
   {
-   "key": "yasser-dosari-hafs-v1/071.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/071.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "071.mp3",
    "size": 4254400,
    "sha256": "c8b01f1fd605139f0b9b96995309ce484d9357b1d3942148cecc7e0970467a3c"
   },
   {
-   "key": "yasser-dosari-hafs-v1/072.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/072.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "072.mp3",
    "size": 4829933,
    "sha256": "d24efd97feba6a47c6845e1f1a968a0721a1bd611f7a6c3798bd4da76f2362d6"
   },
   {
-   "key": "yasser-dosari-hafs-v1/073.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/073.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "073.mp3",
    "size": 3596958,
    "sha256": "81b20d4e8d9cb7e918d1d28d9d655099a589ca593de5a40a453c54edf4b74ed5"
   },
   {
-   "key": "yasser-dosari-hafs-v1/074.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/074.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "074.mp3",
    "size": 4639768,
    "sha256": "4730dbbe850136c07a71a6e89a90277e9bea1ae272205e3473ff427767fb0935"
   },
   {
-   "key": "yasser-dosari-hafs-v1/075.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/075.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "075.mp3",
    "size": 3186520,
    "sha256": "743e3aabd8c35ea53109f8030d6b9ad78827b6da87858b2fd635fc382c5d3c1c"
   },
   {
-   "key": "yasser-dosari-hafs-v1/076.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/076.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "076.mp3",
    "size": 5508699,
    "sha256": "04772b0eae737ef4aa5305a8b5567529adc6b6c96c43d37babc1fd9bc3ec93e3"
   },
   {
-   "key": "yasser-dosari-hafs-v1/077.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/077.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "077.mp3",
    "size": 3839373,
    "sha256": "459f1c9f3eba68cc12af7c7b9efad1af761e2faa78ab0abc65dba601f86ea6fe"
   },
   {
-   "key": "yasser-dosari-hafs-v1/078.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/078.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "078.mp3",
    "size": 4085130,
    "sha256": "9e3bf062dcc9be3d20fa8a3e1dab611c6e38352303ff9950b4adafdef49804d0"
   },
   {
-   "key": "yasser-dosari-hafs-v1/079.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/079.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "079.mp3",
    "size": 3546383,
    "sha256": "ca8e654aeabd7f279a85bbf150c8e729be23a25bc756b550ebd4b9b372b82517"
   },
   {
-   "key": "yasser-dosari-hafs-v1/080.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/080.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "080.mp3",
    "size": 2940338,
    "sha256": "59ff0f7a2af63262e6fbeac35ff0bf6255c83b7940dab95d7fa747f3cc9b9f08"
   },
   {
-   "key": "yasser-dosari-hafs-v1/081.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/081.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "081.mp3",
    "size": 1989484,
    "sha256": "371c23081a2e05441203398f55087ffcba701cb251d4273784d7c7930f38718f"
   },
   {
-   "key": "yasser-dosari-hafs-v1/082.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/082.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "082.mp3",
    "size": 2030863,
    "sha256": "febaeccf573146bb58029c2d652565e5c09fcf200bb3b77ae65a4882d6d802af"
   },
   {
-   "key": "yasser-dosari-hafs-v1/083.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/083.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "083.mp3",
    "size": 3131770,
    "sha256": "3f0d828cf629970bff3d4cb0b64c11f732538cf3420540864d421b0cabd7f4e7"
   },
   {
-   "key": "yasser-dosari-hafs-v1/084.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/084.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "084.mp3",
    "size": 1910492,
    "sha256": "c1c4d61c45392bcffd08f82b3fdb09d3c71fee91e9df0d2af7687b2038d40596"
   },
   {
-   "key": "yasser-dosari-hafs-v1/085.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/085.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "085.mp3",
    "size": 2036712,
    "sha256": "5c647eac0d7ad40831e81247a7e54fa99ebc6fa9a1f92feda289a9a500bb497d"
   },
   {
-   "key": "yasser-dosari-hafs-v1/086.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/086.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "086.mp3",
    "size": 1137682,
    "sha256": "46f3bdeef6026c40d265528811263ce0b816cae1ab5a4552a8ce6f48c31d86f1"
   },
   {
-   "key": "yasser-dosari-hafs-v1/087.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/087.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "087.mp3",
    "size": 1235901,
    "sha256": "a5ce42ee588f6b7f1bd20961e31c4f33950501ad3b22a7821bd105b53eeff19e"
   },
   {
-   "key": "yasser-dosari-hafs-v1/088.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/088.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "088.mp3",
    "size": 1710290,
    "sha256": "73222551481a0d788fb03551e865f59a9a97136516f7481e8cf6751c5b6b0e92"
   },
   {
-   "key": "yasser-dosari-hafs-v1/089.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/089.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "089.mp3",
    "size": 2729688,
    "sha256": "1929b4e8ecfb510ab47810021e39486faa29295889d5762e05d99209c6e70bfc"
   },
   {
-   "key": "yasser-dosari-hafs-v1/090.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/090.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "090.mp3",
    "size": 1418133,
    "sha256": "cc2f385b9975347a0cd83468c53e0b4fea16238fa63ca2c6f4832e7d2a270634"
   },
   {
-   "key": "yasser-dosari-hafs-v1/091.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/091.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "091.mp3",
    "size": 969246,
    "sha256": "1c8f72894595478345ad3d7063d332e9301d6a1594d82b65f2c44d21bd5656b6"
   },
   {
-   "key": "yasser-dosari-hafs-v1/092.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/092.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "092.mp3",
    "size": 1422311,
    "sha256": "4777f08b7fd17268b3f3e88e1342ce3eec4a4a3c8b57ae12b7d5ba3a30ea7448"
   },
   {
-   "key": "yasser-dosari-hafs-v1/093.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/093.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "093.mp3",
    "size": 759846,
    "sha256": "32b63adda307ac850d98cbd6a092583da4ae1e556992e642dec8f06e479d0455"
   },
   {
-   "key": "yasser-dosari-hafs-v1/094.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/094.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "094.mp3",
    "size": 434676,
    "sha256": "61d5339edd0a57e755ed2fb779a05f801057bddbfae8a19691b911e23b1dafae"
   },
   {
-   "key": "yasser-dosari-hafs-v1/095.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/095.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "095.mp3",
    "size": 590989,
    "sha256": "067a7380a80595c37d140efa4d5375add298776d73c076a83b8c4d0a89b25b9f"
   },
   {
-   "key": "yasser-dosari-hafs-v1/096.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/096.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "096.mp3",
    "size": 1118038,
    "sha256": "62d1d3795e03f9a12c7f3c241696f502dfb407945e9a764ba53c27b96b6a1f76"
   },
   {
-   "key": "yasser-dosari-hafs-v1/097.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/097.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "097.mp3",
    "size": 774893,
    "sha256": "b172d26d9f9ca68998e772424134b841446bc58d33f0112613e1c6905570939c"
   },
   {
-   "key": "yasser-dosari-hafs-v1/098.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/098.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "098.mp3",
    "size": 1951452,
    "sha256": "5796f7d590509b3455e1224131ebbaa78b80578280ac777ab242a2757d4ccec1"
   },
   {
-   "key": "yasser-dosari-hafs-v1/099.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/099.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "099.mp3",
    "size": 914495,
    "sha256": "d65adad13aecfc991641691f3a19cd8fa281a35a278b2368c59879d291e89613"
   },
   {
-   "key": "yasser-dosari-hafs-v1/100.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/100.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "100.mp3",
    "size": 779493,
    "sha256": "c055365788b292a452d568dbb337796c882260949e9ba3c6b8cc338491e09329"
   },
   {
-   "key": "yasser-dosari-hafs-v1/101.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/101.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "101.mp3",
    "size": 794540,
    "sha256": "3780240867f72cafa507b1947b84b782643aaf439be16c88796d108c6da7d6d6"
   },
   {
-   "key": "yasser-dosari-hafs-v1/102.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/102.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "102.mp3",
    "size": 677512,
    "sha256": "21491f83158f5519ed3f58606f7d86f97e76f45cc832b577bc926a03a1d4a140"
   },
   {
-   "key": "yasser-dosari-hafs-v1/103.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/103.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "103.mp3",
    "size": 280447,
    "sha256": "fdbfa7dd04bed3af630ef4aa2644373c2fcbd2f447cd45a517a06875aebf069f"
   },
   {
-   "key": "yasser-dosari-hafs-v1/104.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/104.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "104.mp3",
    "size": 669988,
    "sha256": "dea9ba5129f43bb96f671afddb01d91dff0172154d6c9b76984557992bdd24eb"
   },
   {
-   "key": "yasser-dosari-hafs-v1/105.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/105.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "105.mp3",
    "size": 397056,
    "sha256": "d2b3e3417189c9aa0da0578753531a0dcaeabf49ca28f70b4d48c48d95c910df"
   },
   {
-   "key": "yasser-dosari-hafs-v1/106.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/106.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "106.mp3",
    "size": 329766,
    "sha256": "8dfee9377184dc3f84e2ab54baabaa0a1bf632f3f28d4c5133cfb17895a3e575"
   },
   {
-   "key": "yasser-dosari-hafs-v1/107.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/107.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "107.mp3",
    "size": 433003,
    "sha256": "8e7dc95dbdfe747f405df3dc1045a745d76615d6d0b19d389cc6d3de8a180bc4"
   },
   {
-   "key": "yasser-dosari-hafs-v1/108.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/108.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "108.mp3",
    "size": 208561,
    "sha256": "7741cad0f127bb3625cdb5543664b3ac2a951746f4607ef5cd108010c7d9d69c"
   },
   {
-   "key": "yasser-dosari-hafs-v1/109.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/109.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "109.mp3",
    "size": 576783,
    "sha256": "6483378b7c7b4b5cd894e839ac9efe4c42c6cec8588a6e31e8a2e72b666cad68"
   },
   {
-   "key": "yasser-dosari-hafs-v1/110.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/110.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "110.mp3",
    "size": 330184,
    "sha256": "dd2e475e65157e80b810b4fda4b9dcb19fe20a7c2184bb24c9073ae5ddd111a7"
   },
   {
-   "key": "yasser-dosari-hafs-v1/111.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/111.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "111.mp3",
    "size": 395805,
    "sha256": "e0c27dbee23dde8c457aa49a7ef9ddc4727401909f3af99c1d73271fa8f409c4"
   },
   {
-   "key": "yasser-dosari-hafs-v1/112.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/112.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "112.mp3",
    "size": 189334,
    "sha256": "34888ed503996c7a6d97a95f3c35e793aaf3e856f482682e66bd98c7b661eddd"
   },
   {
-   "key": "yasser-dosari-hafs-v1/113.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/113.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "113.mp3",
    "size": 338962,
    "sha256": "5ee252c2dde473f0bf48972ddb12157b8b04ac073a94d571a9b3dad396f8ede5"
   },
   {
-   "key": "yasser-dosari-hafs-v1/114.mp3",
-   "set": "yasser-dosari-hafs-v1",
+   "key": "yasser-dosari-hafs-v2/114.mp3",
+   "set": "yasser-dosari-hafs-v2",
    "file": "114.mp3",
    "size": 578451,
    "sha256": "8525777ffaa33a8be1ce9a2d0a11c6893766f5d6a6d94f2790c731366b941df3"
