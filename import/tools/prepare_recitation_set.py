@@ -221,13 +221,13 @@ SETS = {
     # 004 up to 25 s), so these releases hold MP3Quran's identical constant-bitrate 64 kbps copies of those files instead.
     "tablawi-mujawwad-hafs-v2": {
         "moshaf": 10912, "reciterId": 106, "server": "https://cdn.mp3quran.net/audio/muhammad-tablawi/r2/", "qud": None, "timingRelease": 301,
-        "copy64": True, "releaseRejected": [60, 63], "fallback": "measured", "timingCorrections": "timing_corrections.json",
+        "copy64": True, "copyOf": "tablawi-mujawwad-hafs-v1", "releaseRejected": [60, 63], "fallback": "measured", "timingCorrections": "timing_corrections.json",
         "timingFile": "verse_timestamps_tablawi_mujawwad.json", "style": "mujawwad",
         "reciterAr": "مُحَمَّد مَحْمُود الطَّبْلَاوِيّ (مُجَوَّد)", "reciterEn": "Mohamed Mahmoud Al-Tablawi (Mujawwad)",
     },
     "yasser-dosari-hafs-v2": {
         "moshaf": 92, "reciterId": 92, "server": "https://cdn.mp3quran.net/audio/yasser-dosari/r1/", "qud": None, "timingRelease": 89,
-        "copy64": [4], "timingFile": "verse_timestamps_yasser_dosari.json",
+        "copy64": [4], "copyOf": "yasser-dosari-hafs-v1", "timingFile": "verse_timestamps_yasser_dosari.json",
         "reciterAr": "يَاسِر الدَّوْسَرِيّ", "reciterEn": "Yasser Al-Dosari",
     },
     "yasser-dosari-hafs-v1": {
@@ -1107,15 +1107,20 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
         # The release names the bytes each surah was aligned to: these files must be exactly those.
         mismatched = []
         copies = []
+        original_ms = ({x["surah"]: x["durationMs"] for x in json.loads((OUTPUT / spec["copyOf"] / "audio_manifest.json").read_text(encoding="utf-8"))["tracks"]}
+                       if spec.get("copyOf") else {})
         for t in tracks:
             if t["surahNumber"] in spec.get("releaseRejected", []):
                 continue
             timed = release["doc"]["surahs"][str(t["surahNumber"])]["word_timings"]
             aligned = timed["audio"]
             if uses_copy64(spec, t["surahNumber"]):
-                # Not the aligned bytes but MP3Quran's 64 kbps copy of them: the same audio, so it must last as long (within 50 ms).
-                gap = round(t["durationSeconds"] * 1000) - timed["duration_ms"]
-                copies.append({"surah": t["surahNumber"], "durationMs": round(t["durationSeconds"] * 1000), "alignedDurationMs": timed["duration_ms"],
+                # Not the aligned bytes but MP3Quran's 64 kbps copy of them: the same audio, so it must last as long as the aligned file
+                # (within 50 ms), whose exact length (frames counted) is in the manifest of the set made from it (`copyOf`; the
+                # release's duration_ms is rounded down to 100 ms).
+                aligned_ms = original_ms[t["surahNumber"]]
+                gap = round(t["durationSeconds"] * 1000) - aligned_ms
+                copies.append({"surah": t["surahNumber"], "durationMs": round(t["durationSeconds"] * 1000), "alignedDurationMs": aligned_ms,
                                "gapMs": gap})
                 if abs(gap) > 50:
                     mismatched.append(t["surahNumber"])
