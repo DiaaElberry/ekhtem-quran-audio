@@ -1,8 +1,26 @@
 {
  "set": "jibreel-hafs-v1",
- "madeAt": "2026-11-18T20:53:54Z",
- "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Not heard by anyone yet.",
+ "madeAt": "2026-11-18T21:02:35Z",
+ "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Recognized from the left channel (one channel inverted in surah 9). Not heard by anyone yet.",
  "rows": [
+  {
+   "surah": 9,
+   "ayah": 60,
+   "startMs": 1321480,
+   "endMs": 1354130
+  },
+  {
+   "surah": 9,
+   "ayah": 61,
+   "startMs": 1354130,
+   "endMs": 1382560
+  },
+  {
+   "surah": 9,
+   "ayah": 62,
+   "startMs": 1382560,
+   "endMs": 1395620
+  },
   {
    "surah": 9,
    "ayah": 101,
@@ -65,6 +83,92 @@
   }
  ],
  "surahs": [
+  {
+   "surah": 9,
+   "window": {
+    "ayat": [
+     60,
+     62
+    ],
+    "fromMs": 1321480,
+    "toMs": 1395930
+   },
+   "durationMs": 74450,
+   "heardWords": 59,
+   "textWords": 60,
+   "matchedTextWords": 59,
+   "rows": [
+    {
+     "surah": 9,
+     "ayah": 60,
+     "startMs": 1321480,
+     "heardStartMs": 1321480,
+     "snappedToPause": false,
+     "matchedWords": 21,
+     "words": 22,
+     "endMs": 1354130
+    },
+    {
+     "surah": 9,
+     "ayah": 61,
+     "startMs": 1354130,
+     "heardStartMs": 1354140,
+     "snappedToPause": true,
+     "matchedWords": 26,
+     "words": 26,
+     "endMs": 1382560
+    },
+    {
+     "surah": 9,
+     "ayah": 62,
+     "startMs": 1382560,
+     "heardStartMs": 1382620,
+     "snappedToPause": true,
+     "matchedWords": 12,
+     "words": 12,
+     "endMs": 1395620
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "9:60",
+     "heard": "انما الصدقات للفقرا والمساكين والعاملين عليها والمولفه قلوبهم وفرقاب والغارمين وفي سبيل الله وابن السبيل فريضه من الله والله عليم حكيم",
+     "scores": {
+      "59": 0.299,
+      "60": 0.985,
+      "61": 0.271
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:61",
+     "heard": "ومنهم الذين يوذون النبي ويقولون هو اذن قل اذن خير لكم يومن بالله ويومن للمومنين رحمه للذين امنوا منكم والذين يوذون رسول الله لهم عذاب اليه",
+     "scores": {
+      "60": 0.261,
+      "61": 0.989,
+      "62": 0.186
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:62",
+     "heard": "يحلفون بالله لكم ليرضوكم والله ورسوله احق ان يرضوه ان كانوا مومنين",
+     "scores": {
+      "61": 0.351,
+      "62": 1.0,
+      "63": 0.372
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "009.mp3",
+    "size": 48963772,
+    "sha256": "687d43bac8aa242b8ed9aefadacf2152e9b983b42a0219d5569698c3712b3c24"
+   },
+   "channel": "left"
+  },
   {
    "surah": 9,
    "window": {
