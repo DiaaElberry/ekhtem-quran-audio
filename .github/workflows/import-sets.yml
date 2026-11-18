@@ -7,23 +7,33 @@
 #   publish  download the set again, check every file's size and sha256 against the committed manifest
 #            (import/content/recitations/<set>/audio_manifest.json), create the release <set> (never an existing one),
 #            copy it to R2 and check it on the public address (mirror/files.json must list it: audio_mirror.py export).
+#   measure  (one set) fetch the surahs the windows name, check them against the committed manifest, and time those ayat by
+#            speech recognition in the set's own files (tools/time_surahs_by_speech.py, faster-whisper small on the CPU).
+#            The measured_timings.json comes back as an artifact, to be committed in both repositories before prepare runs
+#            again (decision 258, 18 Nov 2026: the audio stays off the PC, as for the import itself).
 #
 # import/ holds copies of the app repository's tools/prepare_recitation_set.py, tools/check_recitation_audio.py,
-# tools/publish_recitation_set.py and the two text files they read, at the same paths.
+# tools/publish_recitation_set.py, tools/time_surahs_by_speech.py, tools/fetch_measure_audio.py and the two text files
+# they read, at the same paths.
 name: Import recitation sets
 
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "prepare: build and check, publish nothing. publish: release and copy to R2."
+        description: "prepare: build and check, publish nothing. publish: release and copy to R2. measure: time the windows by speech (one set)."
         type: choice
-        options: [prepare, publish]
+        options: [prepare, publish, measure]
         default: prepare
       sets:
         description: "Comma-separated set ids, for example sudais-hafs-v1,ghamdi-hafs-v1"
         type: string
         required: true
+      windows:
+        description: "measure only: space-separated SURAH:FIRST-LAST@FROMMS-TOMS, for example 9:102-104@2390198-2448210"
+        type: string
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -53,6 +63,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # faster-whisper's ctranslate2 wheels need a Python they are built for; the runner's own python3 may be newer.
+      - name: Python for the speech tools
+        if: inputs.mode == 'measure'
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
       - name: Python tools
         run: |
           python3 -m venv "$RUNNER_TEMP/venv"
@@ -72,6 +89,26 @@ jobs:
         with:
           name: ${{ matrix.set }}
           path: import/content/recitations/${{ matrix.set }}/
+
+      - name: Measure (fetch and check the windows' files, time them by speech)
+        if: inputs.mode == 'measure'
+        env:
+          WINDOWS: ${{ inputs.windows }}
+          AUDIO: ${{ runner.temp }}/audio
+        run: |
+          pip install --quiet "faster-whisper>=1.1,<2"
+          python -I -X utf8 import/tools/fetch_measure_audio.py
+          ARGS=()
+          for w in $WINDOWS; do ARGS+=(--window "$w"); done
+          python -I -X utf8 import/tools/time_surahs_by_speech.py --set "$SET" --audio "$AUDIO" "${ARGS[@]}"
+
+      - name: Keep the measurement
+        if: inputs.mode == 'measure' && always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.set }}-measured
+          path: import/content/recitations/${{ matrix.set }}/measured_timings.json
+          if-no-files-found: warn
           if-no-files-found: warn
 
       - name: Release
