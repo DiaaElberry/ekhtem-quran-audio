@@ -242,6 +242,45 @@ SETS = {
         "timingFile": "verse_timestamps_yasser_dosari.json",
         "reciterAr": "يَاسِر الدَّوْسَرِيّ", "reciterEn": "Yasser Al-Dosari",
     },
+    # 4.6.14 (owner, 18 Nov 2026, decision 258): seven Egyptian reciters with a complete MP3Quran recording, in the owner's order.
+    # Each is MP3Quran's only Hafs murattal set of that reciter, all 114 surahs accepted in timing release 2026.10.8 (its v4
+    # recitation id is "timingRelease"), every file the size the release names (HEAD, 18 Nov 2026). Muhammad Jibreel's release
+    # times six ayat with under 70 % of their words (3:20, 3:38, 9:61, 9:103, 9:116, 9:118): measured here as for 4.0.8.
+    "saber-abdulhakam-hafs-v1": {
+        "moshaf": 39, "reciterId": 39, "server": "https://cdn.mp3quran.net/audio/saber-abdulhakam/r1/", "qud": None, "timingRelease": 38,
+        "timingFile": "verse_timestamps_saber_abdulhakam.json",
+        "reciterAr": "صَابِر عَبْد الْحَكَم", "reciterEn": "Saber Abdel Hakam",
+    },
+    "mahmoud-abdulhakam-hafs-v1": {
+        "moshaf": 277, "reciterId": 277, "server": "https://cdn.mp3quran.net/audio/mahmoud-abdulhakam/r1/", "qud": None,
+        "timingRelease": 228, "timingFile": "verse_timestamps_mahmoud_abdulhakam.json",
+        "reciterAr": "مَحْمُود عَبْد الْحَكَم", "reciterEn": "Mahmoud Abdel Hakam",
+    },
+    "yasser-qurashi-hafs-v1": {
+        "moshaf": 93, "reciterId": 93, "server": "https://cdn.mp3quran.net/audio/yasser-qurashi/r1/", "qud": None, "timingRelease": 90,
+        "timingFile": "verse_timestamps_yasser_qurashi.json",
+        "reciterAr": "يَاسِر الْقُرَشِيّ", "reciterEn": "Yasser Al-Qurashi",
+    },
+    "ahmad-shaheen-hafs-v1": {
+        "moshaf": 256, "reciterId": 256, "server": "https://cdn.mp3quran.net/audio/ahmad-shaheen/r1/", "qud": None, "timingRelease": 209,
+        "timingFile": "verse_timestamps_ahmad_shaheen.json",
+        "reciterAr": "أَحْمَد خَلِيل شَاهِين", "reciterEn": "Ahmed Khalil Shaheen",
+    },
+    "ahmad-amer-hafs-v1": {
+        "moshaf": 203, "reciterId": 203, "server": "https://cdn.mp3quran.net/audio/ahmad-amer/r1/", "qud": None, "timingRelease": 170,
+        "timingFile": "verse_timestamps_ahmad_amer.json",
+        "reciterAr": "أَحْمَد عَامِر", "reciterEn": "Ahmed Amer",
+    },
+    "abdulbari-muhammad-hafs-v1": {
+        "moshaf": 50, "reciterId": 50, "server": "https://cdn.mp3quran.net/audio/abdulbari-muhammad/r1/", "qud": None, "timingRelease": 48,
+        "timingFile": "verse_timestamps_abdulbari_muhammad.json",
+        "reciterAr": "عَبْد الْبَارِئ مُحَمَّد", "reciterEn": "Abdul Bari Mohamed",
+    },
+    "jibreel-hafs-v1": {
+        "moshaf": 111, "reciterId": 111, "server": "https://cdn.mp3quran.net/audio/muhammad-jibreel/r1/", "qud": None, "timingRelease": 106,
+        "timingFile": "verse_timestamps_jibreel.json",
+        "reciterAr": "مُحَمَّد جِبْرِيل", "reciterEn": "Mohamed Jibreel",
+    },
 }
 
 
