@@ -1,0 +1,1279 @@
+{
+ "set": "jibreel-hafs-v1",
+ "madeAt": "2026-11-18T20:50:00Z",
+ "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Not heard by anyone yet.",
+ "rows": [
+  {
+   "surah": 4,
+   "ayah": 60,
+   "startMs": 1664090,
+   "endMs": 1689860
+  },
+  {
+   "surah": 4,
+   "ayah": 61,
+   "startMs": 1689860,
+   "endMs": 1705120
+  },
+  {
+   "surah": 4,
+   "ayah": 62,
+   "startMs": 1705120,
+   "endMs": 1728900
+  },
+  {
+   "surah": 4,
+   "ayah": 63,
+   "startMs": 1728900,
+   "endMs": 1742840
+  },
+  {
+   "surah": 4,
+   "ayah": 64,
+   "startMs": 1742840,
+   "endMs": 1766100
+  },
+  {
+   "surah": 4,
+   "ayah": 65,
+   "startMs": 1766100,
+   "endMs": 1785100
+  },
+  {
+   "surah": 4,
+   "ayah": 66,
+   "startMs": 1785100,
+   "endMs": 1810180
+  },
+  {
+   "surah": 4,
+   "ayah": 67,
+   "startMs": 1810180,
+   "endMs": 1817580
+  },
+  {
+   "surah": 4,
+   "ayah": 68,
+   "startMs": 1817580,
+   "endMs": 1822640
+  },
+  {
+   "surah": 4,
+   "ayah": 69,
+   "startMs": 1822640,
+   "endMs": 1850560
+  },
+  {
+   "surah": 4,
+   "ayah": 70,
+   "startMs": 1850560,
+   "endMs": 1855840
+  },
+  {
+   "surah": 4,
+   "ayah": 71,
+   "startMs": 1855840,
+   "endMs": 1866320
+  },
+  {
+   "surah": 4,
+   "ayah": 72,
+   "startMs": 1866320,
+   "endMs": 1881320
+  },
+  {
+   "surah": 4,
+   "ayah": 73,
+   "startMs": 1881320,
+   "endMs": 1897020
+  },
+  {
+   "surah": 4,
+   "ayah": 74,
+   "startMs": 1897020,
+   "endMs": 1913960
+  },
+  {
+   "surah": 4,
+   "ayah": 75,
+   "startMs": 1913960,
+   "endMs": 1943060
+  },
+  {
+   "surah": 4,
+   "ayah": 76,
+   "startMs": 1943060,
+   "endMs": 1963380
+  },
+  {
+   "surah": 4,
+   "ayah": 77,
+   "startMs": 1963380,
+   "endMs": 2009840
+  },
+  {
+   "surah": 4,
+   "ayah": 78,
+   "startMs": 2009840,
+   "endMs": 2045880
+  },
+  {
+   "surah": 4,
+   "ayah": 79,
+   "startMs": 2045880,
+   "endMs": 2064260
+  },
+  {
+   "surah": 4,
+   "ayah": 80,
+   "startMs": 2064260,
+   "endMs": 2075060
+  },
+  {
+   "surah": 4,
+   "ayah": 81,
+   "startMs": 2075060,
+   "endMs": 2096640
+  },
+  {
+   "surah": 4,
+   "ayah": 82,
+   "startMs": 2096640,
+   "endMs": 2108960
+  },
+  {
+   "surah": 4,
+   "ayah": 83,
+   "startMs": 2108960,
+   "endMs": 2134740
+  },
+  {
+   "surah": 4,
+   "ayah": 84,
+   "startMs": 2134740,
+   "endMs": 2152560
+  },
+  {
+   "surah": 4,
+   "ayah": 85,
+   "startMs": 2152560,
+   "endMs": 2171860
+  },
+  {
+   "surah": 4,
+   "ayah": 86,
+   "startMs": 2171860,
+   "endMs": 2189300
+  },
+  {
+   "surah": 4,
+   "ayah": 87,
+   "startMs": 2189300,
+   "endMs": 2206980
+  },
+  {
+   "surah": 4,
+   "ayah": 88,
+   "startMs": 2206980,
+   "endMs": 2227780
+  },
+  {
+   "surah": 4,
+   "ayah": 89,
+   "startMs": 2227780,
+   "endMs": 2262300
+  },
+  {
+   "surah": 4,
+   "ayah": 90,
+   "startMs": 2262300,
+   "endMs": 2302450
+  },
+  {
+   "surah": 4,
+   "ayah": 91,
+   "startMs": 2302450,
+   "endMs": 2341260
+  },
+  {
+   "surah": 91,
+   "ayah": 1,
+   "startMs": 4260,
+   "endMs": 7440
+  },
+  {
+   "surah": 91,
+   "ayah": 2,
+   "startMs": 7440,
+   "endMs": 10740
+  },
+  {
+   "surah": 91,
+   "ayah": 3,
+   "startMs": 10740,
+   "endMs": 15100
+  },
+  {
+   "surah": 91,
+   "ayah": 4,
+   "startMs": 15100,
+   "endMs": 19150
+  },
+  {
+   "surah": 91,
+   "ayah": 5,
+   "startMs": 19150,
+   "endMs": 23220
+  },
+  {
+   "surah": 91,
+   "ayah": 6,
+   "startMs": 23220,
+   "endMs": 26360
+  },
+  {
+   "surah": 91,
+   "ayah": 7,
+   "startMs": 26360,
+   "endMs": 30000
+  },
+  {
+   "surah": 91,
+   "ayah": 8,
+   "startMs": 30000,
+   "endMs": 35160
+  },
+  {
+   "surah": 91,
+   "ayah": 9,
+   "startMs": 35160,
+   "endMs": 40780
+  },
+  {
+   "surah": 91,
+   "ayah": 10,
+   "startMs": 40780,
+   "endMs": 44240
+  },
+  {
+   "surah": 91,
+   "ayah": 11,
+   "startMs": 44240,
+   "endMs": 48460
+  },
+  {
+   "surah": 91,
+   "ayah": 12,
+   "startMs": 48460,
+   "endMs": 52520
+  },
+  {
+   "surah": 91,
+   "ayah": 13,
+   "startMs": 52520,
+   "endMs": 60160
+  },
+  {
+   "surah": 91,
+   "ayah": 14,
+   "startMs": 60160,
+   "endMs": 70060
+  },
+  {
+   "surah": 91,
+   "ayah": 15,
+   "startMs": 70060,
+   "endMs": 74560
+  }
+ ],
+ "surahs": [
+  {
+   "surah": 4,
+   "window": {
+    "ayat": [
+     60,
+     91
+    ],
+    "fromMs": 1663700,
+    "toMs": 2342889
+   },
+   "durationMs": 679189,
+   "heardWords": 686,
+   "textWords": 674,
+   "matchedTextWords": 659,
+   "rows": [
+    {
+     "surah": 4,
+     "ayah": 60,
+     "startMs": 1664090,
+     "heardStartMs": 1664100,
+     "snappedToPause": true,
+     "matchedWords": 30,
+     "words": 30,
+     "endMs": 1689860
+    },
+    {
+     "surah": 4,
+     "ayah": 61,
+     "startMs": 1689860,
+     "heardStartMs": 1689860,
+     "snappedToPause": false,
+     "matchedWords": 15,
+     "words": 15,
+     "endMs": 1705120
+    },
+    {
+     "surah": 4,
+     "ayah": 62,
+     "startMs": 1705120,
+     "heardStartMs": 1705120,
+     "snappedToPause": false,
+     "matchedWords": 16,
+     "words": 16,
+     "endMs": 1728900
+    },
+    {
+     "surah": 4,
+     "ayah": 63,
+     "startMs": 1728900,
+     "heardStartMs": 1728900,
+     "snappedToPause": false,
+     "matchedWords": 16,
+     "words": 16,
+     "endMs": 1742840
+    },
+    {
+     "surah": 4,
+     "ayah": 64,
+     "startMs": 1742840,
+     "heardStartMs": 1742840,
+     "snappedToPause": false,
+     "matchedWords": 23,
+     "words": 23,
+     "endMs": 1766100
+    },
+    {
+     "surah": 4,
+     "ayah": 65,
+     "startMs": 1766100,
+     "heardStartMs": 1766100,
+     "snappedToPause": false,
+     "matchedWords": 19,
+     "words": 19,
+     "endMs": 1785100
+    },
+    {
+     "surah": 4,
+     "ayah": 66,
+     "startMs": 1785100,
+     "heardStartMs": 1785100,
+     "snappedToPause": false,
+     "matchedWords": 27,
+     "words": 27,
+     "endMs": 1810180
+    },
+    {
+     "surah": 4,
+     "ayah": 67,
+     "startMs": 1810180,
+     "heardStartMs": 1810180,
+     "snappedToPause": false,
+     "matchedWords": 6,
+     "words": 6,
+     "endMs": 1817580
+    },
+    {
+     "surah": 4,
+     "ayah": 68,
+     "startMs": 1817580,
+     "heardStartMs": 1817580,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 1822640
+    },
+    {
+     "surah": 4,
+     "ayah": 69,
+     "startMs": 1822640,
+     "heardStartMs": 1822640,
+     "snappedToPause": false,
+     "matchedWords": 18,
+     "words": 18,
+     "endMs": 1850560
+    },
+    {
+     "surah": 4,
+     "ayah": 70,
+     "startMs": 1850560,
+     "heardStartMs": 1850560,
+     "snappedToPause": false,
+     "matchedWords": 7,
+     "words": 7,
+     "endMs": 1855840
+    },
+    {
+     "surah": 4,
+     "ayah": 71,
+     "startMs": 1855840,
+     "heardStartMs": 1855840,
+     "snappedToPause": false,
+     "matchedWords": 11,
+     "words": 11,
+     "endMs": 1866320
+    },
+    {
+     "surah": 4,
+     "ayah": 72,
+     "startMs": 1866320,
+     "heardStartMs": 1866320,
+     "snappedToPause": false,
+     "matchedWords": 17,
+     "words": 17,
+     "endMs": 1881320
+    },
+    {
+     "surah": 4,
+     "ayah": 73,
+     "startMs": 1881320,
+     "heardStartMs": 1881320,
+     "snappedToPause": false,
+     "matchedWords": 19,
+     "words": 19,
+     "endMs": 1897020
+    },
+    {
+     "surah": 4,
+     "ayah": 74,
+     "startMs": 1897020,
+     "heardStartMs": 1897020,
+     "snappedToPause": false,
+     "matchedWords": 21,
+     "words": 21,
+     "endMs": 1913960
+    },
+    {
+     "surah": 4,
+     "ayah": 75,
+     "startMs": 1913960,
+     "heardStartMs": 1913960,
+     "snappedToPause": false,
+     "matchedWords": 29,
+     "words": 31,
+     "endMs": 1943060
+    },
+    {
+     "surah": 4,
+     "ayah": 76,
+     "startMs": 1943060,
+     "heardStartMs": 1943060,
+     "snappedToPause": false,
+     "matchedWords": 20,
+     "words": 20,
+     "endMs": 1963380
+    },
+    {
+     "surah": 4,
+     "ayah": 77,
+     "startMs": 1963380,
+     "heardStartMs": 1963380,
+     "snappedToPause": false,
+     "matchedWords": 47,
+     "words": 48,
+     "endMs": 2009840
+    },
+    {
+     "surah": 4,
+     "ayah": 78,
+     "startMs": 2009840,
+     "heardStartMs": 2009840,
+     "snappedToPause": false,
+     "matchedWords": 36,
+     "words": 36,
+     "endMs": 2045880
+    },
+    {
+     "surah": 4,
+     "ayah": 79,
+     "startMs": 2045880,
+     "heardStartMs": 2045880,
+     "snappedToPause": false,
+     "matchedWords": 18,
+     "words": 18,
+     "endMs": 2064260
+    },
+    {
+     "surah": 4,
+     "ayah": 80,
+     "startMs": 2064260,
+     "heardStartMs": 2064260,
+     "snappedToPause": false,
+     "matchedWords": 11,
+     "words": 12,
+     "endMs": 2075060
+    },
+    {
+     "surah": 4,
+     "ayah": 81,
+     "startMs": 2075060,
+     "heardStartMs": 2075060,
+     "snappedToPause": false,
+     "matchedWords": 23,
+     "words": 24,
+     "endMs": 2096640
+    },
+    {
+     "surah": 4,
+     "ayah": 82,
+     "startMs": 2096640,
+     "heardStartMs": 2096640,
+     "snappedToPause": false,
+     "matchedWords": 13,
+     "words": 13,
+     "endMs": 2108960
+    },
+    {
+     "surah": 4,
+     "ayah": 83,
+     "startMs": 2108960,
+     "heardStartMs": 2108960,
+     "snappedToPause": false,
+     "matchedWords": 29,
+     "words": 30,
+     "endMs": 2134740
+    },
+    {
+     "surah": 4,
+     "ayah": 84,
+     "startMs": 2134740,
+     "heardStartMs": 2134740,
+     "snappedToPause": false,
+     "matchedWords": 22,
+     "words": 22,
+     "endMs": 2152560
+    },
+    {
+     "surah": 4,
+     "ayah": 85,
+     "startMs": 2152560,
+     "heardStartMs": 2152560,
+     "snappedToPause": false,
+     "matchedWords": 20,
+     "words": 22,
+     "endMs": 2171860
+    },
+    {
+     "surah": 4,
+     "ayah": 86,
+     "startMs": 2171860,
+     "heardStartMs": 2171860,
+     "snappedToPause": false,
+     "matchedWords": 15,
+     "words": 15,
+     "endMs": 2189300
+    },
+    {
+     "surah": 4,
+     "ayah": 87,
+     "startMs": 2189300,
+     "heardStartMs": 2189300,
+     "snappedToPause": false,
+     "matchedWords": 16,
+     "words": 17,
+     "endMs": 2206980
+    },
+    {
+     "surah": 4,
+     "ayah": 88,
+     "startMs": 2206980,
+     "heardStartMs": 2206980,
+     "snappedToPause": false,
+     "matchedWords": 21,
+     "words": 22,
+     "endMs": 2227780
+    },
+    {
+     "surah": 4,
+     "ayah": 89,
+     "startMs": 2227780,
+     "heardStartMs": 2228300,
+     "snappedToPause": true,
+     "matchedWords": 28,
+     "words": 28,
+     "endMs": 2262300
+    },
+    {
+     "surah": 4,
+     "ayah": 90,
+     "startMs": 2262300,
+     "heardStartMs": 2262260,
+     "snappedToPause": true,
+     "matchedWords": 33,
+     "words": 36,
+     "endMs": 2302450
+    },
+    {
+     "surah": 4,
+     "ayah": 91,
+     "startMs": 2302450,
+     "heardStartMs": 2302720,
+     "snappedToPause": true,
+     "matchedWords": 30,
+     "words": 32,
+     "endMs": 2341260
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "4:60",
+     "heard": "الم تري الي الذين يزعومون انهم امنوا بما انزل اليك وما انزل من قبلك يريدون ان يتحاكموا الي الطاغوت وقد امروا ان يكفروا به ويريد الشيطان ان يضل لهم ضلالا بعيدا",
+     "scores": {
+      "59": 0.252,
+      "60": 0.987,
+      "61": 0.354
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:61",
+     "heard": "واذا قيل لهم تعالوا الي ما انزل الله والي الرسول رايت المنافقين يصدون عنك صدودا",
+     "scores": {
+      "60": 0.395,
+      "61": 1.0,
+      "62": 0.373
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:62",
+     "heard": "فكيف اذا اصابتهم مصيبه بما قدمت ايديهم ثم جاوا كيحلفون بالله ان اردنا الا احسانا وتوفيقا",
+     "scores": {
+      "61": 0.371,
+      "62": 0.983,
+      "63": 0.226
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:63",
+     "heard": "اوليك الذين يعلموا الله ما في قلوبهم فاعرض عنهم وعظهم وقل لهم في انفسين قولا بليغا",
+     "scores": {
+      "62": 0.237,
+      "63": 0.963,
+      "64": 0.337
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:64",
+     "heard": "وما ارسلنا من رسول الا ليقاع باذن الله ولو انهم اذ ظلموا انفسهم جاواك فاستغفروا الله واستغفر لهم رسول لو جدوا الله توابر رحيما",
+     "scores": {
+      "63": 0.359,
+      "64": 0.968,
+      "65": 0.308
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:65",
+     "heard": "فلا وربك لا يومنون حتي يحكموا كفي ما شجر بينهم ثم لا يجدوا في انفسهم حرجا من ما قضيت ويسلموا تسلينا",
+     "scores": {
+      "64": 0.338,
+      "65": 0.959,
+      "66": 0.388
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:66",
+     "heard": "ولو انا كتبنا عليهم ان قتلوا انفسكم او اخرجوا من دياركم ما فعلوه الا قليل منهم ولو انهم فعلوا ما يعظون به لكان خيرا لهم واشد تثبيتا",
+     "scores": {
+      "65": 0.257,
+      "66": 0.992,
+      "67": 0.245
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:67",
+     "heard": "واذا لاتيناهم من لدنا اجرا عظيما",
+     "scores": {
+      "66": 0.23,
+      "67": 1.0,
+      "68": 0.473
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:68",
+     "heard": "ولهديناهم صراطا مستقيما",
+     "scores": {
+      "67": 0.509,
+      "68": 1.0,
+      "69": 0.229
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:69",
+     "heard": "ومن يقع الله ورسول فاوليك مع الذين انعموا الله عليهم من النبيين والصديقين والشهدا والصالحين وحسن اوليك رفيقا",
+     "scores": {
+      "68": 0.198,
+      "69": 0.972,
+      "70": 0.282
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:70",
+     "heard": "ذلك الفضل من الله وكفي بالله علينا",
+     "scores": {
+      "69": 0.31,
+      "70": 0.971,
+      "71": 0.344
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:71",
+     "heard": "يا ايها الذين امنوا خذوا حذركم فانفروا ثبات او انفروا جميعا",
+     "scores": {
+      "70": 0.258,
+      "71": 1.0,
+      "72": 0.246
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:72",
+     "heard": "وان منكم لمن لا يبط ان فان اصابتكم مصيبه قال قال قد انعم الله علي اذ لم اكم معهم شهيدا",
+     "scores": {
+      "71": 0.221,
+      "72": 0.933,
+      "73": 0.436
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:73",
+     "heard": "ولين اصابكم فضل من الله ليقول انك ان لم تكن بينكم وبينه موده يا ليتني كنت معهم فافوز فوزا عظيما",
+     "scores": {
+      "72": 0.437,
+      "73": 0.979,
+      "74": 0.317
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:74",
+     "heard": "فاليقاتل في سبيل الله الذين يشرون الحياه الدنيا بالاخره ومن يقاتل في سبيل الله فيقتل او يغلب فسوف نوتيه اجرا عظيما",
+     "scores": {
+      "73": 0.386,
+      "74": 0.996,
+      "75": 0.312
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:75",
+     "heard": "وما لكم لا تقاتلون في سبيل الله والمستضع فين من الرجال والنسا والولدان الذين يقولون الذين يقولون ربنا اخرجنا من هذه القريه الظالم اهلها وجعلنا من لدك وليا وجعلنا من لدك نصيرا",
+     "scores": {
+      "74": 0.355,
+      "75": 0.936,
+      "76": 0.407
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:76",
+     "heard": "الذين امنوا يقاتلون في سبيل الله والذين كفروا يقاتلون في سبيل الضهوت فقاتلوا اوليا الشيطان ان كيد الشيطان كان ضعيفا",
+     "scores": {
+      "75": 0.417,
+      "76": 0.978,
+      "77": 0.219
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:77",
+     "heard": "الم تري الي الذين قيل لهم كفوا ايدكم واقيموا الصلاه واتوا الزكاه فلما كتب عليهم القتال اذا فريقوا منهم يخشون الناس كخشيه الله او اشد خشياه وقالوا ربنا لمكتبت علينا القتال لو لا اخرتنا الي اجل قريب قل متاع الدنيا قليل والاخره خير لمن اتقي ولا تظلمون فتيله",
+     "scores": {
+      "76": 0.314,
+      "77": 0.982,
+      "78": 0.302
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:78",
+     "heard": "اين ما تكونوا يدرككم الموت ولو كنتم في بروج مشيده وان تصبهم حسنه يقولوا هذه من عند الله وان تصبهم سييه يقولوا هذه من عندك قل كل من عند الله فما لها اولا القوم فما لهولا القوم لا يكادون يفقه حديثا",
+     "scores": {
+      "77": 0.35,
+      "78": 0.935,
+      "79": 0.323
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:79",
+     "heard": "ما اصابك من حسنه فمن الله وما اصابك من سييه فمن نفسك وارسلناك للناس رسولا وكفي بالله شهيدا",
+     "scores": {
+      "78": 0.382,
+      "79": 1.0,
+      "80": 0.453
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:80",
+     "heard": "من يقير وسول فقد اطاع الله ومن تولي فما ارسلناك عليهم حفيظا",
+     "scores": {
+      "79": 0.456,
+      "80": 0.924,
+      "81": 0.273
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:81",
+     "heard": "ويقولون طاعه فاذا برزو من عندك بيتقايفه منهم غير الذي تقول والله يكتب ما يبيتون فاعرض عنهم وتوكل علي الله وكفي بالله وكيله",
+     "scores": {
+      "80": 0.198,
+      "81": 0.976,
+      "82": 0.326
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:82",
+     "heard": "افلا يتذبرون القران ولو كان من عند غير الله لو جدوا فيه اختلافا كثيرا",
+     "scores": {
+      "81": 0.342,
+      "82": 0.978,
+      "83": 0.328
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:83",
+     "heard": "واذا جاهم امر من الامن او الخوف اذاعو به ولو ردوه الي الرسول والا الامر منهم لعلمه الذين يستنبطونه منهم ولو لا فضل الله عليكم ورحمته لاتبعتم الشيطان الا قليلا",
+     "scores": {
+      "82": 0.345,
+      "83": 0.978,
+      "84": 0.346
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:84",
+     "heard": "فقاتل في سبيل الله لا تكلف الا نفسك وحرض المومنين عسي الله ان يكف باس الذين كفروا والله اشد باس واشد تنكيلا",
+     "scores": {
+      "83": 0.207,
+      "84": 0.995,
+      "85": 0.186
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:85",
+     "heard": "من يشفع شفاعه حسنت يكله نصيب منها ومن يشفع شفاعه سييه يكله كفل منها وكان الله علي كل شي مقيتا",
+     "scores": {
+      "84": 0.209,
+      "85": 0.968,
+      "86": 0.479
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:86",
+     "heard": "واذا حييت بتحيه فحيوا باحسن منها او ردوها ان الله كان علي كل شي حسيبا",
+     "scores": {
+      "85": 0.446,
+      "86": 0.993,
+      "87": 0.301
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:87",
+     "heard": "الله لا اله الا هو ليجمع انكم الي يوم القيامه لا ريب فيه ومن اصدق ملالله حديثا",
+     "scores": {
+      "86": 0.216,
+      "87": 0.968,
+      "88": 0.299
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:88",
+     "heard": "فما لكم في المنافقين فاتين وضعه اركسهم بما كسبوا اتريدون ان تهدو من اظل الله ومن يبلل الله فلا تجد له سبيل",
+     "scores": {
+      "87": 0.317,
+      "88": 0.93,
+      "89": 0.224
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:89",
+     "heard": "ودوا لو تكفرون كما كفروا فتكونون سواه فلا تتخذوا منهم اوليا حتي يهاجروا في سبيل الله فان تولوا فخذوهم وقتلوهم حيث وجدتمهم ولا تتخذوا منهم وليا ولا نصيرا الا",
+     "scores": {
+      "88": 0.37,
+      "89": 0.977,
+      "90": 0.258
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:90",
+     "heard": "الذين يصلون الي قوم بينكم و بينهم مفاقا ارجاكم حصوي الصدورهم اي يقاتلوكم او يقاتلو قوم ضم ولو شا الله لسلطهم عليكم فلقاتلوكم فان عتزلوكم فلم قاتلوكم والقوا اليكم السلم فما جعل الله لكم عليهم سبيلا",
+     "scores": {
+      "89": 0.252,
+      "90": 0.932,
+      "91": 0.391
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "4:91",
+     "heard": "ستجدون اخرين يريدون ان يامنوكم ويامنوا قومبوا كلما ردوا الي الفتنه بركسوا فيها فان لم يعتزلوكم ويرقوا اليكم السلم ويكفوا ايديهم فخذوهم وقتلوهم حيث سقفتموهم واوليكم جعلنا لكم عليهم سلطانا مبينا",
+     "scores": {
+      "90": 0.483,
+      "91": 0.966,
+      "92": 0.251
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "004.mp3",
+    "size": 68950160,
+    "sha256": "84e53929a41e7f1da99f626a5e9689b68e2241c899362cc0e3c649c0290baa5e"
+   }
+  },
+  {
+   "surah": 91,
+   "window": {
+    "ayat": [
+     1,
+     15
+    ],
+    "fromMs": 0,
+    "toMs": 76931
+   },
+   "durationMs": 76931,
+   "heardWords": 59,
+   "textWords": 54,
+   "matchedTextWords": 54,
+   "rows": [
+    {
+     "surah": 91,
+     "ayah": 1,
+     "startMs": 4260,
+     "heardStartMs": 4260,
+     "snappedToPause": false,
+     "matchedWords": 2,
+     "words": 2,
+     "endMs": 7440
+    },
+    {
+     "surah": 91,
+     "ayah": 2,
+     "startMs": 7440,
+     "heardStartMs": 7440,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 10740
+    },
+    {
+     "surah": 91,
+     "ayah": 3,
+     "startMs": 10740,
+     "heardStartMs": 10740,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 15100
+    },
+    {
+     "surah": 91,
+     "ayah": 4,
+     "startMs": 15100,
+     "heardStartMs": 15100,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 19150
+    },
+    {
+     "surah": 91,
+     "ayah": 5,
+     "startMs": 19150,
+     "heardStartMs": 19120,
+     "snappedToPause": true,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 23220
+    },
+    {
+     "surah": 91,
+     "ayah": 6,
+     "startMs": 23220,
+     "heardStartMs": 23220,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 26360
+    },
+    {
+     "surah": 91,
+     "ayah": 7,
+     "startMs": 26360,
+     "heardStartMs": 26360,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 30000
+    },
+    {
+     "surah": 91,
+     "ayah": 8,
+     "startMs": 30000,
+     "heardStartMs": 30000,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 35160
+    },
+    {
+     "surah": 91,
+     "ayah": 9,
+     "startMs": 35160,
+     "heardStartMs": 35160,
+     "snappedToPause": false,
+     "matchedWords": 4,
+     "words": 4,
+     "endMs": 40780
+    },
+    {
+     "surah": 91,
+     "ayah": 10,
+     "startMs": 40780,
+     "heardStartMs": 40780,
+     "snappedToPause": false,
+     "matchedWords": 4,
+     "words": 4,
+     "endMs": 44240
+    },
+    {
+     "surah": 91,
+     "ayah": 11,
+     "startMs": 44240,
+     "heardStartMs": 44240,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 48460
+    },
+    {
+     "surah": 91,
+     "ayah": 12,
+     "startMs": 48460,
+     "heardStartMs": 48460,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 52520
+    },
+    {
+     "surah": 91,
+     "ayah": 13,
+     "startMs": 52520,
+     "heardStartMs": 52520,
+     "snappedToPause": false,
+     "matchedWords": 7,
+     "words": 7,
+     "endMs": 60160
+    },
+    {
+     "surah": 91,
+     "ayah": 14,
+     "startMs": 60160,
+     "heardStartMs": 60200,
+     "snappedToPause": true,
+     "matchedWords": 7,
+     "words": 7,
+     "endMs": 70060
+    },
+    {
+     "surah": 91,
+     "ayah": 15,
+     "startMs": 70060,
+     "heardStartMs": 70060,
+     "snappedToPause": false,
+     "matchedWords": 3,
+     "words": 3,
+     "endMs": 74560
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "91:1",
+     "heard": "والشمس وضحاها",
+     "scores": {
+      "1": 1.0,
+      "2": 0.552
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:2",
+     "heard": "والقمر اذا تلاها",
+     "scores": {
+      "1": 0.552,
+      "2": 1.0,
+      "3": 0.788
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:3",
+     "heard": "والنهار اذا جلاها",
+     "scores": {
+      "2": 0.788,
+      "3": 1.0,
+      "4": 0.647
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:4",
+     "heard": "والليل اذا يغشاها والسما",
+     "scores": {
+      "3": 0.537,
+      "4": 0.829,
+      "5": 0.3
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:5",
+     "heard": "وما بناها",
+     "scores": {
+      "4": 0.462,
+      "5": 0.72,
+      "6": 0.56
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:6",
+     "heard": "والارض وما طحاها",
+     "scores": {
+      "5": 0.75,
+      "6": 1.0,
+      "7": 0.6
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:7",
+     "heard": "ونفس وما سواها",
+     "scores": {
+      "6": 0.6,
+      "7": 1.0,
+      "8": 0.389
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:8",
+     "heard": "فالهمها خدورها وتقواها",
+     "scores": {
+      "7": 0.444,
+      "8": 0.909,
+      "9": 0.368
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:9",
+     "heard": "قد افلح من زكاها",
+     "scores": {
+      "8": 0.211,
+      "9": 1.0,
+      "10": 0.688
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:10",
+     "heard": "وقد خاف من دسها",
+     "scores": {
+      "9": 0.71,
+      "10": 0.903,
+      "11": 0.375
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:11",
+     "heard": "كذبت تمود بطرواها",
+     "scores": {
+      "10": 0.424,
+      "11": 0.882,
+      "12": 0.375
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:12",
+     "heard": "اذ ان بعث اشقاها",
+     "scores": {
+      "11": 0.424,
+      "12": 0.968,
+      "13": 0.385
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:13",
+     "heard": "فقال لهم رسول الله ناقه الله وسقياها",
+     "scores": {
+      "12": 0.392,
+      "13": 1.0,
+      "14": 0.321
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:14",
+     "heard": "فكذبوه فاقرواها فدندم عليهم ربهم بذنبهم فسواها",
+     "scores": {
+      "13": 0.293,
+      "14": 0.945,
+      "15": 0.164
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "91:15",
+     "heard": "ولا يخاف نقباها",
+     "scores": {
+      "14": 0.267,
+      "15": 0.933
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "091.mp3",
+    "size": 1239909,
+    "sha256": "dddda94a8a55c1a184fb2c2cba4cd1e6c26a4e9a3cc51978ed726c054c8f7286"
+   }
+  }
+ ]
+}

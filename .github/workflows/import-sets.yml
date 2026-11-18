@@ -34,6 +34,11 @@ on:
         type: string
         required: false
         default: ""
+      channel:
+        description: "measure only: the channel recognized, mix (default) or left/right for a file with one channel inverted"
+        type: choice
+        options: [mix, left, right]
+        default: mix
 
 permissions:
   contents: write
@@ -95,13 +100,14 @@ jobs:
         if: inputs.mode == 'measure'
         env:
           WINDOWS: ${{ inputs.windows }}
+          CHANNEL: ${{ inputs.channel }}
           AUDIO: ${{ runner.temp }}/audio
         run: |
           pip install --quiet "faster-whisper>=1.1,<2"
           python -I -X utf8 import/tools/fetch_measure_audio.py
           ARGS=()
           for w in $WINDOWS; do ARGS+=(--window "$w"); done
-          python -I -X utf8 import/tools/time_surahs_by_speech.py --set "$SET" --audio "$AUDIO" "${ARGS[@]}"
+          python -I -X utf8 import/tools/time_surahs_by_speech.py --set "$SET" --audio "$AUDIO" --channel "${CHANNEL:-mix}" "${ARGS[@]}"
 
       - name: Keep the measurement
         if: inputs.mode == 'measure' && always()

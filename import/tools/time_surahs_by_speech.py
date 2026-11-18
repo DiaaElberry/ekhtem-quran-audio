@@ -113,18 +113,31 @@ def pauses(audio, rate: int) -> list[tuple[int, int]]:
     return out
 
 
+# Which of the file's channels is recognized: "mix" (both mixed to mono) or one of them, "left" / "right". A file with one channel
+# inverted loses most of its voice when the two are mixed (Muhammad Jibreel's surahs 3, 7, 9, 10, 12: 7 to 9 dB quieter, and the
+# recognizer heard 9 of 49 words where it hears nearly all elsewhere, decision 258); either channel alone holds the whole voice.
+CHANNEL = "mix"
+
+
 def decode(path: Path, from_ms: int | None = None, to_ms: int | None = None):
-    """16 kHz mono float samples of the file, or of [from_ms, to_ms) only (streamed from that point, for long surahs)."""
+    """16 kHz mono float samples of the file (`CHANNEL`), or of [from_ms, to_ms) only (streamed from that point, for long surahs)."""
     import miniaudio
     import numpy as np
+    channels = 1 if CHANNEL == "mix" else 2
+    pick = None if channels == 1 else (0 if CHANNEL == "left" else 1)
+
+    def mono(samples):
+        array = np.asarray(samples, dtype=np.float32)
+        return array if pick is None else array[pick::2]
+
     if from_ms is None:
-        decoded = miniaudio.decode_file(str(path), output_format=miniaudio.SampleFormat.FLOAT32, nchannels=1, sample_rate=16000)
-        return np.asarray(decoded.samples, dtype=np.float32)
+        decoded = miniaudio.decode_file(str(path), output_format=miniaudio.SampleFormat.FLOAT32, nchannels=channels, sample_rate=16000)
+        return mono(decoded.samples)
     want = (to_ms - from_ms) * 16
     chunks, have = [], 0
-    for block in miniaudio.stream_file(str(path), output_format=miniaudio.SampleFormat.FLOAT32, nchannels=1, sample_rate=16000,
+    for block in miniaudio.stream_file(str(path), output_format=miniaudio.SampleFormat.FLOAT32, nchannels=channels, sample_rate=16000,
                                        frames_to_read=16000, seek_frame=from_ms * 16):
-        chunks.append(np.asarray(block, dtype=np.float32))
+        chunks.append(mono(block))
         have += len(chunks[-1])
         if have >= want:
             break
@@ -207,7 +220,11 @@ def main() -> None:
     parser.add_argument("--audio", type=Path, required=True, help="folder with the set's NNN.mp3 files")
     parser.add_argument("--model", default="small")
     parser.add_argument("--out", default="measured_timings.json", help="file name in content/recitations/<set>/ (a second model's pass goes beside the first)")
+    parser.add_argument("--channel", choices=["mix", "left", "right"], default="mix",
+                        help="the channel recognized: both mixed (default), or one of them for a file with one channel inverted")
     args = parser.parse_args()
+    global CHANNEL
+    CHANNEL = args.channel
     sys.stdout.reconfigure(encoding="utf-8")
     from faster_whisper import WhisperModel
     model = WhisperModel(args.model, device="cpu", compute_type="int8", cpu_threads=6, num_workers=1)
@@ -222,6 +239,8 @@ def main() -> None:
         path = args.audio / f"{surah:03}.mp3"
         result = time_surah(model, path, surah, counts, window)
         result["file"] = {"name": path.name, "size": path.stat().st_size, "sha256": prs._sha256(path)}
+        if CHANNEL != "mix":
+            result["channel"] = CHANNEL
         results.append(result)
         bad = [c["ayah"] for c in result["check"] if not c["ownBest"]]
         print(f"surah {surah}: {result['matchedTextWords']}/{result['textWords']} text words heard, "
