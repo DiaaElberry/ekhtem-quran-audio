@@ -89,6 +89,7 @@ jobs:
         with:
           name: ${{ matrix.set }}
           path: import/content/recitations/${{ matrix.set }}/
+          if-no-files-found: warn
 
       - name: Measure (fetch and check the windows' files, time them by speech)
         if: inputs.mode == 'measure'
@@ -108,7 +109,6 @@ jobs:
         with:
           name: ${{ matrix.set }}-measured
           path: import/content/recitations/${{ matrix.set }}/measured_timings.json
-          if-no-files-found: warn
           if-no-files-found: warn
 
       - name: Release
