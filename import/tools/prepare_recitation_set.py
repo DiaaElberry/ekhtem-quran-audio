@@ -356,7 +356,11 @@ def download(staging: Path, set_ids: list[str]) -> None:
     if not (api / "reciters_ar.json").is_file():
         _fetch(RECITERS_URL, api / "reciters_ar.json", log)
     extra = ["warsh_words.json.gz"] if any(SETS[s].get("riwayah") == "warsh" for s in set_ids) else []
-    for name in ["catalog.json", "manifest.json"] + extra + [SETS[s]["qud"] + ".zip" for s in set_ids if SETS[s].get("qud")]:
+    # QUD's release files only for the sets QUD timed (or Warsh's word list): QUD replaced v4.0.0 with v5.0.0 on 13 Nov 2026
+    # and v4.0.0's files are gone (HTTP 404), which stopped every set's download although sets timed by MP3Quran's timing
+    # release never read them (decision 258). Sets QUD timed keep their committed provenance; staging them again needs v4.0.0.
+    uses_qud = any(SETS[s].get("qud") for s in set_ids) or bool(extra)
+    for name in (["catalog.json", "manifest.json"] if uses_qud else []) + extra + [SETS[s]["qud"] + ".zip" for s in set_ids if SETS[s].get("qud")]:
         if not (qud / name).is_file():
             _fetch(QUD_RELEASE + name, qud / name, log)
     _write_log(staging, "catalogues", log)
