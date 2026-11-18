@@ -1,6 +1,6 @@
 {
  "set": "jibreel-hafs-v1",
- "madeAt": "2026-11-18T20:50:00Z",
+ "madeAt": "2026-11-18T20:53:54Z",
  "method": "tools/time_surahs_by_speech.py: faster-whisper small int8 with word times, aligned to the ayah text (letters only), starts moved to the end of the pause before them less 70 ms; ends at the next start. Not heard by anyone yet.",
  "rows": [
   {
@@ -194,6 +194,66 @@
    "ayah": 91,
    "startMs": 2302450,
    "endMs": 2341260
+  },
+  {
+   "surah": 9,
+   "ayah": 101,
+   "startMs": 2362632,
+   "endMs": 2391732
+  },
+  {
+   "surah": 9,
+   "ayah": 102,
+   "startMs": 2391732,
+   "endMs": 2411832
+  },
+  {
+   "surah": 9,
+   "ayah": 103,
+   "startMs": 2411832,
+   "endMs": 2431422
+  },
+  {
+   "surah": 9,
+   "ayah": 104,
+   "startMs": 2431422,
+   "endMs": 2448132
+  },
+  {
+   "surah": 9,
+   "ayah": 105,
+   "startMs": 2448132,
+   "endMs": 2468681
+  },
+  {
+   "surah": 9,
+   "ayah": 116,
+   "startMs": 2727427,
+   "endMs": 2744797
+  },
+  {
+   "surah": 9,
+   "ayah": 117,
+   "startMs": 2744797,
+   "endMs": 2778067
+  },
+  {
+   "surah": 9,
+   "ayah": 118,
+   "startMs": 2778067,
+   "endMs": 2811677
+  },
+  {
+   "surah": 9,
+   "ayah": 119,
+   "startMs": 2811677,
+   "endMs": 2820437
+  },
+  {
+   "surah": 9,
+   "ayah": 120,
+   "startMs": 2820437,
+   "endMs": 2874697
   },
   {
    "surah": 91,
@@ -951,6 +1011,258 @@
     "size": 68950160,
     "sha256": "84e53929a41e7f1da99f626a5e9689b68e2241c899362cc0e3c649c0290baa5e"
    }
+  },
+  {
+   "surah": 9,
+   "window": {
+    "ayat": [
+     101,
+     105
+    ],
+    "fromMs": 2361302,
+    "toMs": 2468681
+   },
+   "durationMs": 107379,
+   "heardWords": 91,
+   "textWords": 87,
+   "matchedTextWords": 87,
+   "rows": [
+    {
+     "surah": 9,
+     "ayah": 101,
+     "startMs": 2362632,
+     "heardStartMs": 2362622,
+     "snappedToPause": true,
+     "matchedWords": 22,
+     "words": 22,
+     "endMs": 2391732
+    },
+    {
+     "surah": 9,
+     "ayah": 102,
+     "startMs": 2391732,
+     "heardStartMs": 2391802,
+     "snappedToPause": true,
+     "matchedWords": 17,
+     "words": 17,
+     "endMs": 2411832
+    },
+    {
+     "surah": 9,
+     "ayah": 103,
+     "startMs": 2411832,
+     "heardStartMs": 2411762,
+     "snappedToPause": true,
+     "matchedWords": 16,
+     "words": 16,
+     "endMs": 2431422
+    },
+    {
+     "surah": 9,
+     "ayah": 104,
+     "startMs": 2431422,
+     "heardStartMs": 2431422,
+     "snappedToPause": true,
+     "matchedWords": 16,
+     "words": 16,
+     "endMs": 2448132
+    },
+    {
+     "surah": 9,
+     "ayah": 105,
+     "startMs": 2448132,
+     "heardStartMs": 2448122,
+     "snappedToPause": true,
+     "matchedWords": 16,
+     "words": 16,
+     "endMs": 2468681
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "9:101",
+     "heard": "من حولكم من الاعراب منافقون ومن اهل المدينه ما ردوا علي النفاق لا تعلموا بم نحن نعلموا بم سنعذبهم مروتين ثم يردون الي اذاب عظيم",
+     "scores": {
+      "100": 0.38,
+      "101": 0.931,
+      "102": 0.166
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:102",
+     "heard": "واخرون عترفوا بذنوبهم خلطوا املا صالحا واخر سييا عسي الله ان يتوب عليهم ان الله غفور الرحيم خذ",
+     "scores": {
+      "101": 0.28,
+      "102": 0.957,
+      "103": 0.356
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:103",
+     "heard": "من اموالهم صدقه تطهرهم وتزكيهم بها وصل عليهم ان صلاتك سكن لهم والله سميع عليم",
+     "scores": {
+      "102": 0.371,
+      "103": 0.981,
+      "104": 0.252
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:104",
+     "heard": "الم يعلموا ان الله هو يقبل التوبه عن عباده وياخذ الصدقات وان الله هو التواب الرحيم وقل",
+     "scores": {
+      "103": 0.229,
+      "104": 0.976,
+      "105": 0.344
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:105",
+     "heard": "عملوا فسير الله املكم ورسوله والمومنون وستردون الي عالم الغيب والشهاده فينباكم بما كنتم تعملون",
+     "scores": {
+      "104": 0.398,
+      "105": 0.948,
+      "106": 0.365
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "009.mp3",
+    "size": 48963772,
+    "sha256": "687d43bac8aa242b8ed9aefadacf2152e9b983b42a0219d5569698c3712b3c24"
+   },
+   "channel": "left"
+  },
+  {
+   "surah": 9,
+   "window": {
+    "ayat": [
+     116,
+     120
+    ],
+    "fromMs": 2725457,
+    "toMs": 2874697
+   },
+   "durationMs": 149240,
+   "heardWords": 134,
+   "textWords": 136,
+   "matchedTextWords": 133,
+   "rows": [
+    {
+     "surah": 9,
+     "ayah": 116,
+     "startMs": 2727427,
+     "heardStartMs": 2727457,
+     "snappedToPause": true,
+     "matchedWords": 17,
+     "words": 17,
+     "endMs": 2744797
+    },
+    {
+     "surah": 9,
+     "ayah": 117,
+     "startMs": 2744797,
+     "heardStartMs": 2744837,
+     "snappedToPause": true,
+     "matchedWords": 27,
+     "words": 27,
+     "endMs": 2778067
+    },
+    {
+     "surah": 9,
+     "ayah": 118,
+     "startMs": 2778067,
+     "heardStartMs": 2778097,
+     "snappedToPause": true,
+     "matchedWords": 30,
+     "words": 31,
+     "endMs": 2811677
+    },
+    {
+     "surah": 9,
+     "ayah": 119,
+     "startMs": 2811677,
+     "heardStartMs": 2811677,
+     "snappedToPause": false,
+     "matchedWords": 9,
+     "words": 9,
+     "endMs": 2820437
+    },
+    {
+     "surah": 9,
+     "ayah": 120,
+     "startMs": 2820437,
+     "heardStartMs": 2820437,
+     "snappedToPause": false,
+     "matchedWords": 50,
+     "words": 52,
+     "endMs": 2874697
+    }
+   ],
+   "notes": [],
+   "check": [
+    {
+     "ayah": "9:116",
+     "heard": "ان الله له ملك السماوات والارض يحيي ويميت وما لكم من دون الله من ولي ولا نصير",
+     "scores": {
+      "115": 0.39,
+      "116": 1.0,
+      "117": 0.351
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:117",
+     "heard": "لقد تاب الله علي النبي والمهاجرين والانصار الذين اتبعوه في ساعه الانسره من بعد ما كاد يزيغ قلوب فريق منهم ثم تاب عليهم انه بهم رووف رحيم",
+     "scores": {
+      "116": 0.31,
+      "117": 0.985,
+      "118": 0.348
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:118",
+     "heard": "وعلي الثلاثه الذين خلفوا حتي اذا ضاقت عليهم الارض بما رحبت وضاقت عليهم انفسهم وظنوا الا ملجا من الله الا اليه ثم متاب عليهم ليتوبوا ان الله هو التواب الرحيم",
+     "scores": {
+      "117": 0.428,
+      "118": 0.99,
+      "119": 0.302
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:119",
+     "heard": "يا ايها الذين امنوا اتقوا الله وكونوا مع الصادقين",
+     "scores": {
+      "118": 0.33,
+      "119": 1.0,
+      "120": 0.221
+     },
+     "ownBest": true
+    },
+    {
+     "ayah": "9:120",
+     "heard": "ما كام لاهل المدينه ومن حولهم من الاراب ان يتخلفوا عرسول الله ولا يرربوا بانفسهم عن نفسه ذلك بانهم لا يصيبهم رما ولا نصب ولا نخنصه في سبيل الله ولا يطاون موطيا يغيظ الكفار ولا ينالون من عدو النيل الا كتب لهم به عمل صحيح ان الله لا يضيع اجر المحسنين",
+     "scores": {
+      "119": 0.229,
+      "120": 0.956,
+      "121": 0.269
+     },
+     "ownBest": true
+    }
+   ],
+   "file": {
+    "name": "009.mp3",
+    "size": 48963772,
+    "sha256": "687d43bac8aa242b8ed9aefadacf2152e9b983b42a0219d5569698c3712b3c24"
+   },
+   "channel": "left"
   },
   {
    "surah": 91,
