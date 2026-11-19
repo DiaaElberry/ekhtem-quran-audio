@@ -21,7 +21,7 @@ function text(value) {
 }
 
 function oneLine(value) {
-  return text(value).replace(/[\r\n  ]+/g, " ");
+  return text(value).replace(/[\r\n\u2028\u2029]+/g, " ");
 }
 
 /** The report from the parsed JSON, or {error} when it breaks a rule. Lengths count characters as the apps do (UTF-16 units). */
