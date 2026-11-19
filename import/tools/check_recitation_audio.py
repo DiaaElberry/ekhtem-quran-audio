@@ -7,7 +7,9 @@
     <venv python> -I tools/check_recitation_audio.py --set hassan-saleh-hafs-v2 --locate-ayah-clips     # the set's timings, from ayah clips cut from its own files
 
 Needs numpy and miniaudio. The staged MP3s are untrusted downloads: run with -I; this script only decodes them. Envelopes are
-cached under <staging>/analysis/<set id>/ (never beside the MP3s: the publish script uploads every MP3 of that folder).
+cached under <staging>/analysis/<set id>/ (never beside the MP3s: the publish script uploads every MP3 of that folder). With the cache
+present the MP3s are not opened (and miniaudio is not needed): `--envelopes-only` writes it where the files are (GitHub), and a set with
+private timings is checked elsewhere from it (decision 270).
 
 Evidence: a 10 ms RMS envelope (20 ms window) of the file decoded to 16 kHz, both channels. "Quiet" follows tools/build_warsh.py:
 below floor + 0.3 x (speech - floor), floor/speech being the file's 5th/60th percentile dB (the floor no lower than -75 dBFS,
@@ -24,6 +26,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import statistics
 import sys
 from pathlib import Path
@@ -498,10 +501,20 @@ def main() -> None:
     parser.add_argument("--locate-ayah-clips", action="store_true", help="time the set from ayah clips cut from its own files (<staging>/clips/<set id>/SSSAAA.mp3): writes clip_check.json")
     parser.add_argument("--whole-surahs", default="", help="with --locate-clips: comma-separated surahs to do every ayah of")
     parser.add_argument("--measure", default="", help="with --locate-clips: surah:ayah[,surah:ayah] ranges to write as measured rows, up to the surah's end")
+    parser.add_argument("--envelopes-only", action="store_true",
+                        help="write the envelope cache of every staged file (<staging>/analysis/<set>/) and stop: no timing is read. The check then "
+                             "runs elsewhere from the cache (a set with private timings, decision 270)")
     args = parser.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     if args.seek_check:
         raise SystemExit(1 if seek_check(args.set, args.staging) else 0)
+    if args.envelopes_only:
+        for surah in range(1, 115):
+            db = envelope(args.staging / args.set / f"{surah:03}.mp3", args.staging / "analysis" / args.set / f"{surah:03}.npy")
+            print(f"{args.set} {surah:03}: {len(db) * HOP} ms decoded", flush=True)
+        return
+    if prs.SETS.get(args.set, {}).get("privateTimings") and os.environ.get("GITHUB_ACTIONS") == "true":
+        sys.exit(f"{args.set}: private timings (QUA Dataset License 1.0) are never read on GitHub; run --envelopes-only here, the check elsewhere")
     spec = prs.SETS[args.set]
     if args.locate_ayah_clips:
         result = locate_ayah_clips(args.set, args.staging)

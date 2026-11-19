@@ -7,6 +7,11 @@ from MP3Quran's own ayat_timing as a draft (`"qud": None`), which tools/check_re
     python -I tools/prepare_recitation_set.py --download          # fetch audio, QUD assets, MP3Quran API data
     python -I tools/prepare_recitation_set.py                     # build content/recitations/<id>/ from staged files
     python -I tools/prepare_recitation_set.py --check             # rebuild in memory, compare with the committed files
+    python -I tools/prepare_recitation_set.py --set <id> --download --facts-only   # GitHub: the MP3s and their audio facts only
+
+A set with "privateTimings" (QUD v5 data, QUA Dataset License 1.0) is never built on GitHub: the audio repository's run fetches its MP3s
+and writes their audio facts (<staging>/audio-facts/<set id>/, check_recitation_audio.py --envelopes-only adds <staging>/analysis/<set id>/),
+and the build and the audio check run here from those facts and QUD's files, the MP3s staying on GitHub (decision 270).
 
 Staged files (untrusted downloads; this script only reads them, never executes them):
     <staging>/<set id>/NNN.mp3                     the 114 MP3s, unmodified
@@ -23,6 +28,7 @@ import difflib
 import gzip
 import hashlib
 import json
+import os
 import re
 import statistics
 import sys
@@ -61,6 +67,15 @@ TARTEEL_TERMS = ("Tarteel's CDN publishes no licence for these files, and QUL li
 QURANICAUDIO_TERMS = ("quranicaudio.com's About page: \"Mp3s on this site may be downloaded and used for personal use free of charge\" "
                       "and \"you may not use these files for commercial purposes\". No other licence. Audio rights: to be accepted by "
                       "the owner; see FUTURE_CONTENT_SOURCES.md C.6.")
+WAY2QURAN_TERMS = ("way2quran.com's FAQ, question 12 (\"Can I use these recitations in my app or channel?\"): \"الاستخدام الشخصي والتعليمي والدعوي "
+                   "مسموح به. لأي استخدام تجاري أو نشر على نطاق واسع، يُرجى التواصل معنا لتوضيح الحقوق المتعلقة بالقارئ الأصلي\" (personal, educational "
+                   "and da'wah use allowed; for commercial use or wide publication, contact them about the reciter's rights). No other licence. Used "
+                   "under the owner's standing \"no permission needed\" decision (decision 270, as for quranicaudio.com's Abd al-Basit Warsh).")
+# QUD's releases after v4.0.0 (v5.0.0, 13 Nov 2026) are under the QUA Dataset License 1.0, no longer CC BY 4.0: the app may use the timing data
+# (it is free, with no ads), with the credit "QUD Technologies - Qur'anic Universal Audio (https://qud.dev)" and a link to the licence, but the
+# data and anything made from it may not be published (section 6(a)). Such a set is built off GitHub from the audio facts its run returns
+# (write_facts), so its timings never reach the public audio repository, its Actions artifacts, logs or releases (decision 270).
+QUA_LICENCE_URL = "https://github.com/QUD-Technologies/quranic-universal-audio/blob/main/LICENSE"
 
 SETS = {
     "afasy-hafs-v1": {
@@ -281,7 +296,28 @@ SETS = {
         "timingFile": "verse_timestamps_jibreel.json",
         "reciterAr": "مُحَمَّد جِبْرِيل", "reciterEn": "Mohamed Jibreel",
     },
+    # 4.7.15 (owner's list of Warsh reciters, 19 Nov 2026, decision 270): Saber Abdel Hakam's Warsh an Nafi, the one reciter of the list with a
+    # complete Warsh recording that has ayah timings: way2quran.com's 114 files, timed by QUD v5.0.0 for exactly these URLs (6,214 ayat, the
+    # Warsh mushaf's keys). MP3Quran has no Warsh recording of his ("moshaf": None; his Hafs is moshaf 39). The timing data is QUA-licensed
+    # ("privateTimings"): its GitHub run returns only audio facts, and the timings are built from them off GitHub.
+    "saber-abdulhakam-warsh-v1": {
+        "moshaf": None, "reciterId": 39, "server": "https://media.way2quran.com/saber-abdel-hakam/warsh-an-nafi/",
+        "qud": "saber_abdulhakam_warsh_way2quran", "qudVersion": "v5.0.0", "privateTimings": True,
+        "timingFile": "verse_timestamps_saber_abdulhakam_warsh.json",
+        "reciterAr": "صَابِر عَبْد الْحَكَم", "reciterEn": "Saber Abdel Hakam", "riwayah": "warsh",
+        "host": "way2quran.com", "terms": WAY2QURAN_TERMS,
+    },
 }
+
+
+def qud_version(spec: dict) -> str:
+    """The QUD release a set's timings come from: v4.0.0 (CC BY 4.0) for the sets timed before 13 Nov 2026, as their committed provenance
+    names it (its files are gone since, HTTP 404); a later set names its own (`qudVersion`)."""
+    return spec.get("qudVersion", QUD_VERSION)
+
+
+def qud_release(spec: dict) -> str:
+    return f"https://github.com/QUD-Technologies/quranic-universal-audio/releases/download/{qud_version(spec)}/"
 
 
 # --------------------------------------------------------------------------------------------- download
@@ -346,25 +382,31 @@ def _write_log(staging: Path, name: str, log: dict) -> None:
     path.write_text(json.dumps(dict(sorted(old.items())), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def download(staging: Path, set_ids: list[str]) -> None:
-    """Fetch what is not staged yet. Staged files are never replaced: earlier sets' provenance names their hashes."""
+def download(staging: Path, set_ids: list[str], audio_only: bool = False) -> None:
+    """Fetch what is not staged yet. Staged files are never replaced: earlier sets' provenance names their hashes.
+    `audio_only`: the MP3s alone, no catalogue or timing (a set with private timings, on GitHub: write_facts)."""
     api = staging / "mp3quran-api"
-    qud = staging / f"qud-{QUD_VERSION}"
     api.mkdir(parents=True, exist_ok=True)
-    qud.mkdir(parents=True, exist_ok=True)
     log: dict = {}
-    if not (api / "reciters_ar.json").is_file():
+    if not audio_only and not (api / "reciters_ar.json").is_file():
         _fetch(RECITERS_URL, api / "reciters_ar.json", log)
-    extra = ["warsh_words.json.gz"] if any(SETS[s].get("riwayah") == "warsh" for s in set_ids) else []
     # QUD's release files only for the sets QUD timed (or Warsh's word list): QUD replaced v4.0.0 with v5.0.0 on 13 Nov 2026
     # and v4.0.0's files are gone (HTTP 404), which stopped every set's download although sets timed by MP3Quran's timing
     # release never read them (decision 258). Sets QUD timed keep their committed provenance; staging them again needs v4.0.0.
-    uses_qud = any(SETS[s].get("qud") for s in set_ids) or bool(extra)
-    for name in (["catalog.json", "manifest.json"] if uses_qud else []) + extra + [SETS[s]["qud"] + ".zip" for s in set_ids if SETS[s].get("qud")]:
-        if not (qud / name).is_file():
-            _fetch(QUD_RELEASE + name, qud / name, log)
+    # A set from a later release fetches that release's files (`qudVersion`).
+    for version in sorted({qud_version(SETS[s]) for s in set_ids if SETS[s].get("qud") or SETS[s].get("riwayah") == "warsh"}):
+        if audio_only:
+            break
+        ids = [s for s in set_ids if qud_version(SETS[s]) == version]
+        qud = staging / f"qud-{version}"
+        qud.mkdir(parents=True, exist_ok=True)
+        extra = ["warsh_words.json.gz"] if any(SETS[s].get("riwayah") == "warsh" for s in ids) else []
+        uses_qud = any(SETS[s].get("qud") for s in ids) or bool(extra)
+        for name in (["catalog.json", "manifest.json"] if uses_qud else []) + extra + [SETS[s]["qud"] + ".zip" for s in ids if SETS[s].get("qud")]:
+            if not (qud / name).is_file():
+                _fetch(qud_release(SETS[ids[0]]) + name, qud / name, log)
     _write_log(staging, "catalogues", log)
-    if any(SETS[s].get("timingRelease") for s in set_ids):
+    if not audio_only and any(SETS[s].get("timingRelease") for s in set_ids):
         log = {}
         folder = staging / "mp3quran-timings" / TIMING_RELEASE
         folder.mkdir(parents=True, exist_ok=True)
@@ -378,13 +420,14 @@ def download(staging: Path, set_ids: list[str]) -> None:
     for set_id in set_ids:
         spec = SETS[set_id]
         log = {}
-        folder = api / f"ayat_timing-read{spec['moshaf']}"
-        folder.mkdir(exist_ok=True)
-        for surah in range(1, 115):
-            if not (folder / f"{surah:03}.json").is_file():
-                _fetch(f"{MP3QURAN_API}ayat_timing?surah={surah}&read={spec['moshaf']}", folder / f"{surah:03}.json", log)
-        _write_log(staging, f"ayat_timing-read{spec['moshaf']}", log)
-        if spec.get("qul"):
+        if spec.get("moshaf") and not audio_only:     # None: MP3Quran has no recording of this riwayah by this reciter
+            folder = api / f"ayat_timing-read{spec['moshaf']}"
+            folder.mkdir(exist_ok=True)
+            for surah in range(1, 115):
+                if not (folder / f"{surah:03}.json").is_file():
+                    _fetch(f"{MP3QURAN_API}ayat_timing?surah={surah}&read={spec['moshaf']}", folder / f"{surah:03}.json", log)
+            _write_log(staging, f"ayat_timing-read{spec['moshaf']}", log)
+        if spec.get("qul") and not audio_only:
             log = {}
             folder = staging / "qul-api" / f"surah_segments-{spec['qul']}"
             folder.mkdir(parents=True, exist_ok=True)
@@ -562,6 +605,45 @@ def parse_mp3(path: Path, activity: array | None = None) -> dict:
     return info
 
 
+# Audio facts: what build() needs from a set's MP3s, written where they were downloaded (a GitHub machine) so the set can be built where
+# they are not. <staging>/audio-facts/<set id>/NNN.json is parse_mp3's record of the file; NNN.activity its granule envelope, one
+# little-endian uint16 per granule. Neither holds audio, nor any timing: a set with "privateTimings" is built from them off GitHub.
+FACTS = "audio-facts"
+
+
+def write_facts(staging: Path, set_id: str) -> None:
+    folder = staging / FACTS / set_id
+    folder.mkdir(parents=True, exist_ok=True)
+    for surah in range(1, 115):
+        activity = array("H")
+        info = parse_mp3(staging / set_id / f"{surah:03}.mp3", activity)
+        if sys.byteorder != "little":
+            activity.byteswap()
+        (folder / f"{surah:03}.json").write_text(json.dumps(info, ensure_ascii=False, sort_keys=False) + "\n", encoding="utf-8", newline="\n")
+        (folder / f"{surah:03}.activity").write_bytes(activity.tobytes())
+        print(f"{set_id} {surah:03}.mp3 {info['sizeBytes']} B {info['durationSeconds']} s {info['bitrateMode']} {info['bitrateKbps']} kbps", flush=True)
+
+
+def staged_audio(staging: Path, set_id: str) -> bool:
+    """True when the set's MP3s are staged here; otherwise build() reads its audio facts."""
+    return (staging / set_id).is_dir() and any((staging / set_id).glob("*.mp3"))
+
+
+def track_facts(staging: Path, set_id: str, surah: int, activity: array | None = None) -> dict:
+    """parse_mp3 of the staged file, or the same record and envelope from the set's audio facts."""
+    if staged_audio(staging, set_id):
+        return parse_mp3(staging / set_id / f"{surah:03}.mp3", activity)
+    folder = staging / FACTS / set_id
+    info = json.loads((folder / f"{surah:03}.json").read_text(encoding="utf-8"))
+    if activity is not None:
+        values = array("H")
+        values.frombytes((folder / f"{surah:03}.activity").read_bytes())
+        if sys.byteorder != "little":
+            values.byteswap()
+        activity.extend(values)
+    return info
+
+
 # ------------------------------------------------------------------------------------------ timings
 
 def hafs_ayah_counts() -> list[int]:
@@ -601,7 +683,7 @@ def clip_rows(set_id: str, counts: list[int]) -> tuple[list[dict], list[dict], l
 
 
 def load_qud(staging: Path, spec: dict) -> dict:
-    folder = staging / f"qud-{QUD_VERSION}"
+    folder = staging / f"qud-{qud_version(spec)}"
     archive = folder / f"{spec['qud']}.zip"
     manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
     entry = manifest["recitations"][spec["qud"]]
@@ -777,10 +859,10 @@ def warsh_page_turns(rows: list[dict], qud: dict) -> tuple[list[dict], list[dict
     return turns, detail
 
 
-def warsh_numbering_check(staging: Path) -> dict:
+def warsh_numbering_check(staging: Path, spec: dict) -> dict:
     """Proves QUD's Warsh keys are the app's Warsh ayat: the same keys, and per ayah QUD's words against the app's text, letters only."""
     words: dict[str, list[str]] = {}
-    for word in json.loads(gzip.decompress((staging / f"qud-{QUD_VERSION}" / "warsh_words.json.gz").read_bytes())):
+    for word in json.loads(gzip.decompress((staging / f"qud-{qud_version(spec)}" / "warsh_words.json.gz").read_bytes())):
         words.setdefault(word["ref"].rsplit(":", 1)[0], []).append(word["text"])
     app = {}
     for line in (ROOT / "android/app/src/main/assets/warsh/quran-warsh-plain.txt").read_text(encoding="utf-8").splitlines():
@@ -1110,13 +1192,18 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
     riwayah = spec.get("riwayah", "hafs")
     style = spec.get("style", "murattal")
     on_mp3quran = spec["server"].startswith("https://cdn.mp3quran.net/")
+    moshaf_id = spec.get("moshaf")     # None: MP3Quran has no recording of this riwayah by this reciter, so no record or timing of it
     audio_dir = staging / set_id
-    names = sorted(p.name for p in audio_dir.iterdir())
-    expected = [f"{s:03}.mp3" for s in range(1, 115)]
-    assert names == expected, f"{audio_dir}: expected exactly 001.mp3..114.mp3, found {len(names)} entries"
+    if staged_audio(staging, set_id):
+        names = sorted(p.name for p in audio_dir.iterdir())
+        expected = [f"{s:03}.mp3" for s in range(1, 115)]
+        assert names == expected, f"{audio_dir}: expected exactly 001.mp3..114.mp3, found {len(names)} entries"
+    else:
+        names = sorted(p.name for p in (staging / FACTS / set_id).glob("*.json"))
+        assert names == [f"{s:03}.json" for s in range(1, 115)], f"{staging / FACTS / set_id}: expected the audio facts of 114 files, found {len(names)}"
     audio_log, catalogue_log = _log(staging, set_id), _log(staging, "catalogues")
-    timing_log = _log(staging, f"ayat_timing-read{spec['moshaf']}")
-    timing_dir = staging / "mp3quran-api" / f"ayat_timing-read{spec['moshaf']}"
+    timing_log = _log(staging, f"ayat_timing-read{moshaf_id}") if moshaf_id else {}
+    timing_dir = staging / "mp3quran-api" / f"ayat_timing-read{moshaf_id}"
     qud = load_qud(staging, spec) if spec.get("qud") else None
     release = load_timing_release(staging, spec) if spec.get("timingRelease") else None
     if qud:
@@ -1138,9 +1225,9 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
     tracks, pauses = [], []
     for surah in range(1, 115):
         activity = array("H")
-        info = parse_mp3(audio_dir / f"{surah:03}.mp3", activity)
+        info = track_facts(staging, set_id, surah, activity)
         # MP3Quran's rows were made for another recording of this reciter, so they say nothing about these files.
-        mp3quran = [] if spec.get("ayahClips") else json.loads((timing_dir / f"{surah:03}.json").read_text(encoding="utf-8"))
+        mp3quran = [] if spec.get("ayahClips") or not moshaf_id else json.loads((timing_dir / f"{surah:03}.json").read_text(encoding="utf-8"))
         pauses.append({"surah": surah, **pause_alignment(
             activity, info["sampleRateHz"], [r["startMs"] for r in rows if r["surah"] == surah and r["ayah"] >= 2],
             [e["start_time"] for e in mp3quran if e["ayah"] >= 2])})
@@ -1224,24 +1311,31 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
         check = {"source": f"{MP3QURAN_API}ayat_timing?surah=N&read={spec['moshaf']} (N = 1..114)", "ayatCompared": 0,
                  "note": "Not compared: MP3Quran's read=299 is for another recording of this reciter.",
                  "medianStartDeltaMs": None, "absStartDeltaMsPercentiles": {"p99": None}, "ayatOver2s": []}
+    elif not moshaf_id:
+        check = {"source": None, "ayatCompared": 0,
+                 "note": "Not compared: MP3Quran has no recording of this riwayah by this reciter (v3 reciters and v4 recitations, "
+                         "19 Nov 2026), so no MP3Quran timing exists for these files.",
+                 "medianStartDeltaMs": None, "absStartDeltaMsPercentiles": {"p99": None}, "ayatOver2s": []}
     else:
         check = cross_check(rows, staging, spec, counts)
     for repeat in repeats:
         surah, ayah = map(int, repeat["ayah"].split(":"))
         entry = next((e for e in json.loads((timing_dir / f"{surah:03}.json").read_text(encoding="utf-8"))
-                      if e["ayah"] == ayah), None)
+                      if e["ayah"] == ayah), None) if moshaf_id else None
         repeat["mp3quranRangeMs"] = [entry["start_time"], entry["end_time"]] if entry else None
 
-    reciters = json.loads((staging / "mp3quran-api" / "reciters_ar.json").read_text(encoding="utf-8"))
-    reciter = next(r for r in reciters["reciters"] if any(m["id"] == spec["moshaf"] for m in r["moshaf"]))
-    moshaf = next(m for m in reciter["moshaf"] if m["id"] == spec["moshaf"])
-    assert (moshaf["server"] == spec["server"] or not on_mp3quran) and moshaf["surah_total"] == 114, moshaf
-    assert sorted(map(int, moshaf["surah_list"].split(","))) == list(range(1, 115))
+    reciter = moshaf = None
+    if moshaf_id:
+        reciters = json.loads((staging / "mp3quran-api" / "reciters_ar.json").read_text(encoding="utf-8"))
+        reciter = next(r for r in reciters["reciters"] if any(m["id"] == spec["moshaf"] for m in r["moshaf"]))
+        moshaf = next(m for m in reciter["moshaf"] if m["id"] == spec["moshaf"])
+        assert (moshaf["server"] == spec["server"] or not on_mp3quran) and moshaf["surah_total"] == 114, moshaf
+        assert sorted(map(int, moshaf["surah_list"].split(","))) == list(range(1, 115))
 
     host = "MP3Quran" if on_mp3quran else spec.get("host", "")
     riwaya_name = {"hafs": "Hafs", "warsh": "Warsh"}[riwayah]
     if qud:
-        timing_source = f"QUD Technologies quranic-universal-audio {QUD_VERSION}; {qud['catalog']['name_en']} {host} {riwaya_name}"
+        timing_source = f"QUD Technologies quranic-universal-audio {qud_version(spec)}; {qud['catalog']['name_en']} {host} {riwaya_name}"
         if style != "murattal":
             timing_source += f" {style}"
     elif release:
@@ -1282,14 +1376,19 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
     if qud:
         timing_note = (f"QUD's catalog lists exactly these URLs, so its timings are used as published. No independent "
                        "offset measurement was possible: QUD publishes no audio checksums for the files it aligned.")
+        base = qud_release(spec)
         timings_block = {
             "provider": "QUD Technologies, quranic-universal-audio", "licence": qud["manifest"]["license"],
-            "release": QUD_VERSION, "releaseCreatedAt": qud["manifest"]["created_at"],
-            "asset": QUD_RELEASE + qud["archive"].name, "assetSha256": qud["sha256"], "assetBytes": qud["archive"].stat().st_size,
-            "manifestUrl": QUD_RELEASE + "manifest.json", "manifestSha256": qud["manifestSha256"],
+            **({"licenceUrl": QUA_LICENCE_URL, "credit": "QUD Technologies - Qur'anic Universal Audio (https://qud.dev)",
+                "notPublished": "QUA Dataset License 1.0, section 6(a): the timing data and anything made from it stay out of the public audio "
+                                "repository, its Actions artifacts, logs and releases; the set was built off GitHub from its audio facts (decision 270)."}
+               if spec.get("privateTimings") else {}),
+            "release": qud_version(spec), "releaseCreatedAt": qud["manifest"]["created_at"],
+            "asset": base + qud["archive"].name, "assetSha256": qud["sha256"], "assetBytes": qud["archive"].stat().st_size,
+            "manifestUrl": base + "manifest.json", "manifestSha256": qud["manifestSha256"],
             "manifestEntry": {k: qud["entry"][k] for k in ("sha256", "bytes", "ts_version", "content_hash",
                                                            "coverage_ayahs", "riwayah", "change_kind")},
-            "releaseCatalogUrl": QUD_RELEASE + "catalog.json", "releaseCatalogSha256": qud["releaseCatalogSha256"],
+            "releaseCatalogUrl": base + "catalog.json", "releaseCatalogSha256": qud["releaseCatalogSha256"],
             "releaseCatalogEntriesForSlug": qud["listedInReleaseCatalog"],
             "zipMembers": qud["members"],
             "catalog": {k: qud["catalog"][k] for k in ("slug", "name_en", "name_ar", "riwayah", "style", "channel",
@@ -1374,6 +1473,9 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
             "moshaf": {k: moshaf[k] for k in ("id", "name", "rewaya_id", "server", "surah_total", "moshaf_type")},
             "ayatTiming": {"url": check["source"], "fetchedAt": sorted(v["fetchedAt"] for v in timing_log.values())[:1]
                            + sorted(v["fetchedAt"] for v in timing_log.values())[-1:]},
+        } if moshaf_id else {
+            "note": "MP3Quran has no recording of this riwayah by this reciter: not in v3 reciters?language=ar (rewaya 2, 10, 18) nor in the "
+                    f"v4 recitations (checked 19 Nov 2026). Its reciter id for his other recordings: {spec.get('reciterId')}.",
         },
         "timings": timings_block,
         "totals": {
@@ -1398,7 +1500,7 @@ def build(staging: Path, set_id: str, counts: list[int]) -> tuple[dict[str, str]
         "timingAdjustments": adjustments,
         **({"timingShifts": shifted} if shifted else {}),
         **({"timingCorrections": {"file": f"content/recitations/{set_id}/{spec['timingCorrections']}", "values": corrected}} if corrected else {}),
-        **({"pageTurns": turns_detail, "warshNumberingCheck": warsh_numbering_check(staging)} if turns_detail else {}),
+        **({"pageTurns": turns_detail, "warshNumberingCheck": warsh_numbering_check(staging, spec)} if turns_detail else {}),
         "pauseAlignmentCheck": summarize_pauses(pauses),
         "validation": {**report, "hardFailures": hard},
         "mp3quranCrossCheck": check,
@@ -1470,6 +1572,9 @@ def main() -> None:
     parser.add_argument("--download", action="store_true", help="fetch audio, QUD assets and MP3Quran API data first")
     parser.add_argument("--download-only", action="store_true", help="with --download: stop after fetching")
     parser.add_argument("--check", action="store_true", help="re-validate staged files against the committed output")
+    parser.add_argument("--facts-only", action="store_true",
+                        help="write the set's audio facts (audio-facts/<set>/: each file's frame walk and granule envelope) and stop; with --download "
+                             "only the MP3s are fetched. For a set with private timings, run where the audio is (GitHub); build elsewhere from the facts")
     args = parser.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
     set_ids = sorted(SETS) if args.set == "all" else [args.set]
@@ -1478,6 +1583,16 @@ def main() -> None:
             changed = seek_durations(args.staging, set_id)
             print(f"{set_id}: {len(changed)} durationMs written" + (f" (first: {changed[0]})" if changed else ""))
         return
+    if args.facts_only:
+        if args.download:
+            download(args.staging, set_ids, audio_only=True)
+        for set_id in set_ids:
+            write_facts(args.staging, set_id)
+        return
+    private = [s for s in set_ids if SETS[s].get("privateTimings")]
+    if private and os.environ.get("GITHUB_ACTIONS") == "true":
+        # The audio repository is public: its runs' artifacts and logs are public too, and QUA-licensed timing data may not be published.
+        sys.exit(f"{', '.join(private)}: private timings (QUA Dataset License 1.0) are never built on GitHub; run --facts-only here, build elsewhere")
     if args.download:
         download(args.staging, set_ids)
     if args.download_only:

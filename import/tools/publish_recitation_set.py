@@ -36,18 +36,31 @@ def release_exists(tag: str) -> bool:
 def notes(set_id: str, spec: dict, manifest: dict) -> tuple[str, str]:
     total = sum(t["size"] for t in manifest["tracks"])
     style = manifest.get("style", "murattal")
-    title = f"{spec['reciterEn']} — Hafs, {style} (114 surahs, mp3quran.net)"
+    riwaya = manifest.get("riwaya", "Hafs an Asim")
+    if spec["server"].startswith("https://cdn.mp3quran.net/"):
+        host = "mp3quran.net"
+        source = (f"Source: mp3quran.net (moshaf {spec['moshaf']}), `{spec['server']}NNN.mp3`"
+                  + (" (MP3Quran's constant-bitrate copy `NNN-64k.mp3` for " + ("every surah" if spec.get("copy64") is True else "surah " + ", ".join(map(str, spec["copy64"]))) + ", the same audio)" if spec.get("copy64") else "")
+                  + ", unmodified. mp3quran.net lets any visitor or "
+                  "developer copy and use its material (its privacy page, Copyrights); this is its statement, not a licence from the reciter "
+                  "or the recording's producer.")
+    else:
+        host = spec["host"]
+        source = f"Source: {host}, `{spec['server']}NNN.mp3`, unmodified. {spec['terms']}"
+    if spec.get("timingRelease"):
+        timing = (f"Ayah timings: MP3Quran timing release {prs.TIMING_RELEASE} (recitation {spec['timingRelease']}), made for exactly these "
+                  "files (each file's sha256 checked).")
+    else:
+        # QUD's later releases are under the QUA Dataset License 1.0, which forbids republishing the data: only named here, never attached.
+        timing = (f"Ayah timings: QUD Technologies - Qur'anic Universal Audio (https://qud.dev), release {prs.qud_version(spec)}, made for exactly "
+                  f"these URLs; the timing data is not published here ({prs.QUA_LICENCE_URL}).")
+    title = f"{spec['reciterEn']} — {riwaya.split()[0]}, {style} (114 surahs, {host})"
     body = "\n".join([
         f"{spec['reciterAr']} — {spec['reciterEn']}",
         "",
-        f"Riwayah: Hafs an Asim. Style: {style}. All 114 surahs, one MP3 per surah (`001.mp3` … `114.mp3`), {total:,} bytes.",
-        f"Source: mp3quran.net (moshaf {spec['moshaf']}), `{spec['server']}NNN.mp3`"
-        + (" (MP3Quran's constant-bitrate copy `NNN-64k.mp3` for " + ("every surah" if spec.get("copy64") is True else "surah " + ", ".join(map(str, spec["copy64"]))) + ", the same audio)" if spec.get("copy64") else "")
-        + ", unmodified. mp3quran.net lets any visitor or "
-        "developer copy and use its material (its privacy page, Copyrights); this is its statement, not a licence from the reciter "
-        "or the recording's producer.",
-        f"Ayah timings: MP3Quran timing release {prs.TIMING_RELEASE} (recitation {spec['timingRelease']}), made for exactly these "
-        "files (each file's sha256 checked). Sizes and sha256 of every file are in the app's audio_manifest for this set.",
+        f"Riwayah: {riwaya}. Style: {style}. All 114 surahs, one MP3 per surah (`001.mp3` … `114.mp3`), {total:,} bytes.",
+        source,
+        timing + " Sizes and sha256 of every file are in the app's audio_manifest for this set.",
         "",
         "A release is never changed once published: installed app versions download from it.",
     ])

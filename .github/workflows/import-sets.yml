@@ -11,6 +11,10 @@
 #            speech recognition in the set's own files (tools/time_surahs_by_speech.py, faster-whisper small on the CPU).
 #            The measured_timings.json comes back as an artifact, to be committed in both repositories before prepare runs
 #            again (decision 258, 18 Nov 2026: the audio stays off the PC, as for the import itself).
+#   facts    download the set and describe its audio only: each file's frame walk (size, sha256, length, format) and its
+#            envelopes, as an artifact; no timing is fetched or read. For a set whose timing data may not be published
+#            (QUD v5, QUA Dataset License 1.0: "privateTimings"), which is built and checked off GitHub from these facts
+#            (decision 270, 19 Nov 2026). The tools refuse to build such a set's timings on a GitHub machine.
 #
 # import/ holds copies of the app repository's tools/prepare_recitation_set.py, tools/check_recitation_audio.py,
 # tools/publish_recitation_set.py, tools/time_surahs_by_speech.py, tools/fetch_measure_audio.py and the two text files
@@ -21,9 +25,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "prepare: build and check, publish nothing. publish: release and copy to R2. measure: time the windows by speech (one set)."
+        description: "prepare: build and check, publish nothing. publish: release and copy to R2. measure: time the windows by speech (one set). facts: describe the audio only (private timings)."
         type: choice
-        options: [prepare, publish, measure]
+        options: [prepare, publish, measure, facts]
         default: prepare
       sets:
         description: "Comma-separated set ids, for example sudais-hafs-v1,ghamdi-hafs-v1"
@@ -94,6 +98,22 @@ jobs:
         with:
           name: ${{ matrix.set }}
           path: import/content/recitations/${{ matrix.set }}/
+          if-no-files-found: warn
+
+      - name: Facts (download, describe the audio only; no timing is fetched or read)
+        if: inputs.mode == 'facts'
+        run: |
+          python -I -X utf8 import/tools/prepare_recitation_set.py --set "$SET" --download --facts-only --staging "$RUNNER_TEMP/staging"
+          python -I -X utf8 import/tools/check_recitation_audio.py --set "$SET" --staging "$RUNNER_TEMP/staging" --envelopes-only
+          mkdir -p "$RUNNER_TEMP/facts"
+          cp -r "$RUNNER_TEMP/staging/audio-facts" "$RUNNER_TEMP/staging/analysis" "$RUNNER_TEMP/staging/fetch-log" "$RUNNER_TEMP/facts/"
+
+      - name: Keep the facts
+        if: inputs.mode == 'facts' && always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.set }}-facts
+          path: ${{ runner.temp }}/facts/
           if-no-files-found: warn
 
       - name: Measure (fetch and check the windows' files, time them by speech)
