@@ -1,0 +1,50 @@
+# Tests and deploys the app's bug-report Worker (decision 265; workers/report) to Cloudflare, at
+# https://audio.ekhtemalquran.stream/report. On a push that changes it, or by hand: Actions -> Deploy the bug-report Worker.
+# Secrets: CLOUDFLARE_API_TOKEN (the token "ekhtem-report-worker") and R2_ACCOUNT_ID (the Cloudflare account).
+name: Deploy the bug-report Worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "workers/report/**"
+      - ".github/workflows/deploy-report-worker.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-report-worker
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      # The runner's own Node (20 or later: node:test, fetch's Request and Response).
+      - name: Test the Worker's rules
+        working-directory: workers/report
+        run: node --test test.mjs
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.R2_ACCOUNT_ID }}
+          workingDirectory: workers/report
+          wranglerVersion: "4"
+          command: deploy
+
+      - name: Check the route answers (a GET must be refused by the Worker, not served by the bucket)
+        run: |
+          for i in 1 2 3 4 5 6; do
+            body=$(curl -s -w ' HTTP%{http_code}' https://audio.ekhtemalquran.stream/report || true)
+            echo "$body"
+            case "$body" in *'"error":"method"'*HTTP405) echo "The Worker answers on the route."; exit 0;; esac
+            sleep 10
+          done
+          echo "The route did not reach the Worker."; exit 1

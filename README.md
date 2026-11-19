@@ -53,3 +53,9 @@ after download. [`manifest.json`](manifest.json) at the root of this repository 
   "Copyrights" section of its privacy page). The files are published unmodified and used non-commercially in a
   free app without ads.
 - `husary-hafs-v1`: TvQuran.com states "All rights reserved". This is why the app moved to mp3quran.net's copy.
+
+## Bug reports from the app (`workers/report`)
+
+The app's Report a bug page (decision 265) posts to `https://audio.ekhtemalquran.stream/report`, a Cloudflare Worker that
+checks the report and emails it through Cloudflare Email Routing to the developer's verified address, the user's email (if
+given) as Reply-To. Nothing is stored. `.github/workflows/deploy-report-worker.yml` tests and deploys it on every change.

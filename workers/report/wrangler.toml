@@ -1,0 +1,31 @@
+# Ekhtem AlQur'an's bug-report Worker (decision 265): see src/index.js. Deployed by .github/workflows/deploy-report-worker.yml
+# with the CLOUDFLARE_API_TOKEN secret (token "ekhtem-report-worker": Workers scripts on the account, Workers routes on
+# ekhtemalquran.stream only) and the account id from the R2_ACCOUNT_ID secret.
+name = "ekhtem-report"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+# Only this path on the audio host; everything else there stays the R2 bucket's.
+[[routes]]
+pattern = "audio.ekhtemalquran.stream/report"
+zone_name = "ekhtemalquran.stream"
+
+[vars]
+# The verified Email Routing destination (the owner's choice, 19 Nov 2026) and the sender on the zone.
+REPORT_TO = "diaaelberry@softsolvit.com"
+REPORT_FROM = "report@ekhtemalquran.stream"
+
+# Email Routing's sending binding: it can send to this one verified address only.
+[[send_email]]
+name = "MAIL"
+destination_address = "diaaelberry@softsolvit.com"
+
+# A few reports a minute from one address (Cloudflare's rate limit allows 10 or 60 second periods).
+[[ratelimits]]
+name = "REPORTS"
+namespace_id = "2651"
+
+  [ratelimits.simple]
+  limit = 3
+  period = 60
